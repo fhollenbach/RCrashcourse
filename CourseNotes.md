@@ -1,7 +1,7 @@
 *R* Crash Course CBS
 ================
 Florian M. Hollenbach
-2022-01-17
+2022-01-19
 
 # Getting Started in *R* & RStudio
 
