@@ -1,0 +1,154 @@
+---
+title: "_R_ Crash Course CBS"
+author: "Florian M. Hollenbach"
+date:  "`r Sys.Date()`"
+output: rmarkdown::github_document
+bibliography: "/Users/florianhollenbach/Dropbox (Personal)/Bibtex/fhollenbach_master.bib"
+---
+
+
+# Getting Started in _R_ & RStudio
+
+
+In this class we will work with and analyze data in _R_. _R_ is a programming language that is widely used for data manipulation, visualization, and analysis. _R_ is an open source program and is free for anyone. Many of the functions and packages (more on this later) we will use within _R_ are written by other _R_ users. While we work with the _R_ program, we will use a different program as the graphical interface. Specifically, we will use the RStudio IDE (integrated development environment) to work in _R_. Both programs are available for free. 
+
+_R_ can be very hard to learn initially, especially if you have never programmed before. You will encounter situations where you are completely lost and might have no idea what to do or what the next step should be. __This is completely normal!__ Hadley Wickham works for RStudio and is one of the most prolific programmers in R. We will work with many of his packages throughout the course. As Hadley notes, it is completely normal to feel lost when starting to program: 
+<center>
+![Hadley Wickham](images/wickham.jpeg){width=40%}
+</center>
+In addition, it is important that you ask question when you are stuck. We will have a discussion forum on Canvas and you should try to make use of it as much as possible. If you are stuck and don't know where to go next, ask in class or in the discussion forum. __There are no stupid questions!__
+
+## Installing _R_ & RStudio
+
+The first step is to correctly install _R_ on your machine. Please go to [https://cloud.r-project.org/](https://cloud.r-project.org/). Then click on the link to download the latest version of _R_ for your specific operating system. Once you have downloaded the program, follow the general instructions to install _R_.
+
+After installing _R_, we need to install the RStudio IDE. You can download the latest version of RStudio [here](https://www.rstudio.com/products/rstudio/download/#download). Once you have downloaded RStudio, follow the instructions and install the program. 
+
+Once you have installed both programs, open up RStudio. You should see something like this: 
+<center>
+![RStudio Starting Screen](images/Rstudio.png)
+</center>
+
+This is the RStudio program. We will work with this program when manipulating, analyzing, or visualizing any data. Start by looking around in RStudio and try to familiarize yourself with the program. 
+
+You can adjust the appearance (for example, font or background color) if you click on RStudio &rarr; Preferences &rarr; Appearance. 
+
+## Getting started with _R_ & RStudio
+
+In the console, you can write code that is immediately executed (or evaluated) by _R_ once you hit enter. For example, set the cursor by clicking to the right of to the little angle bracket >. 
+
+Now type `4+4` and hit enter/return. You should see that _R_ evaluates the command and prints the solution and look like this. 
+<center>
+![Console Results](images/calc.png)
+</center>
+
+Just note that in the following text, the output looks slightly different when commands are evaluated:
+```{r calculator1}
+4+4
+```
+
+After _R_ prints the result of the evaluated command, it once again provides the angle bracket, telling us that _R_ is ready to execute the next command. _R_ is a really good calculator, try entering some simple calculations in the console and have _R_ execute them. The following mathematical operators are probably most often used: 
+- `+`: addition
+
+- `-`: subtraction
+
+- `/`: division
+
+- `*`: multiplication
+
+- `^`: exponentiation
+
+- `sqrt()`: square root
+
+Try out some calculations yourself! 
+Note that _R_ follows standard order of operations rules, so it can be important to use parentheses.
+
+```{r calculator examples}
+7 + 3/5
+
+(7 + 3)/5
+```
+
+_R_ also has operators to evaluate logical expressions, meaning _R_ evaluates whether a statement is *true* or *false*: 
+
+- `==`: is equal to
+
+- `!=`: is NOT equal to
+
+- `<`: smaller than
+
+- `>`: greater than
+
+For example, we can ask _R_ whether three is smaller than five or whether seven is equal to 0: 
+
+```{r calculator examples2}
+3 < 5
+7 == 0
+```
+
+We can also connect different logical statements with the logical operators for *and* or *or*: `&`; `|`:
+
+```{r calculator examples3}
+3 < 5 & 7 == 0
+
+3 < 5 | 7 == 0 
+```
+
+The `#` operator is special in _R_, as it denotes comments. Anything that is in a line behind the `#` is ignored by _R_ and not evaluated. Try writing `# 3 + 4` and hit return. You will see that _R_ does not evaluate the command. The `#` is used to add comments into rcode, we will return to the importance of this later. 
+
+Anything you write in the console is immediately interpreted by _R_ once you hit `Enter`/`Return`. In general, we could enter any command here in the **Console** and have _R_ execute the command. This is bad practice, however, and should be avoided as much as possible. When we write and evaluate code directly in the **Console** it is executed at once and then lost. Think of you using a sheet of paper to make a calculation and then immediately discarding the piece of paper. Instead of working directly in the Console, we write _Rcode_ in a basic script that we can save (this is equivalent to a do-file, if you have worked with Stata before). Writing code in the script will allow us to save our code and re-execute the commands at any time in the future. Working with scripts also ensures that our work is _reproducible_, i.e., others can go back and check whether our work was correct. This is of great importance, especially when doing scientific research. 
+
+To open a new _rscript_, click on the little white plus in the upper left corner of RStudio and select `R Script`.
+<center>
+![Opening Rscripts](images/rscript.png){width=25%} ![Opening Rscripts](images/rscript2.png){width=22%}
+</center>
+
+Once you have an rscript open, the first step should be to save it somewhere sensible. For example, you might create a folder for this course and save all rscripts for class in that folder. You should pick a name for your rscript that makes sense and reminds you about the contents of the script. For example, you could save this first rscript as `Rcrashcourse.R`. 
+
+You should practice writing anything you do in _R_ in a rscript. Start by repeating a few of the simple calculations that you did above. Write each calculation in a separate line: 
+
+```{r calculator script}
+4+4
+
+9+2
+
+3/2
+```
+
+You might notice that nothing happens when you write code in the rscript and hit enter. To execute the rcode that is in our script, we have to send it to the console. We can do so by having the cursor in the line we want to execute and then hitting `Ctrl + Enter` (Windows) or `Command + Return` (Mac). Alternatively, you can select one or multiple lines to execute and then hit `Ctrl + Enter` (Windows) or `Command + Return` (Mac). Try selecting some code you wrote by executing the line. 
+
+<center>
+![Executing code from rscripts](images/execute.png){width=35%}
+</center>
+
+
+It is good practice to add plenty of comments to your rscripts, so that others can understand what you are doing (and why). It will also help your future self when you open old code. The comments will help you remember why you wrote certain code and what your reasoning was. Remember, we can include comments using the `#` symbol. Anything in a line behind the `#` symbol will not be executed by _R_. 
+
+```{r comment example}
+# this is our first rscript
+# in the first line we calculate four plus four
+4+4 # comments can also go behind a command we want to execute, anything before # will still be executed
+#### we can also use multiple # to mark comments
+# or we can have an empty comment line
+#
+#
+# next we calculate nine plus two 
+9+2 
+
+# next we want to divide 3 by 2
+3/2
+```
+
+One important operator in _R_ is the __assignment operator__. With the assignment operator we can assign values/numbers/words to objects that are rembered by _R_. For example, we might want _R_ to remember that my name is 'Florian', so we assign the word 'Florian' to the object called name. There are actually two assignment operators in _R_: 
+
+1. `<-`
+
+2. `=`
+
+It doesn't really matter which one you use, but you should decide early and use one consistently. In this course, the examples will all use the `<-` assignment operator.
+```{r name assignment}
+name <- 'Florian'
+```
+
+
+
