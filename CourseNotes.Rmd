@@ -14,7 +14,7 @@ In this class we will work with and analyze data in _R_. _R_ is a programming la
 
 _R_ can be very hard to learn initially, especially if you have never programmed before. You will encounter situations where you are completely lost and might have no idea what to do or what the next step should be. __This is completely normal!__ Hadley Wickham works for RStudio and is one of the most prolific programmers in R. We will work with many of his packages throughout the course. As Hadley notes, it is completely normal to feel lost when starting to program: 
 <center>
-![Hadley Wickham](images/wickham.jpeg){width=30%}
+![Hadley Wickham](images/wickham.jpeg){width=20%}
 </center>
 In addition, it is important that you ask question when you are stuck. We will have a discussion forum on Canvas and you should try to make use of it as much as possible. If you are stuck and don't know where to go next, ask in class or in the discussion forum. __There are no stupid questions!__
 
@@ -199,7 +199,7 @@ One important operator in _R_ is the **assignment operator**. With the assignmen
 
 It doesn't really matter which one you use, but you should decide early and use one consistently. In this course, the examples will all use the `<-` assignment operator. You can think of the arrow assigment symbols `<-` as `gets`. 
 
-For example, say we might want _R_ to remember an object that contains my name, so we assign the word 'Florian' to the object called name. Object names have to start with a letter but can include numbers and other symbols. They cannot include empty spaces. It is good practice to only use lowercase letters, numbers, and `_` in your object names.^[See here for a complete style guide for programming in R: (https://style.tidyverse.org/index.html)[https://style.tidyverse.org/index.html]] You should always try use reasonable and informative names for your objects, so that you can remember what are the contents of a given object. 
+For example, say we might want _R_ to remember an object that contains my name, so we assign the word 'Florian' to the object called name. Object names have to start with a letter but can include numbers and other symbols. They cannot include empty spaces. It is good practice to only use lowercase letters, numbers, and `_` in your object names.^[See here for a complete style guide for programming in R: [https://style.tidyverse.org/index.html](https://style.tidyverse.org/index.html)] You should always try use reasonable and informative names for your objects, so that you can remember what are the contents of a given object. 
 ```{r name assignment}
 name <- 'Florian' ## object 'name' gets assigned the character vector 'Florian'
 ```
@@ -276,7 +276,7 @@ student_df$height*100 ## multiply each value by 100
 ```
 
 We can also create a new variable in the data frame. Once again we use the dollar sign `$` with the new variable's name and then assign the values. 
-```{r vectorized}
+```{r vectorized2}
 student_df$height_in_meters <- student_df$height*100 ## multiply each value by 100 and assign to new variable
 ```
 

@@ -1,7 +1,7 @@
 *R* Crash Course CBS
 ================
 Florian M. Hollenbach
-2022-01-26
+2022-01-27
 
 # Getting Started in *R* & RStudio
 
@@ -23,7 +23,7 @@ RStudio and is one of the most prolific programmers in R. We will work
 with many of his packages throughout the course. As Hadley notes, it is
 completely normal to feel lost when starting to program:
 <center>
-<img src="images/wickham.jpeg" title="fig:" style="width:30.0%" alt="Hadley Wickham" />
+<img src="images/wickham.jpeg" title="fig:" style="width:20.0%" alt="Hadley Wickham" />
 </center>
 
 In addition, it is important that you ask question when you are stuck.
@@ -489,7 +489,9 @@ birth_year
 Now we have three different vectors, each including the observations for
 five students in terms of their names, height, and birth year. We can
 combine these variables into a data frame using the `data.frame()`
-function.
+function. Note that to combine the different vectors into one data
+frame, they all have to have the same length (contain the same number of
+elements).
 
 ``` r
 student_df <- data.frame(names, height, birth_year)
@@ -543,10 +545,65 @@ student_df[ ,1] ## all elements in first column
 
     ## [1] "Anna"  "Otto"  "Emmy"  "Hanna" "Signe"
 
+At least in this course, you will rarely create new data sets. Instead
+you will work with data sets provided to you or that you have downloaded
+somewhere, but it is good to first learn the basics.
+
+The different columns in each data set are the different variables. As
+you saw above, you can access the specific colums in a data frame by
+using the square brackets and adding the column number behind a comma:
+`student_df[ , 1]`.[3] The best way to access specific variables
+(columns) in a data frame, however, is by using the variable’s name. You
+can do so with the help of the `$` sign. You first specify the name of
+the data frame object and then the variable name, separated by the
+dollar sign `$`:
+
+``` r
+student_df$names ## access the names variable
+```
+
+    ## [1] "Anna"  "Otto"  "Emmy"  "Hanna" "Signe"
+
+``` r
+student_df$height ## access the heigh variable
+```
+
+    ## [1] 1.75 1.52 1.89 1.66 1.55
+
+``` r
+student_df$birth_year ## access the birth year variable
+```
+
+    ## [1] 1990 1986 1995 1992 1991
+
+One of the great things about R is that it is vectorized, this means
+that operations can be done on the whole vector without going through
+each element individually. For example, say we want to have the height
+in cm instead of m, so we need to multiply each of the students’ heights
+by 100. We can just multiply the whole variable by 100 and *R*
+automatically does so for each element.
+
+``` r
+student_df$height*100 ## multiply each value by 100
+```
+
+    ## [1] 175 152 189 166 155
+
+We can also create a new variable in the data frame. Once again we use
+the dollar sign `$` with the new variable’s name and then assign the
+values.
+
+``` r
+student_df$height_in_meters <- student_df$height*100 ## multiply each value by 100 and assign to new variable
+```
+
 [1] There are other types of data as well, but we won’t encounter them
 much. For example, there is a specific class for *complex* numbers and
 one for *integers*. We won’t make very much use of those types and will
 ignore them for now.
 
 [2] See here for a complete style guide for programming in R:
-(<https://style.tidyverse.org/index.html>)\[<https://style.tidyverse.org/index.html>\]
+<https://style.tidyverse.org/index.html>
+
+[3] Alternatively, you can also use the variable name in quotation
+marks: `student_df[ , "names"]`.
