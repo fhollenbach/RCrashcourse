@@ -45,6 +45,14 @@ download the latest version of RStudio
 Once you have downloaded RStudio, follow the instructions and install
 the program.
 
+If you have a lot of trouble installing R and RStudio on your machine,
+you can also use RStudio inside your web brower in the cloud. You can
+sign up for a free account here: <https://rstudio.cloud/>. Note,
+however, that the free version of RStudio Cloud limits you to 25 hours
+of use per month and requires you to be connected to the internet. In
+general, I would still encourage you to install the programs on your
+machine.
+
 Once you have installed both programs, open up RStudio. You should see
 something like this:
 <center>
