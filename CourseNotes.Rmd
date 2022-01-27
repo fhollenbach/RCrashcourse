@@ -14,7 +14,7 @@ In this class we will work with and analyze data in _R_. _R_ is a programming la
 
 _R_ can be very hard to learn initially, especially if you have never programmed before. You will encounter situations where you are completely lost and might have no idea what to do or what the next step should be. __This is completely normal!__ Hadley Wickham works for RStudio and is one of the most prolific programmers in R. We will work with many of his packages throughout the course. As Hadley notes, it is completely normal to feel lost when starting to program: 
 <center>
-![Hadley Wickham](images/wickham.jpeg){width=40%}
+![Hadley Wickham](images/wickham.jpeg){width=30%}
 </center>
 In addition, it is important that you ask question when you are stuck. We will have a discussion forum on Canvas and you should try to make use of it as much as possible. If you are stuck and don't know where to go next, ask in class or in the discussion forum. __There are no stupid questions!__
 
@@ -96,7 +96,9 @@ We can also connect different logical statements with the logical operators for 
 
 The `#` operator is special in _R_, as it denotes comments. Anything that is in a line behind the `#` is ignored by _R_ and not evaluated. Try writing `# 3 + 4` and hit return. You will see that _R_ does not evaluate the command. The `#` is used to add comments into rcode, we will return to the importance of this later. 
 
-Anything you write in the console is immediately interpreted by _R_ once you hit `Enter`/`Return`. In general, we could enter any command here in the **Console** and have _R_ execute the command. This is bad practice, however, and should be avoided as much as possible. When we write and evaluate code directly in the **Console** it is executed at once and then lost. Think of you using a sheet of paper to make a calculation and then immediately discarding the piece of paper. Instead of working directly in the Console, we write _Rcode_ in a basic script that we can save (this is equivalent to a do-file, if you have worked with Stata before). Writing code in the script will allow us to save our code and re-execute the commands at any time in the future. Working with scripts also ensures that our work is _reproducible_, i.e., others can go back and check whether our work was correct. This is of great importance, especially when doing scientific research. 
+Anything you write in the console is immediately interpreted by _R_ once you hit `Enter`/`Return`. In general, we could enter any command here in the **Console** and have _R_ execute the command. Executing commands directly in the console is bad practice, however, and should be avoided as much as possible. When we write and evaluate code directly in the **Console** it is executed at once and then lost.  Similarly, if you point and click to estimate models or created graphs (for example in Stata), it is hard to remember exactly what you have done and not possible for others to reproduce your code. Think of you using a sheet of paper to make a calculation and then immediately discarding the piece of paper. 
+
+Instead of working directly in the Console, we write _Rcode_ in a basic script that we can save (this is equivalent to a do-file, if you have worked with Stata before). Writing code in the script will allow us to save our code and re-execute the commands at any time in the future. Working with scripts also ensures that our work is _reproducible_, i.e., others can go back and check whether our work was correct. This is of great importance, especially when doing scientific research. 
 
 To open a new _rscript_, click on the little white plus in the upper left corner of RStudio and select `R Script`.
 <center>
@@ -105,7 +107,7 @@ To open a new _rscript_, click on the little white plus in the upper left corner
 
 Once you have an rscript open, the first step should be to save it somewhere sensible. For example, you might create a folder for this course and save all rscripts for class in that folder. You should pick a name for your rscript that makes sense and reminds you about the contents of the script. For example, you could save this first rscript as `Rcrashcourse.R`. 
 
-You should practice writing anything you do in _R_ in a rscript. Start by repeating a few of the simple calculations that you did above. Write each calculation in a separate line: 
+**You should practice writing anything you do in _R_ in a rscript** and execute the code from the script. Start by repeating a few of the simple calculations that you did above. Write each calculation in a separate line: 
 
 ```{r calculator script}
 4+4
@@ -139,15 +141,143 @@ It is good practice to add plenty of comments to your rscripts, so that others c
 3/2
 ```
 
-One important operator in _R_ is the __assignment operator__. With the assignment operator we can assign values/numbers/words to objects that are rembered by _R_. For example, we might want _R_ to remember that my name is 'Florian', so we assign the word 'Florian' to the object called name. There are actually two assignment operators in _R_: 
+
+## R programming language
+As with any program, there are different types of variables/data in _R_. The types you will encounter closely follow types of variables you should have encountered in previous methods courses. In our class, we will focus on the following types of data:^[There are other types of data as well, but we won't encounter them much. For example, there is a specific class for *complex* numbers and one for *integers*. We won't make very much use of those types and will ignore them for now.]  
+- character 
+- double/numeric
+- factor
+- logical
+
+*Character* data is anything that includes non-numeric characters and is not logical. Characters are known as *strings* in Stata. In _R_, character variables are depicted and entered inside quotation marks. 
+
+```{r character}
+"Florian" ## florian is of type character
+class("florian")
+"Florian is a professor" ## is also one character
+"123" ## if you include numbers in quotation marks, R interprets them as characters 
+### this would not work, but try it: "1" + "3"R won't perform calculations on character objects
+```
+*Numeric* data is any variables that are *real* numbers, those are the objects that you can perform mathematical operations on. For our purposes, we will use the terms *numeric* and *double* interchangeably. Even if you enter a "full" number, _R_ will interpret as being numeric type, i.e., `1` is interpreted as `1.0`. 
+
+```{r numeric}
+1 ## is numeric
+class(1)
+1 == 1.000 ### is 1 the same as 1.000
+1 + 3 ## if perform calculations on multiple numeric types, the result will also be numeric
+```
+*Factor* data are categorical variables that can be either numeric or character but distinguish a certain (fixed) number of categories. For example, you could have a variable that distinguishes hair color and can take the following values: "brown", "black", "blond". Factor variables can be unordered (such as hair color) or have an intrinsic order. For example, if you are describing education levels as a categorical variable, we usually have a clear order: "no degree", "high school", "Bachelor", post-graduate degree", etc. _R_ can accomodate both unordered and ordered categorical variables. 
+
+```{r factor}
+haircolor <- factor(c("brown", "blond", "black")) ## we are creating a factor variable that can take three values: brown, blond, black
+
+education <- factor(c("no degree", "high school", "Bachelor", "post-graduate degree"), ordered = TRUE) ### education is also a factor variable, but with an intrinsic ordering
+education ## as you can see, R denotes the order of the different levels
+```
+*Logical* variables can take only two values `TRUE` or `FALSE`, which is interpreted by _R_ in binary form as `1` and `0`. The output of logical operations is always of type *logical*. We can use *logical* variables to run conditional operations. 
+
+```{r logical}
+1 == 1 ## TRUE
+
+1 < 0 ## FALSE
+```
+## Objects? What are objects? 
+
+_R_ is an *object oriented programming (OOP)* language, which means that everything in _R_ is organized around **named objects**. These objects can come in different types, such as: 
+- functions
+- data frames 
+- matrices
+- vectors
+- lists
+
+
+One important operator in _R_ is the **assignment operator**. With the assignment operator we can assign values/numbers/words to objects that are remembered by _R_. There are actually two assignment operators in _R_: 
 
 1. `<-`
 
 2. `=`
 
-It doesn't really matter which one you use, but you should decide early and use one consistently. In this course, the examples will all use the `<-` assignment operator.
+It doesn't really matter which one you use, but you should decide early and use one consistently. In this course, the examples will all use the `<-` assignment operator. You can think of the arrow assigment symbols `<-` as `gets`. 
+
+For example, say we might want _R_ to remember an object that contains my name, so we assign the word 'Florian' to the object called name. Object names have to start with a letter but can include numbers and other symbols. They cannot include empty spaces. It is good practice to only use lowercase letters, numbers, and `_` in your object names.^[See here for a complete style guide for programming in R: (https://style.tidyverse.org/index.html)[https://style.tidyverse.org/index.html]] You should always try use reasonable and informative names for your objects, so that you can remember what are the contents of a given object. 
 ```{r name assignment}
-name <- 'Florian'
+name <- 'Florian' ## object 'name' gets assigned the character vector 'Florian'
+```
+
+In this course we will primarily use *function*, *data frames*, and *vectors*. *Functions* usually take one or more inputs (called arguments), perform some operation on the input, and generate an output. For example, the `sqrt()` operator mentioned above is a function that takes one *argument*.
+```{r sqrt funtion}
+sqrt(9) ## sqrt() is the function, the input here is 9, the function takes the input and calculates the square root, it then outputs the result
+```
+
+*Vectors* are a simple data structure in _R_ that *N* contain elements of one type. A vector is defined by its length, which is the number of elements it contains. Vectors are created by using the function `c()` (combine) and separating the individual elements by commas. It's important to note that all elements of the vector must be of the same type of variable. For example, if you vector includes numeric and character data, R will automatically make all numbers into characters. To create a simple vector of numbers and assign it to the object `number_example` we would write: 
+```{r number example}
+example_numbers <- c(1, 2, 3, 4, 5) ### object name assignment operator and object contents
+```
+
+To print the content (or if too large a preview of the content) of an object, you can just type and execute the object name or use the `print()` function. Of course, the object has to exist, i.e., you may have to have created it first. You can access specific elements in a vector with square brackets `[]` behind the object name  and the specific location number of element.
+```{r print example}
+example_numbers ## show all elements
+
+print(example_numbers) ## print content of object
+
+example_numbers[1] ## only show the first element
+```
+
+*Data frames* are objects that contain multiple (many) observations for multiple variables. You could think of each variable being a vector by itself. Then the variables are bound together into a data frame. Each variable then becomes one column of the data frame. For example, assume we have data on five students. We have recorded their names, height, birth year, and favorite color. 
+
+First, let's create the vectors for each of these variables. It is important, of course, that the data for each person is in the same location in each vector, i.e., if Anna is the first name, we also have to first enter her height and birth year. 
+
+```{r vectors example}
+names <- c("Anna", "Otto", "Emmy", "Hanna", "Signe") ## a vector of characters
+names
+
+height <- c(1.75, 1.52, 1.89, 1.66, 1.55) ## vector of numeric data, note that R uses . to as the decimal point
+height
+
+birth_year <- c(1990, 1986, 1995, 1992, 1991) ## vector of numeric data
+birth_year
+```
+
+Now we have three different vectors, each including the observations for five students in terms of their names, height, and birth year. We can combine these variables into a data frame using the `data.frame()` function. Note that to combine the different vectors into one data frame, they all have to have the same length (contain the same number of elements).
+
+```{r data frame example}
+student_df <- data.frame(names, height, birth_year)
+student_df
+```
+
+Each of the vectors are now one column in the new data frame, which we called `student_df`. Each row in the data frame corresponds to the data (name, height, birth year) for one person (observation). Note also how you can assign existing objects to new objects. We can again access specific elements of the data frame with the square brackets `[]`. However, since the data frame has two dimensions, we need to specify the location of the element by _row_ and _column_, e.g., `student_df[row, column]`.
+
+```{r access data frame example}
+student_df[1,1] ## element in first row, first column
+
+student_df[2,1] ## element in second row, first column
+
+student_df[1,2] ## element in first row, second column
+
+student_df[1, ] ## all elements in first row
+
+student_df[ ,1] ## all elements in first column
+```
+
+At least in this course, you will rarely create new data sets. Instead you will work with data sets provided to you or that you have downloaded somewhere, but it is good to first learn the basics. 
+
+The different columns in each data set are the different variables. As you saw above, you can access the specific colums in a data frame by using the square brackets and adding the column number behind a comma: `student_df[ , 1]`.^[Alternatively, you can also use the variable name in quotation marks: `student_df[ , "names"]`.] The best way to access specific variables (columns) in a data frame, however, is by using the variable's name. You can do so with the help of the `$` sign. You first specify the name of the data frame object and then the variable name, separated by the dollar sign `$`: 
+```{r access data frame example2}
+student_df$names ## access the names variable
+
+student_df$height ## access the heigh variable
+
+student_df$birth_year ## access the birth year variable
+```
+
+One of the great things about R is that it is vectorized, this means that operations can be done on the whole vector without going through each element individually. For example, say we want to have the height in cm instead of m, so we need to multiply each of the students' heights by 100. We can just multiply the whole variable by 100 and _R_ automatically does so for each element. 
+```{r vectorized}
+student_df$height*100 ## multiply each value by 100
+```
+
+We can also create a new variable in the data frame. Once again we use the dollar sign `$` with the new variable's name and then assign the values. 
+```{r vectorized}
+student_df$height_in_meters <- student_df$height*100 ## multiply each value by 100 and assign to new variable
 ```
 
 
