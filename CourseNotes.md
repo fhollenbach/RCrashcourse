@@ -1,7 +1,7 @@
 *R* Crash Course CBS
 ================
 Florian M. Hollenbach
-2022-01-27
+2022-01-30
 
 # Getting Started in *R* & RStudio
 
@@ -56,7 +56,7 @@ machine.
 Once you have installed both programs, open up RStudio. You should see
 something like this:
 <center>
-![RStudio Starting Screen](images/Rstudio.png "fig:")
+<img src="images/Rstudio.png" title="fig:" style="width:40.0%" alt="RStudio" />
 </center>
 
 This is the RStudio program. We will work with this program when
@@ -74,8 +74,9 @@ clicking to the right of to the little angle bracket \>.
 
 Now type `4+4` and hit enter/return. You should see that *R* evaluates
 the command and prints the solution and look like this.
+
 <center>
-![Console Results](images/calc.png "fig:")
+<img src="images/calc.png" title="fig:" style="width:40.0%" alt="Console" />
 </center>
 
 Just note that in the following text, the output looks slightly

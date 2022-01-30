@@ -29,7 +29,7 @@ If you have a lot of trouble installing R and RStudio on your machine, you can a
 
 Once you have installed both programs, open up RStudio. You should see something like this: 
 <center>
-![RStudio Starting Screen](images/Rstudio.png)
+![RStudio](images/Rstudio.png){width=40%}
 </center>
 
 This is the RStudio program. We will work with this program when manipulating, analyzing, or visualizing any data. Start by looking around in RStudio and try to familiarize yourself with the program. 
@@ -40,9 +40,10 @@ You can adjust the appearance (for example, font or background color) if you cli
 
 In the console, you can write code that is immediately executed (or evaluated) by _R_ once you hit enter. For example, set the cursor by clicking to the right of to the little angle bracket >. 
 
-Now type `4+4` and hit enter/return. You should see that _R_ evaluates the command and prints the solution and look like this. 
+Now type `4+4` and hit enter/return. You should see that _R_ evaluates the command and prints the solution and look like this.
+
 <center>
-![Console Results](images/calc.png)
+![Console](images/calc.png){width=40%}
 </center>
 
 Just note that in the following text, the output looks slightly different when commands are evaluated:
