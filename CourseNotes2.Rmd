@@ -1,0 +1,435 @@
+---
+title: "_R_ Crash Course CBS 2"
+author: "Rasmus Corlin Christensen"
+date:  "`r Sys.Date()`"
+output: 
+  html_document:
+    keep_md: yes
+    toc: true
+    toc_depth: 2
+
+---
+
+# **Packages**
+
+Packages are the fundamental units of R code. They include reusable R functions, the documentation that describes how to use them, and sample data. 
+
+By default, R installs a set of packages during installation. More packages can be added later, when they are needed for some specific purpose. 
+
+There is an *infinite* amount of packages available that can help you do, literally, anything: from [basic data analysis](https://www.tidyverse.org/), [sending emails](https://github.com/rpremraj/mailR) or [writing blogs](https://rpubs.com/yanalytics/rwordpress) inside R, all the way to packages that have [Flavor Flav yelling “yeaaahhhh, boi!!”](https://github.com/brooke-watson/BRRR) in R as soon as your code successfully completes.
+
+Packages allow you to expand the types of analyses you do be adding other packages. A complete [list of contributed packages](https://cran.r-project.org/web/packages/) is available from CRAN.
+
+### Fortunes
+
+Let's try with one useless, but fun R package, `fortunes`, which... tells fortunes, supplied by various coders over the years.
+
+You *install* a package as follows:
+
+```{r eval=F}
+install.packages("[packagename]")
+```
+
+For example, we can install this from the R Project repo:
+
+```{r message=F}
+install.packages("fortunes",repos="https://cloud.r-project.org")
+```
+
+After installing, we *load* the package using the `library()` function, as so.
+
+You **always** want to load all the necessary packages at the top of your script.
+
+```{r message=FALSE}
+library("fortunes")
+```
+
+Now we can use the package functions. `fortunes` has one simple function, `fortune()`, which we can run as so:
+
+```{r message=F}
+fortune()
+```
+
+### Tidyverse
+
+Now let's try something that you will likely use going forward, the standout "tidyverse" for R.
+
+The *tidyverse* is acollection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures. You can do read data, do data analysis, visualisation and more.
+
+We can install and load the package as follows:
+
+```{r message=F}
+
+install.packages("tidyverse",repos="https://cloud.r-project.org")
+
+library(tidyverse)
+
+```
+
+With `tidyverse`, we can do some of the basic things needed, including reading data, wrangling data, and visualising data. We'll get to that below.
+
+------
+
+# **Where to get help and inspiration?**
+
+To be perfectly honest, any data science and programming journey relies *heavily* on help. One of the great things about the R system is that there is a *ton* of help to be found, from internal RStudi resources, to package documentation, online developer communities (like [Stackoverflow](https://stackoverflow.com/)), and much, much more. 
+
+### Online resources
+
+The notes below draw heavily on some these resources, in particular (all freely available online):
+
+- Hadley Wickham's book [R for Data Science](https://r4ds.had.co.nz/index.html).
+- Dirk Eddelbuettel's [Data Science Programming Methods lectures](https://stat447.com/).
+- Kieran Healy's [Data Visualization: A practical introduction](https://socviz.co/)
+- [RStudio Cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
+
+Two bits we'll use below, tidyverse and ggplot2, you can find package details here:
+- [tidyverse](https://www.tidyverse.org/)
+- [ggplot2](https://ggplot2.tidyverse.org/index.html)
+
+### Help functions in RStudio
+
+You can also find help right here in RStudio.
+
+The `help()` function and `?` help operator in R provide access to the documentation pages for R functions, data sets, and other objects, both for packages in the standard R distribution and for contributed packages. To access documentation for the standard `lm` (linear model) function, for example, enter the command `help(lm)` or `help("lm")`, or `?lm` or `?"lm"` (i.e., the quotes are optional):
+
+```{r}
+?lm()
+```
+
+### Vignettes
+
+Many packages include *vignettes*, which are discursive documents meant to illustrate and explain facilities in the package. You can discover vignettes by accessing the help page for a package, or via the browseVignettes() function: the command `browseVignettes()` opens a list of vignettes from all of your installed packages in your browser, while `browseVignettes(package=package-name)` (e.g., `browseVignettes(package="survival")`) shows the vignettes, if any, for a particular package. `vignette()` is employed similarly, but displays a list of vignettes in text form.
+
+### R Help on the Internet
+
+There are internet search sites that are specialized for R searches, including [search.r-project.org](https://www.search.r-project.org).
+
+It is also possible to use a general search site like Google, by qualifying the search with “R” or the name of an R package (or both). It can be particularly helpful to paste an error message into a search engine to find out whether others have solved a problem that you encountered.
+
+------
+
+# **Data loading and wrangling**
+
+### Reading data
+
+R can read or write just about anything from text files, just about any existing database backend, specialised files (xls,xlsx, statistics packages), via connections from programs, URLs, and more.
+
+`Tidyverse` has a package called `readr` which is great for importing data into R. 
+
+Most of `readr`’s functions are concerned with turning flat files into data frames:
+
+* read_csv() reads comma delimited files, 
+* read_csv2() reads semicolon separated files (common in countries where , is used as the decimal place), 
+* read_tsv() reads tab delimited files, and read_delim() reads in files with any delimiter.
+
+These functions all have similar syntax: once you’ve mastered one, you can use the others with ease. For the rest of this chapter we’ll focus on read_csv(). Not only are csv files one of the most common forms of data storage, but once you understand read_csv(), you can easily apply your knowledge to all the other functions in readr.
+
+### read_csv()/read_csv2()
+
+Let's work with the `read_csv` option first: Often you'll be loading in Comma-separated values (.csv) files, basically slimmed-down Excel files.
+
+The first argument to read_csv() is the most important: it’s the path to the file to read.
+
+The `read_csv()` function can read both from online and from an online location - with a URL - or from your local data.
+
+Let's try loading .csv file called heights.csv from an online location, and saving that to an object called `heights`
+
+```{r}
+
+heights <- read_csv("https://raw.githubusercontent.com/phdskat/RCrashcourse2/main/heights.csv")
+
+```
+
+We can do the exact same from your loca data - if you download the `heights.csv` file from the [RCrashcourse2 repository](https://github.com/phdskat/RCrashcourse2).
+
+You then have to put the data somewhere useful for the package to load your data. 
+
+One common thing to do can do is place it right next to your R project files, if you have set up an R project. R's starting point when load files is that they are placed in the R project folder, so that you can easily read it:
+
+```{r}
+
+heights <- read_csv("heights.csv")
+
+```
+
+When you run `read_csv()` it prints out a column specification that gives the name and type of each column.
+
+### Wrangling
+
+Data wrangling is the art of getting your data into R in a useful form for visualisation and modelling. Data wrangling is very important: without it you can’t work with your own data! 
+
+Often you’ll need to create some new variables or summaries, or maybe you just want to rename the variables or reorder the observations in order to make the data a little easier to work with.
+
+Here, we'll go through how to (over)view your data, how to over(view) your data, basic data transformation, and how to do basic exploratory data analysis.
+
+### Viewing your data
+
+Let's start with the `heights` data again. 
+
+The `View()` function in R invokes a spreadsheet-style data viewer on a matrix-like R object. To view all the contents of a defined object, use the `View()` function:
+
+```{r}
+View(heights)
+```
+
+### Glance at data
+
+The `head()` function the first or last parts of a vector, matrix, table, data frame or function:
+
+```{r}
+head(heights)
+```
+
+### The tidyverse pipe!
+
+Pipes are a powerful tool for clearly expressing a sequence of multiple operations. So far, you’ve just been calling functions plainly. Here, it's time to explore the pipe in more detail.
+
+The pipe, `%>%`, comes from the `magrittr` package by Stefan Milton Bache. Packages in the tidyverse load %>% for you automatically, so you don’t usually load magrittr explicitly.
+
+The point of the pipe is to help you write code in a way that is easier to read and understand. To see why the pipe is so useful, we’re going to explore a number of ways of writing the same code. Let's use the code above:
+
+```{r}
+
+# To see the head() or our data, we can either do this, which is the old way of doing things:
+
+head(heights)
+
+# Or we can pass the data object, with the pipe, to the head() function. It's the same outcome. We will use this going forward.
+
+heights %>% head()
+
+```
+
+### Then pull request it into Florian's github
+
+This is trivial when doing single operations, but when you do multiple ones, as we'll see below, it is incredibly useful!
+
+### Filtering
+
+`filter()` allows you to subset observations based on their values. The first argument is the name of the data frame. The second and subsequent arguments are the expressions that filter the data frame. For example, we can select everyone aged exactly 45 in the data:
+
+```{r}
+
+heights %>% filter(age==45)
+
+```
+
+When you run that line of code, the `dplyr` package in tidyverse executes the filtering operation and returns a new data frame. If you want to save the result, you’ll need to use the assignment operator, `<-`:
+
+```{r}
+
+age45 <- heights %>% filter(age == 45)
+
+```
+
+### Arranging
+
+`arrange()` works similarly to `filter()` except that instead of selecting rows, it changes their order. It takes a data frame and a set of column names (or more complicated expressions) to order by. If you provide more than one column name, each additional column will be used to break ties in the values of preceding columns:
+
+```{r}
+
+heights %>% arrange(age)
+
+```
+
+Use `desc()` to re-order by a column in descending order:
+
+```{r}
+
+heights %>% arrange(desc(age))
+
+```
+
+### Select
+
+It’s not uncommon to get datasets with hundreds or even thousands of variables. In this case, the first challenge is often narrowing in on the variables you’re actually interested in. `select()` allows you to rapidly zoom in on a useful subset using operations based on the names of the variables.
+
+```{r}
+
+# Select columns by name
+
+select(heights, sex, age, race)
+
+```
+
+### Add new variables
+
+Besides selecting sets of existing columns, it’s often useful to add new columns that are functions of existing columns. That’s the job of `mutate()`:
+
+```{r}
+
+# we can use the pipe to first add a new column, then arrange by it, so we get a list of the tallest people (in cm)
+
+heights %>% 
+  mutate(heightcm = height * 2.54) %>% 
+  arrange(-heightcm)
+
+```
+
+### Summarise
+
+The last key verb is `summarise()`. It collapses a data frame to a single row.
+
+The `summarise()` function is most useful when we pair it with `group_by()`. This changes the unit of analysis from the complete dataset to individual groups. Say we want to know the average age of each sex group (males and females)
+
+```{r}
+
+
+# group this with the pipe
+
+heights %>% 
+  group_by(sex) %>% 
+  summarise(mean(age))
+  
+
+```
+
+There are *many* summary functions available beyond `mean()`:
+
+* Center: mean(), median()
+* Spread: sd(), IQR(), mad()
+* Range: min(), max(), quantile()
+* Position: first(), last(), nth(),
+* Count: n(), n_distinct()
+* Logical: any(), all()
+
+------
+
+# **Simple regression analysis**
+
+In R, with the `heights` data, we can do a simple linear regression to predict a quantitative outcome y on the basis of one single predictor variable x. 
+
+For instance, we can try to see if the variable `age` is a predictor of `earn`, using the base R `lm()` function (linear model).
+
+The lm command takes the variables in the format:
+
+```{r eval=F}
+lm([target variable] ~ [predictor variables], data = [data source])
+```
+
+So we do as follows:
+
+```{r}
+
+# create the model
+
+model <- lm(earn ~ age, data = heights)
+
+# see the model
+
+model
+
+```
+
+The output tells us that the predicted earnings for someone aged 0 is just above 19.000, and for every additional 1 year, the average person is expected to earn just about 100 more.
+
+To review the results in more detail, we can use the `summary()` function:
+
+```{r}
+summary(model)
+```
+
+Here we can see, for instance, the p-values, the R-squared, and so on, which we can use to evaluate the linear model.
+
+------
+
+# **Data visualisation**
+
+>“The simple graph has brought more information to the data analyst’s mind than any other device.”
+>— John Tukey
+
+R has several systems for making graphs, but `ggplot2`, which is part of `tidyverse` is one of the most elegant and most versatile. `ggplot2` implements the grammar of graphics, a coherent system for describing and building graphs. With `ggplot2`, you can do more faster by learning one system and applying it in many places.
+
+### First steps
+
+Let’s use our first graph to answer a question: 
+
+Do males people earn more than females? You probably already have an answer, but try to make your answer precise. What does the relationship between sex and earnings look like? 
+
+You can test your answer with the `heights` data frame we have used throughout. A data frame is a rectangular collection of variables (in the columns) and observations (in the rows).
+
+### Creating a ggplot
+
+To plot the sex-earn relationship, run this code to put `sex` on the x-axis and `earn` on the y-axis:
+
+```{r}
+ggplot(data = heights) + 
+  geom_point(mapping = aes(x = sex, y = earn))
+```
+
+The plot shows a strong relationship between sex and earnings. In simple terms, males tend to earn more than women. Does this confirm or refute your hypothesis?
+
+With ggplot2, you begin a plot with the function `ggplot()`. `ggplot()` creates a coordinate system that you can add layers to. The first argument of `ggplot()` is the dataset to use in the graph. So `ggplot(data = heights)` creates an empty graph, but it’s not very interesting so I’m not going to show it here.
+
+You complete your graph by adding one or more layers to `ggplot()`. The function `geom_point()` adds a layer of points to your plot, which creates a scatterplot. ggplot2 comes with many geom functions that each add a different type of layer to a plot. You’ll learn a whole bunch of them throughout this chapter.
+
+Each geom function in ggplot2 takes a `mapping` argument. This defines how variables in your dataset are mapped to visual properties. The `mapping` argument is always paired with `aes()`, and the x and y arguments of aes() specify which variables to map to the x and y axes. ggplot2 looks for the mapped variables in the `data` argument, in this case, `heights`.
+
+### A graphing template
+
+Let’s turn this code into a reusable template for making graphs with ggplot2. To make a graph, replace the bracketed sections in the code below with a dataset, a geom function, or a collection of mappings.
+
+```{r,eval=F}
+ggplot(data = <DATA>) + 
+  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
+```
+
+------
+
+# **Extra stuff (if we have the time):**
+
+### Flows
+
+There are two primary tools of controlling "flows" in R: choices and loops. 
+
+We'll focus on *choices*, in particular "if" and "if/else" statements, which are decision-making devices built into your programming using conditional statements.
+
+You can also use *loops*, like "for" and "while" loops, which allow you to repeatedly run code, typically with changing options.
+
+We'll focus on *choices* here, with `if()` and `ifelse()`.
+
+### if()
+
+The syntax of the if statement is:
+
+```{r,eval=F}
+if (test_expression) {
+  statement
+}
+```
+If the `test_expression` is `TRUE`, the statement gets executed. But if it’s FALSE, nothing happens.
+
+For example:
+
+```{r}
+x <- 5
+if(x > 0){
+print("Positive number")
+}
+```
+
+### ifelse()
+
+The syntax of if…else statement is:
+
+```{r eval=F}
+if (test_expression) {
+  statement1
+} else {
+  statement2
+}
+```
+
+For example:
+
+```{r}
+x <- -5
+if(x > 0){
+print("Non-negative number")
+} else {
+print("Negative number")
+}
+```
+
+------
