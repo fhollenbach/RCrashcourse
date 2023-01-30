@@ -102,7 +102,8 @@ For example, we can ask _R_ whether three is smaller than five or whether seven 
 Note that R returns the result in form of logical values, i.e., `TRUE` or `FALSE`.
 
 
-**Question 1**
+#### Question 1
+
 Any guess of how we might get R to evaluate whether 6 is greater or equal than 7? 
 
 ### More logical operators
@@ -115,8 +116,10 @@ We can also connect different logical statements with the logical operators for 
 3 < 5 | 7 == 0 ## evaluate whether 3 is smaller than 5 or 7 is equal to zero 
 ```
 
-**Question 2**
+#### Question 2
+
 Take 5 minutes to predict and write down what each of the following lines of code will return. Then run them individually: 
+
 ```{r practice 2, eval = FALSE}
 12/2
 
@@ -296,7 +299,8 @@ birth_year <- c(1990, 1986, 1995, 1992, 1991) ## vector of numeric data
 birth_year
 ```
 
-**Question 3** 
+#### Question 3
+
 Think of an example that you might collect data for. Create three vectors, each with five hypothetical values for each variable. Make sure to use *good* names for each vector. 
 
 ### Combining into data frames
@@ -334,9 +338,12 @@ student_df$height ## access the heigh variable
 student_df$birth_year ## access the birth year variable
 ```
 
-**Question 4** 
+#### Question 4 
+
 1. Combine the three vectors you created in question 3 into a dataframe.
+
 2. Print the second value of your second variable. 
+
 3. Print the third variable. Access it using the variable's name.
 
 

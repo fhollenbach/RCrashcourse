@@ -176,8 +176,10 @@ whether seven is equal to 0:
 Note that R returns the result in form of logical values, i.e., `TRUE`
 or `FALSE`.
 
-**Question 1** Any guess of how we might get R to evaluate whether 6 is
-greater or equal than 7?
+#### Question 1
+
+Any guess of how we might get R to evaluate whether 6 is greater or
+equal than 7?
 
 ### More logical operators
 
@@ -196,8 +198,10 @@ operators for *and* or *or*: `&`; `|`:
 
     ## [1] TRUE
 
-**Question 2** Take 5 minutes to predict and write down what each of the
-following lines of code will return. Then run them individually:
+#### Question 2
+
+Take 5 minutes to predict and write down what each of the following
+lines of code will return. Then run them individually:
 
 ``` r
 12/2
@@ -596,9 +600,11 @@ birth_year
 
     ## [1] 1990 1986 1995 1992 1991
 
-**Question 3** Think of an example that you might collect data for.
-Create three vectors, each with five hypothetical values for each
-variable. Make sure to use *good* names for each vector.
+#### Question 3
+
+Think of an example that you might collect data for. Create three
+vectors, each with five hypothetical values for each variable. Make sure
+to use *good* names for each vector.
 
 ### Combining into data frames
 
@@ -691,9 +697,14 @@ student_df$birth_year ## access the birth year variable
 
     ## [1] 1990 1986 1995 1992 1991
 
-**Question 4** 1. Combine the three vectors you created in question 3
-into a dataframe. 2. Print the second value of your second variable. 3.
-Print the third variable. Access it using the variable’s name.
+#### Question 4
+
+1.  Combine the three vectors you created in question 3 into a
+    dataframe.
+
+2.  Print the second value of your second variable.
+
+3.  Print the third variable. Access it using the variable’s name.
 
 ## Vectorization
 
@@ -777,10 +788,12 @@ fortune()
 ```
 
     ## 
-    ## Jesus and the rest of the R-help community: Thanks for your help.
-    ##    -- Mike Saunders (after Jesus Frias answered his question about split-split
-    ##       plots)
-    ##       R-help (February 2005)
+    ## Ivo Welch: Thanks. I will put in a suggestion that the docs refer to q() in
+    ## 'see also' for 'stop'.
+    ## Brian D. Ripley: I don't think anyone else is confusing 'exit' with 'stop',
+    ## though. I hope you don't when driving ....
+    ##    -- Ivo Welch and Brian D. Ripley
+    ##       R-help (March 2004)
 
 ### Tidyverse
 
