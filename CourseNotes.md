@@ -3,6 +3,15 @@
 Florian M. Hollenbach & Rasmus Corlin Christensen
 2023-01-30
 
+    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+    ## ✔ ggplot2 3.4.0      ✔ purrr   1.0.0 
+    ## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
+    ## ✔ tidyr   1.2.1      ✔ stringr 1.5.0 
+    ## ✔ readr   2.1.3      ✔ forcats 0.5.2 
+    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+    ## ✖ dplyr::filter() masks stats::filter()
+    ## ✖ dplyr::lag()    masks stats::lag()
+
 # Getting Started in *R* & RStudio
 
 In this class we will work with and analyze data in *R*. *R* is a
@@ -53,15 +62,16 @@ After installing *R*, we need to install the RStudio IDE. You can
 download the latest version of RStudio
 [here](https://www.rstudio.com/products/rstudio/download/#download).
 Once you have downloaded RStudio, follow the instructions and install
-the program.
+the program. If you are on Mac, make sure you open RStudio from the
+Applications folder and delete the file in your “Download” folder. You
+do not want to open the program from the Downloads folder.
 
 If you have a lot of trouble installing R and RStudio on your machine,
 you can also use RStudio inside your web brower in the cloud. You can
 sign up for a free account here: <https://rstudio.cloud/>. Note,
 however, that the free version of RStudio Cloud limits you to 25 hours
 of use per month and requires you to be connected to the internet. In
-general, I would still encourage you to install the programs on your
-machine.
+general, I would encourage you to install the programs on your machine.
 
 Once you have installed both programs, open up RStudio. You should see
 something like this:
@@ -79,7 +89,8 @@ manipulating, analyzing, or visualizing any data. Start by looking
 around in RStudio and try to familiarize yourself with the program.
 
 You can adjust the appearance (for example, font or background color) if
-you click on RStudio → Preferences → Appearance.
+you click on RStudio → Preferences → Appearance. (On Mac: Tools → Global
+Options → Appearance)
 
 ## Getting started with *R* & RStudio
 
@@ -87,8 +98,10 @@ In the console, you can write code that is immediately executed (or
 evaluated) by *R* once you hit enter. For example, set the cursor by
 clicking to the right of to the little angle bracket \>.
 
+### R as a calculator
+
 Now type `4+4` and hit enter/return. You should see that *R* evaluates
-the command and prints the solution and look like this.
+the command and prints the solution. It should look like this:
 
 <center>
 
@@ -112,7 +125,9 @@ After *R* prints the result of the evaluated command, it once again
 provides the angle bracket, telling us that *R* is ready to execute the
 next command. *R* is a really good calculator, try entering some simple
 calculations in the console and have *R* execute them. The following
-mathematical operators are probably most often used: - `+`: addition
+mathematical operators are probably most often used:
+
+- `+`: addition
 
 - `-`: subtraction
 
@@ -124,8 +139,8 @@ mathematical operators are probably most often used: - `+`: addition
 
 - `sqrt()`: square root
 
-Try out some calculations yourself! Note that *R* follows standard order
-of operations rules, so it can be important to use parentheses.
+Now try out some calculations yourself! Note that *R* follows standard
+order of operations rules, so it can be important to use parentheses.
 
 ``` r
 7 + 3/5
@@ -142,9 +157,11 @@ of operations rules, so it can be important to use parentheses.
 *R* also has operators to evaluate logical expressions, meaning *R*
 evaluates whether a statement is *true* or *false*:
 
-- `==`: is equal to
+- `==`: this operator *evaluates* if the value to its left **is equal
+  to** the value to its right
 
-- `!=`: is NOT equal to
+- `!=`: this operator *evaluates* if the value to its left **is NOT
+  equal to** the value to its right
 
 - `<`: smaller than
 
@@ -165,32 +182,61 @@ whether seven is equal to 0:
 
     ## [1] FALSE
 
+Note that R returns the result in form of logical values, i.e., `TRUE`
+or `FALSE`.
+
+\*\* Question 1\*\* Any guess of how we might get R to evaluate whether
+6 is greater or equal than 7?
+
+### More logical operators
+
 We can also connect different logical statements with the logical
 operators for *and* or *or*: `&`; `|`:
 
 ``` r
-3 < 5 & 7 == 0
+3 < 5 & 7 == 0  ## evaluate whether 3 is smaller than 5 AND 7 is equal to zero 
 ```
 
     ## [1] FALSE
 
 ``` r
-3 < 5 | 7 == 0 
+3 < 5 | 7 == 0 ## evaluate whether 3 is smaller than 5 or 7 is equal to zero 
 ```
 
     ## [1] TRUE
 
+\*\* Question 2\*\* Take 5 minutes to predict and write down what each
+of the following lines of code will return. Then run them individually:
+
+``` r
+12/2
+
+32/0
+
+9 == 3*3
+
+3*4 == 12 & 3 > 4
+
+3*4 == 12 | 3 > 4
+
+3*4 != 12 & 3 <= 3
+
+(12 == 3*4 & 3 == 4) | 0 == 0 
+```
+
+### Comments & Writing Code in Rscripts
+
 The `#` operator is special in *R*, as it denotes comments. Anything
-that is in a line behind the `#` is ignored by *R* and not evaluated.
-Try writing `# 3 + 4` and hit return. You will see that *R* does not
-evaluate the command. The `#` is used to add comments into rcode, we
-will return to the importance of this later.
+that in a line written behind the `#` is ignored by *R* and not
+evaluated. Try writing `# 3 + 4` and hit return. You will see that *R*
+does not evaluate the command. The `#` is used to add comments into
+rcode, we will return to the importance of this later.
 
 Anything you write in the console is immediately interpreted by *R* once
 you hit `Enter`/`Return`. In general, we could enter any command here in
 the **Console** and have *R* execute the command. Executing commands
-directly in the console is bad practice, however, and should be avoided
-as much as possible. When we write and evaluate code directly in the
+directly in the console is bad practice, however. You should avoid doing
+so as much as possible. When we write and evaluate code directly in the
 **Console** it is executed at once and then lost. Similarly, if you
 point and click to estimate models or created graphs (for example in
 Stata), it is hard to remember exactly what you have done and not
@@ -204,7 +250,8 @@ worked with Stata before). Writing code in the script will allow us to
 save our code and re-execute the commands at any time in the future.
 Working with scripts also ensures that our work is *reproducible*, i.e.,
 others can go back and check whether our work was correct. This is of
-great importance, especially when doing scientific research.
+great importance, especially when doing scientific research, or for your
+professor to check your exam :).
 
 To open a new *rscript*, click on the little white plus in the upper
 left corner of RStudio and select `R Script`.
@@ -220,7 +267,7 @@ somewhere sensible. For example, you might create a folder for this
 course and save all rscripts for class in that folder. You should pick a
 name for your rscript that makes sense and reminds you about the
 contents of the script. For example, you could save this first rscript
-as `Rcrashcourse.R`.
+as `Rcrashcourse.R` or `Rcrashcourse_day1.R`.
 
 **You should practice writing anything you do in *R* in a rscript** and
 execute the code from the script. Start by repeating a few of the simple
@@ -246,13 +293,15 @@ line:
     ## [1] 1.5
 
 You might notice that nothing happens when you write code in the rscript
-and hit enter. To execute the rcode that is in our script, we have to
-send it to the console. We can do so by having the cursor in the line we
-want to execute and then hitting `Ctrl + Enter` (Windows) or
-`Command + Return` (Mac). Alternatively, you can select one or multiple
-lines to execute and then hit `Ctrl + Enter` (Windows) or
-`Command + Return` (Mac). Try selecting some code you wrote by executing
-the line.
+and hit enter. To execute the rcode that is in our script, we
+specifically have to instruct R to evaluate the chunk of code, i.e.,
+send it to the console. There are multiple ways to do so. For example,
+we can evaluate a single line by having the cursor in the line we want
+to execute and then hitting `Ctrl + Enter` (Windows) or
+`Command + Return` (Mac). Alternatively, you can select chunks of code
+(in a single or over multiple lines) to execute and then hit
+`Ctrl + Enter` (Windows) or `Command + Return` (Mac). Try selecting some
+code you wrote and then executing the chunk.
 
 <center>
 
@@ -264,12 +313,12 @@ alt="Executing code from rscripts" />
 
 </center>
 
-It is good practice to add plenty of comments to your rscripts, so that
-others can understand what you are doing (and why). It will also help
-your future self when you open old code. The comments will help you
-remember why you wrote certain code and what your reasoning was.
-Remember, we can include comments using the `#` symbol. Anything in a
-line behind the `#` symbol will not be executed by *R*.
+It is good practice to add plenty of comments to your rscripts. This is
+done so that others can understand what you are doing (and why). It will
+also help your future self when you open old code. The comments will
+help you remember why you wrote certain code and what your reasoning
+was. Remember, we can include comments using the `#` symbol. Anything in
+a line behind the `#` symbol will not be executed by *R*.
 
 ``` r
 # this is our first rscript
@@ -296,6 +345,16 @@ line behind the `#` symbol will not be executed by *R*.
 ```
 
     ## [1] 1.5
+
+<center>
+
+<figure>
+<img src="images/comments.jpeg" style="width:35.0%"
+alt="Practice good ommenting" />
+<figcaption aria-hidden="true">Practice good ommenting</figcaption>
+</figure>
+
+</center>
 
 ## R programming language
 
@@ -693,9 +752,11 @@ fortune()
 ```
 
     ## 
-    ## They're just statistics. How could it hurt to look at them?
-    ##    -- Duncan Murdoch (in a discussion about the merits and perils of p-values)
-    ##       R-help (April 2016)
+    ## Only with a very high signal to noise ratio (e.g., high true R^2) can torturing
+    ## data lead to a confession to something other than what the analyst wants to
+    ## hear.
+    ##    -- Frank Harrell
+    ##       R-help (April 2010)
 
 ### Tidyverse
 
@@ -1251,7 +1312,7 @@ ggplot(data = heights) +
   geom_point(mapping = aes(x = sex, y = earn))
 ```
 
-![](CourseNotes_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
+![](CourseNotes_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
 
 The plot shows a strong relationship between sex and earnings. In simple
 terms, males tend to earn more than women. Does this confirm or refute
