@@ -11,11 +11,14 @@ bibliography: "/Users/florianhollenbach/Dropbox (Personal)/Bibtex/fhollenbach_ma
 
 In this class we will work with and analyze data in _R_. _R_ is a programming language that is widely used for data manipulation, visualization, and analysis. _R_ is an open source program and is free for anyone. Many of the functions and packages (more on this later) we will use within _R_ are written by other _R_ users. While we work with the _R_ program, we will use a different program as the graphical interface. Specifically, we will use the RStudio IDE (integrated development environment) to work in _R_. Both programs are available for free. 
 
-_R_ can be very hard to learn initially, especially if you have never programmed before. You will encounter situations where you are completely lost and might have no idea what to do or what the next step should be. __This is completely normal!__ Hadley Wickham works for RStudio and is one of the most prolific programmers in R. We will work with many of his packages throughout the course. As Hadley notes, it is completely normal to feel lost when starting to program: 
+_R_ can be tough to learn initially, especially if you have never programmed before. You will encounter situations where you are completely lost and might have no idea what to do or what the next step should be. It is important not to fall into despair. __This is completely normal!__ Hadley Wickham works for RStudio and is one of the most prolific programmers in R. We will work with many of his packages throughout the course. As Hadley notes, it is completely normal to feel lost when starting to program: 
 <center>
-![Hadley Wickham](images/wickham.jpeg){width=20%}
+![Hadley Wickham](images/wickham.jpeg){width=10%}
 </center>
-In addition, it is important that you ask question when you are stuck. We will have a discussion forum on Canvas and you should try to make use of it as much as possible. If you are stuck and don't know where to go next, ask in class or in the discussion forum. __There are no stupid questions!__
+
+In addition, it is __important that you ask question when you are stuck.__ We have the discussion forum on Canvas and you should make use of it as much as possible. If you are stuck and don't know where to go next, ask in class or in the discussion forum. __There are no stupid questions! Be the hero who asks the question that everyone is thinking about.__
+
+![Alt Text](https://media.giphy.com/media/gg9LCtsjjBninkG52i/giphy.gif)
 
 ## Installing _R_ & RStudio
 

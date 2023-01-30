@@ -10,6 +10,18 @@ library("fortunes")
 
 fortune()
 
+
+
+### install praise
+install.packages("praise")
+
+library(praise)
+
+praise()
+
+praise("${Exclamation}! You are all ${adjective} students! ${Exclamation}!")
+
+
 # installing tidyverse
 
 install.packages("tidyverse")
