@@ -4,7 +4,7 @@ author: "Florian M. Hollenbach & Rasmus Corlin Christensen"
 date:  "`r Sys.Date()`"
 output: rmarkdown::github_document
 ---
-```{r echo=FALSE}
+```{r echo=FALSE, message = FALSE}
 library(tidyverse)
 ```
 

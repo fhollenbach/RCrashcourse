@@ -3,15 +3,6 @@
 Florian M. Hollenbach & Rasmus Corlin Christensen
 2023-01-30
 
-    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
-    ## ✔ ggplot2 3.4.0      ✔ purrr   1.0.0 
-    ## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
-    ## ✔ tidyr   1.2.1      ✔ stringr 1.5.0 
-    ## ✔ readr   2.1.3      ✔ forcats 0.5.2 
-    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ## ✖ dplyr::filter() masks stats::filter()
-    ## ✖ dplyr::lag()    masks stats::lag()
-
 # Getting Started in *R* & RStudio
 
 In this class we will work with and analyze data in *R*. *R* is a
@@ -786,13 +777,10 @@ fortune()
 ```
 
     ## 
-    ## Barry Rowlingson: Your grid above has 8*6 = 42 points.
-    ## (That was a subtle Hitchhikers Guide To The Galaxy reference there, honest, and
-    ## not a stupid dumb multiplication mistake on my part after working four 18-hour
-    ## days on the trot...)
-    ## Peter Dalgaard: [...] Don't panic, just throw yourself at the ground and miss.
-    ##    -- Barry Rowlingson and Peter Dalgaard
-    ##       R-help (March 2004)
+    ## Jesus and the rest of the R-help community: Thanks for your help.
+    ##    -- Mike Saunders (after Jesus Frias answered his question about split-split
+    ##       plots)
+    ##       R-help (February 2005)
 
 ### Tidyverse
 
