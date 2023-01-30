@@ -1,7 +1,7 @@
 *R* Crash Course CBS
 ================
 Florian M. Hollenbach & Rasmus Corlin Christensen
-2022-01-31
+2023-01-30
 
 # Getting Started in *R* & RStudio
 
@@ -15,22 +15,32 @@ interface. Specifically, we will use the RStudio IDE (integrated
 development environment) to work in *R*. Both programs are available for
 free.
 
-*R* can be very hard to learn initially, especially if you have never
+*R* can be tough to learn initially, especially if you have never
 programmed before. You will encounter situations where you are
 completely lost and might have no idea what to do or what the next step
-should be. **This is completely normal!** Hadley Wickham works for
-RStudio and is one of the most prolific programmers in R. We will work
-with many of his packages throughout the course. As Hadley notes, it is
-completely normal to feel lost when starting to program:
+should be. It is important not to fall into despair. **This is
+completely normal!** Hadley Wickham works for RStudio and is one of the
+most prolific programmers in R. We will work with many of his packages
+throughout the course. As Hadley notes, it is completely normal to feel
+lost when starting to program:
 <center>
-<img src="images/wickham.jpeg" title="fig:" style="width:20.0%" alt="Hadley Wickham" />
+
+<figure>
+<img src="images/wickham.jpeg" style="width:10.0%"
+alt="Hadley Wickham" />
+<figcaption aria-hidden="true">Hadley Wickham</figcaption>
+</figure>
+
 </center>
 
-In addition, it is important that you ask question when you are stuck.
-We will have a discussion forum on Canvas and you should try to make use
+In addition, it is **important that you ask question when you are
+stuck.** We have the discussion forum on Canvas and you should make use
 of it as much as possible. If you are stuck and don’t know where to go
 next, ask in class or in the discussion forum. **There are no stupid
-questions!**
+questions! Be the hero who asks the question that everyone is thinking
+about.**
+
+![Alt Text](https://media.giphy.com/media/gg9LCtsjjBninkG52i/giphy.gif)
 
 ## Installing *R* & RStudio
 
@@ -56,7 +66,12 @@ machine.
 Once you have installed both programs, open up RStudio. You should see
 something like this:
 <center>
-<img src="images/Rstudio.png" title="fig:" style="width:40.0%" alt="RStudio" />
+
+<figure>
+<img src="images/Rstudio.png" style="width:40.0%" alt="RStudio" />
+<figcaption aria-hidden="true">RStudio</figcaption>
+</figure>
+
 </center>
 
 This is the RStudio program. We will work with this program when
@@ -76,7 +91,12 @@ Now type `4+4` and hit enter/return. You should see that *R* evaluates
 the command and prints the solution and look like this.
 
 <center>
-<img src="images/calc.png" title="fig:" style="width:40.0%" alt="Console" />
+
+<figure>
+<img src="images/calc.png" style="width:40.0%" alt="Console" />
+<figcaption aria-hidden="true">Console</figcaption>
+</figure>
+
 </center>
 
 Just note that in the following text, the output looks slightly
@@ -94,15 +114,15 @@ next command. *R* is a really good calculator, try entering some simple
 calculations in the console and have *R* execute them. The following
 mathematical operators are probably most often used: - `+`: addition
 
--   `-`: subtraction
+- `-`: subtraction
 
--   `/`: division
+- `/`: division
 
--   `*`: multiplication
+- `*`: multiplication
 
--   `^`: exponentiation
+- `^`: exponentiation
 
--   `sqrt()`: square root
+- `sqrt()`: square root
 
 Try out some calculations yourself! Note that *R* follows standard order
 of operations rules, so it can be important to use parentheses.
@@ -122,13 +142,13 @@ of operations rules, so it can be important to use parentheses.
 *R* also has operators to evaluate logical expressions, meaning *R*
 evaluates whether a statement is *true* or *false*:
 
--   `==`: is equal to
+- `==`: is equal to
 
--   `!=`: is NOT equal to
+- `!=`: is NOT equal to
 
--   `<`: smaller than
+- `<`: smaller than
 
--   `>`: greater than
+- `>`: greater than
 
 For example, we can ask *R* whether three is smaller than five or
 whether seven is equal to 0:
@@ -189,8 +209,10 @@ great importance, especially when doing scientific research.
 To open a new *rscript*, click on the little white plus in the upper
 left corner of RStudio and select `R Script`.
 <center>
-<img src="images/rscript.png" style="width:25.0%" alt="Opening Rscripts" />
-<img src="images/rscript2.png" style="width:22.0%" alt="Opening Rscripts" />
+<img src="images/rscript.png" style="width:25.0%"
+alt="Opening Rscripts" />
+<img src="images/rscript2.png" style="width:22.0%"
+alt="Opening Rscripts" />
 </center>
 
 Once you have an rscript open, the first step should be to save it
@@ -233,7 +255,13 @@ lines to execute and then hit `Ctrl + Enter` (Windows) or
 the line.
 
 <center>
-<img src="images/execute.png" title="fig:" style="width:35.0%" alt="Executing code from rscripts" />
+
+<figure>
+<img src="images/execute.png" style="width:35.0%"
+alt="Executing code from rscripts" />
+<figcaption aria-hidden="true">Executing code from rscripts</figcaption>
+</figure>
+
 </center>
 
 It is good practice to add plenty of comments to your rscripts, so that
@@ -274,7 +302,7 @@ line behind the `#` symbol will not be executed by *R*.
 As with any program, there are different types of variables/data in *R*.
 The types you will encounter closely follow types of variables you
 should have encountered in previous methods courses. In our class, we
-will focus on the following types of data:[1]  
+will focus on the following types of data:[^1]  
 - character - double/numeric - factor - logical
 
 *Character* data is anything that includes non-numeric characters and is
@@ -342,11 +370,11 @@ class(1)
 *Factor* data are categorical variables that can be either numeric or
 character but distinguish a certain (fixed) number of categories. For
 example, you could have a variable that distinguishes hair color and can
-take the following values: “brown,” “black,” “blond.” Factor variables
+take the following values: “brown”, “black”, “blond”. Factor variables
 can be unordered (such as hair color) or have an intrinsic order. For
 example, if you are describing education levels as a categorical
-variable, we usually have a clear order: “no degree,” “high school,”
-“Bachelor,” post-graduate degree”, etc. *R* can accomodate both
+variable, we usually have a clear order: “no degree”, “high school”,
+“Bachelor”, post-graduate degree”, etc. *R* can accomodate both
 unordered and ordered categorical variables.
 
 ``` r
@@ -402,7 +430,7 @@ For example, say we might want *R* to remember an object that contains
 my name, so we assign the word ‘Florian’ to the object called name.
 Object names have to start with a letter but can include numbers and
 other symbols. They cannot include empty spaces. It is good practice to
-only use lowercase letters, numbers, and `_` in your object names.[2]
+only use lowercase letters, numbers, and `_` in your object names.[^2]
 You should always try use reasonable and informative names for your
 objects, so that you can remember what are the contents of a given
 object.
@@ -561,7 +589,7 @@ somewhere, but it is good to first learn the basics.
 The different columns in each data set are the different variables. As
 you saw above, you can access the specific colums in a data frame by
 using the square brackets and adding the column number behind a comma:
-`student_df[ , 1]`.[3] The best way to access specific variables
+`student_df[ , 1]`.[^3] The best way to access specific variables
 (columns) in a data frame, however, is by using the variable’s name. You
 can do so with the help of the `$` sign. You first specify the name of
 the data frame object and then the variable name, separated by the
@@ -665,11 +693,9 @@ fortune()
 ```
 
     ## 
-    ## If you aren't sure of the relative priority of two operators, use parentheses.
-    ## 1:(nr-1) would work regardless of whether : or - had higher priority. Or, in
-    ## extreme cases, read the documentation.
-    ##    -- Duncan Murdoch
-    ##       R-help (August 2005)
+    ## They're just statistics. How could it hurt to look at them?
+    ##    -- Duncan Murdoch (in a discussion about the merits and perils of p-values)
+    ##       R-help (April 2016)
 
 ### Tidyverse
 
@@ -708,14 +734,13 @@ package documentation, online developer communities (like
 The notes below draw heavily on some these resources, in particular (all
 freely available online):
 
--   Hadley Wickham’s book [R for Data
-    Science](https://r4ds.had.co.nz/index.html).
--   Dirk Eddelbuettel’s [Data Science Programming Methods
-    lectures](https://stat447.com/).
--   Kieran Healy’s [Data Visualization: A practical
-    introduction](https://socviz.co/)
--   [RStudio
-    Cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
+- Hadley Wickham’s book [R for Data
+  Science](https://r4ds.had.co.nz/index.html).
+- Dirk Eddelbuettel’s [Data Science Programming Methods
+  lectures](https://stat447.com/).
+- Kieran Healy’s [Data Visualization: A practical
+  introduction](https://socviz.co/)
+- [RStudio Cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
 
 Two bits we’ll use below, tidyverse and ggplot2, you can find package
 details here: - [tidyverse](https://www.tidyverse.org/) -
@@ -775,11 +800,11 @@ data into R.
 Most of `readr`’s functions are concerned with turning flat files into
 data frames:
 
--   read_csv() reads comma delimited files,
--   read_csv2() reads semicolon separated files (common in countries
-    where , is used as the decimal place),
--   read_tsv() reads tab delimited files, and read_delim() reads in
-    files with any delimiter.
+- read_csv() reads comma delimited files,
+- read_csv2() reads semicolon separated files (common in countries where
+  , is used as the decimal place),
+- read_tsv() reads tab delimited files, and read_delim() reads in files
+  with any delimiter.
 
 These functions all have similar syntax: once you’ve mastered one, you
 can use the others with ease. For the rest of this chapter we’ll focus
@@ -806,12 +831,10 @@ heights <- read_csv("https://raw.githubusercontent.com/phdskat/RCrashcourse2/mai
 ```
 
     ## Rows: 1192 Columns: 6
-
     ## ── Column specification ────────────────────────────────────────────────────────
     ## Delimiter: ","
     ## chr (2): sex, race
     ## dbl (4): earn, height, ed, age
-
     ## 
     ## ℹ Use `spec()` to retrieve the full column specification for this data.
     ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
@@ -833,12 +856,10 @@ heights <- read_csv("heights.csv")
 ```
 
     ## Rows: 1192 Columns: 6
-
     ## ── Column specification ────────────────────────────────────────────────────────
     ## Delimiter: ","
     ## chr (2): sex, race
     ## dbl (4): earn, height, ed, age
-
     ## 
     ## ℹ Use `spec()` to retrieve the full column specification for this data.
     ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
@@ -898,7 +919,7 @@ operations. So far, you’ve just been calling functions plainly. Here,
 it’s time to explore the pipe in more detail.
 
 The pipe, `%>%`, comes from the `magrittr` package by Stefan Milton
-Bache. Packages in the tidyverse load %>% for you automatically, so you
+Bache. Packages in the tidyverse load %\>% for you automatically, so you
 don’t usually load magrittr explicitly.
 
 The point of the pipe is to help you write code in a way that is easier
@@ -1118,12 +1139,12 @@ heights %>%
 
 There are *many* summary functions available beyond `mean()`:
 
--   Center: mean(), median()
--   Spread: sd(), IQR(), mad()
--   Range: min(), max(), quantile()
--   Position: first(), last(), nth(),
--   Count: n(), n_distinct()
--   Logical: any(), all()
+- Center: mean(), median()
+- Spread: sd(), IQR(), mad()
+- Range: min(), max(), quantile()
+- Position: first(), last(), nth(),
+- Count: n(), n_distinct()
+- Logical: any(), all()
 
 ------------------------------------------------------------------------
 
@@ -1333,13 +1354,13 @@ print("Negative number")
 
     ## [1] "Negative number"
 
-[1] There are other types of data as well, but we won’t encounter them
-much. For example, there is a specific class for *complex* numbers and
-one for *integers*. We won’t make very much use of those types and will
-ignore them for now.
+[^1]: There are other types of data as well, but we won’t encounter them
+    much. For example, there is a specific class for *complex* numbers
+    and one for *integers*. We won’t make very much use of those types
+    and will ignore them for now.
 
-[2] See here for a complete style guide for programming in R:
-<https://style.tidyverse.org/index.html>
+[^2]: See here for a complete style guide for programming in R:
+    <https://style.tidyverse.org/index.html>
 
-[3] Alternatively, you can also use the variable name in quotation
-marks: `student_df[ , "names"]`.
+[^3]: Alternatively, you can also use the variable name in quotation
+    marks: `student_df[ , "names"]`.

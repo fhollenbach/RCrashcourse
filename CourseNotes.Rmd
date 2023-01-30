@@ -3,7 +3,6 @@ title: "_R_ Crash Course CBS"
 author: "Florian M. Hollenbach & Rasmus Corlin Christensen"
 date:  "`r Sys.Date()`"
 output: rmarkdown::github_document
-bibliography: "/Users/florianhollenbach/Dropbox (Personal)/Bibtex/fhollenbach_master.bib"
 ---
 
 # Getting Started in _R_ & RStudio
