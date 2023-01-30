@@ -46,7 +46,7 @@ You can adjust the appearance (for example, font or background color) if you cli
 In the console, you can write code that is immediately executed (or evaluated) by _R_ once you hit enter. For example, set the cursor by clicking to the right of to the little angle bracket >. 
 
 
-### R as a calculator
+## R as a calculator
 
 Now type `4+4` and hit enter/return. You should see that _R_ evaluates the command and prints the solution. It should look like this:
 
@@ -102,7 +102,7 @@ For example, we can ask _R_ whether three is smaller than five or whether seven 
 Note that R returns the result in form of logical values, i.e., `TRUE` or `FALSE`.
 
 
-** Question 1**
+**Question 1**
 Any guess of how we might get R to evaluate whether 6 is greater or equal than 7? 
 
 ### More logical operators
@@ -115,7 +115,7 @@ We can also connect different logical statements with the logical operators for 
 3 < 5 | 7 == 0 ## evaluate whether 3 is smaller than 5 or 7 is equal to zero 
 ```
 
-** Question 2**
+**Question 2**
 Take 5 minutes to predict and write down what each of the following lines of code will return. Then run them individually: 
 ```{r practice 2, eval = FALSE}
 12/2
@@ -274,11 +274,11 @@ number_example <- c(1, 2, 3, 4, 5) ### object name assignment operator and objec
 
 To print the content (or if too large a preview of the content) of an object, you can just type and execute the object name or use the `print()` function. Of course, the object has to exist, i.e., you have to have created it first. You can access specific elements in a vector with square brackets `[]` behind the object name and the specific location number of element.
 ```{r print example}
-example_numbers ## show all elements
+number_example ## show all elements
 
-print(example_numbers) ## print content of object
+print(number_example) ## print content of object
 
-example_numbers[1] ## only the first element
+number_example[1] ## only the first element
 ```
 
 *Data frames* are objects that contain multiple (many) observations for multiple variables. You could think of each variable being a vector by itself. Then the variables are bound together into a data frame. Each variable then becomes one column of the data frame. For example, assume we have data on five students. We have recorded their names, height, birth year, and favorite color. 
@@ -296,7 +296,7 @@ birth_year <- c(1990, 1986, 1995, 1992, 1991) ## vector of numeric data
 birth_year
 ```
 
-** Question 3 ** 
+**Question 3** 
 Think of an example that you might collect data for. Create three vectors, each with five hypothetical values for each variable. Make sure to use *good* names for each vector. 
 
 ### Combining into data frames
@@ -334,13 +334,13 @@ student_df$height ## access the heigh variable
 student_df$birth_year ## access the birth year variable
 ```
 
-** Question 4 ** 
+**Question 4** 
 1. Combine the three vectors you created in question 3 into a dataframe.
 2. Print the second value of your second variable. 
 3. Print the third variable. Access it using the variable's name.
 
 
-### Vectorization
+## Vectorization
 
 One of the great things about R is that it is vectorized, this means that operations can be done on the whole vector without going through each element individually. For example, say we want to have the height in cm instead of m, so we need to multiply each of the students' heights by 100. We can just multiply the whole variable by 100 and _R_ automatically does so for each element. 
 ```{r vectorized}

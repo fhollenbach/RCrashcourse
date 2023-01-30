@@ -98,7 +98,7 @@ In the console, you can write code that is immediately executed (or
 evaluated) by *R* once you hit enter. For example, set the cursor by
 clicking to the right of to the little angle bracket \>.
 
-### R as a calculator
+## R as a calculator
 
 Now type `4+4` and hit enter/return. You should see that *R* evaluates
 the command and prints the solution. It should look like this:
@@ -185,8 +185,8 @@ whether seven is equal to 0:
 Note that R returns the result in form of logical values, i.e., `TRUE`
 or `FALSE`.
 
-\*\* Question 1\*\* Any guess of how we might get R to evaluate whether
-6 is greater or equal than 7?
+**Question 1** Any guess of how we might get R to evaluate whether 6 is
+greater or equal than 7?
 
 ### More logical operators
 
@@ -205,8 +205,8 @@ operators for *and* or *or*: `&`; `|`:
 
     ## [1] TRUE
 
-\*\* Question 2\*\* Take 5 minutes to predict and write down what each
-of the following lines of code will return. Then run them individually:
+**Question 2** Take 5 minutes to predict and write down what each of the
+following lines of code will return. Then run them individually:
 
 ``` r
 12/2
@@ -349,20 +349,29 @@ a line behind the `#` symbol will not be executed by *R*.
 <center>
 
 <figure>
-<img src="images/comments.jpeg" style="width:35.0%"
-alt="Practice good ommenting" />
-<figcaption aria-hidden="true">Practice good ommenting</figcaption>
+<img src="images/comments.jpeg" style="width:20.0%"
+alt="Practice good ommenting (via Prairie World Comics)" />
+<figcaption aria-hidden="true">Practice good ommenting (via Prairie
+World Comics)</figcaption>
 </figure>
 
 </center>
 
-## R programming language
+## Variabletypes
 
 As with any program, there are different types of variables/data in *R*.
 The types you will encounter closely follow types of variables you
 should have encountered in previous methods courses. In our class, we
-will focus on the following types of data:[^1]  
-- character - double/numeric - factor - logical
+will focus on the following types of data:[^1]
+
+- character
+- double/numeric
+- factor
+- logical
+
+You can generally ask R to evaluate the type of a value by using the
+function `class()` with the relevant value inside the parantheses (We
+will cover “functions” in more general terms later).
 
 *Character* data is anything that includes non-numeric characters and is
 not logical. Characters are known as *strings* in Stata. In *R*,
@@ -426,6 +435,12 @@ class(1)
 
     ## [1] 4
 
+``` r
+1/3
+```
+
+    ## [1] 0.3333333
+
 *Factor* data are categorical variables that can be either numeric or
 character but distinguish a certain (fixed) number of categories. For
 example, you could have a variable that distinguishes hair color and can
@@ -433,7 +448,8 @@ take the following values: “brown”, “black”, “blond”. Factor variabl
 can be unordered (such as hair color) or have an intrinsic order. For
 example, if you are describing education levels as a categorical
 variable, we usually have a clear order: “no degree”, “high school”,
-“Bachelor”, post-graduate degree”, etc. *R* can accomodate both
+“Bachelor”, post-graduate degree”, etc. You might remember ordered
+categorical variables as *ordinal* variables. *R* can accommodate both
 unordered and ordered categorical variables.
 
 ``` r
@@ -468,8 +484,15 @@ to run conditional operations.
 
 *R* is an *object oriented programming (OOP)* language, which means that
 everything in *R* is organized around **named objects**. These objects
-can come in different types, such as: - functions - data frames -
-matrices - vectors - lists
+can come in different types, such as:
+
+- vectors
+- matrices
+- data frames
+- lists
+- functions
+
+We will cover each in turn.
 
 One important operator in *R* is the **assignment operator**. With the
 assignment operator we can assign values/numbers/words to objects that
@@ -482,7 +505,7 @@ are remembered by *R*. There are actually two assignment operators in
 
 It doesn’t really matter which one you use, but you should decide early
 and use one consistently. In this course, the examples will all use the
-`<-` assignment operator. You can think of the arrow assigment symbols
+`<-` assignment operator. You can think of the arrow assignment symbol
 `<-` as `gets`.
 
 For example, say we might want *R* to remember an object that contains
@@ -495,7 +518,7 @@ objects, so that you can remember what are the contents of a given
 object.
 
 ``` r
-name <- 'Florian' ## object 'name' gets assigned the character vector 'Florian'
+name <- "Florian" ## object 'name' gets assigned the character vector 'Florian'
 ```
 
 In this course we will primarily use *function*, *data frames*, and
@@ -510,7 +533,7 @@ sqrt(9) ## sqrt() is the function, the input here is 9, the function takes the i
 
     ## [1] 3
 
-*Vectors* are a simple data structure in *R* that *N* contain elements
+*Vectors* are a simple data structure in *R* that contain *N* elements
 of one type. A vector is defined by its length, which is the number of
 elements it contains. Vectors are created by using the function `c()`
 (combine) and separating the individual elements by commas. It’s
@@ -521,30 +544,30 @@ To create a simple vector of numbers and assign it to the object
 `number_example` we would write:
 
 ``` r
-example_numbers <- c(1, 2, 3, 4, 5) ### object name assignment operator and object contents
+number_example <- c(1, 2, 3, 4, 5) ### object name assignment operator and object contents
 ```
 
 To print the content (or if too large a preview of the content) of an
 object, you can just type and execute the object name or use the
-`print()` function. Of course, the object has to exist, i.e., you may
-have to have created it first. You can access specific elements in a
-vector with square brackets `[]` behind the object name and the specific
+`print()` function. Of course, the object has to exist, i.e., you have
+to have created it first. You can access specific elements in a vector
+with square brackets `[]` behind the object name and the specific
 location number of element.
 
 ``` r
-example_numbers ## show all elements
+number_example ## show all elements
 ```
 
     ## [1] 1 2 3 4 5
 
 ``` r
-print(example_numbers) ## print content of object
+print(number_example) ## print content of object
 ```
 
     ## [1] 1 2 3 4 5
 
 ``` r
-example_numbers[1] ## only show the first element
+number_example[1] ## only the first element
 ```
 
     ## [1] 1
@@ -562,7 +585,7 @@ location in each vector, i.e., if Anna is the first name, we also have
 to first enter her height and birth year.
 
 ``` r
-names <- c("Anna", "Otto", "Emmy", "Hanna", "Signe") ## a vector of characters
+names <- c("Anna", "Otto", "Emmy", "Hanna", "Signe") ## a vector of characters, student names
 names
 ```
 
@@ -582,12 +605,17 @@ birth_year
 
     ## [1] 1990 1986 1995 1992 1991
 
+**Question 3** Think of an example that you might collect data for.
+Create three vectors, each with five hypothetical values for each
+variable. Make sure to use *good* names for each vector.
+
+### Combining into data frames
+
 Now we have three different vectors, each including the observations for
-five students in terms of their names, height, and birth year. We can
-combine these variables into a data frame using the `data.frame()`
-function. Note that to combine the different vectors into one data
-frame, they all have to have the same length (contain the same number of
-elements).
+five students: their names, height, and birth year. We can combine these
+variables into a data frame using the `data.frame()` function. Note that
+to combine the different vectors into one data frame, they all have to
+have the same length (contain the same number of elements).
 
 ``` r
 student_df <- data.frame(names, height, birth_year)
@@ -601,14 +629,14 @@ student_df
     ## 4 Hanna   1.66       1992
     ## 5 Signe   1.55       1991
 
-Each of the vectors are now one column in the new data frame, which we
-called `student_df`. Each row in the data frame corresponds to the data
-(name, height, birth year) for one person (observation). Note also how
-you can assign existing objects to new objects. We can again access
-specific elements of the data frame with the square brackets `[]`.
-However, since the data frame has two dimensions, we need to specify the
-location of the element by *row* and *column*, e.g.,
-`student_df[row, column]`.
+Each of the vectors are now one column in the new data frame, a new
+object which we called `student_df`. Each row in the data frame
+corresponds to the data (name, height, birth year) for one person
+(observation). Note also how you can assign existing objects to new
+objects. We can again access specific elements of the data frame with
+the square brackets `[]`. However, since the data frame has two
+dimensions, we need to specify the location of the element by *row* and
+*column*, e.g., `student_df[row, column]`.
 
 ``` r
 student_df[1,1] ## element in first row, first column
@@ -643,10 +671,10 @@ student_df[ ,1] ## all elements in first column
 
 At least in this course, you will rarely create new data sets. Instead
 you will work with data sets provided to you or that you have downloaded
-somewhere, but it is good to first learn the basics.
+somewhere, but it is good to learn the basics first.
 
 The different columns in each data set are the different variables. As
-you saw above, you can access the specific colums in a data frame by
+you saw above, you can access the specific columns in a data frame by
 using the square brackets and adding the column number behind a comma:
 `student_df[ , 1]`.[^3] The best way to access specific variables
 (columns) in a data frame, however, is by using the variable’s name. You
@@ -672,6 +700,12 @@ student_df$birth_year ## access the birth year variable
 
     ## [1] 1990 1986 1995 1992 1991
 
+**Question 4** 1. Combine the three vectors you created in question 3
+into a dataframe. 2. Print the second value of your second variable. 3.
+Print the third variable. Access it using the variable’s name.
+
+## Vectorization
+
 One of the great things about R is that it is vectorized, this means
 that operations can be done on the whole vector without going through
 each element individually. For example, say we want to have the height
@@ -693,7 +727,7 @@ values.
 student_df$height_in_meters <- student_df$height*100 ## multiply each value by 100 and assign to new variable
 ```
 
-# **Packages**
+## **Packages**
 
 Packages are the fundamental units of R code. They include reusable R
 functions, the documentation that describes how to use them, and sample
@@ -752,11 +786,13 @@ fortune()
 ```
 
     ## 
-    ## Only with a very high signal to noise ratio (e.g., high true R^2) can torturing
-    ## data lead to a confession to something other than what the analyst wants to
-    ## hear.
-    ##    -- Frank Harrell
-    ##       R-help (April 2010)
+    ## Barry Rowlingson: Your grid above has 8*6 = 42 points.
+    ## (That was a subtle Hitchhikers Guide To The Galaxy reference there, honest, and
+    ## not a stupid dumb multiplication mistake on my part after working four 18-hour
+    ## days on the trot...)
+    ## Peter Dalgaard: [...] Don't panic, just throw yourself at the ground and miss.
+    ##    -- Barry Rowlingson and Peter Dalgaard
+    ##       R-help (March 2004)
 
 ### Tidyverse
 
