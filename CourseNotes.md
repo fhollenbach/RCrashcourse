@@ -1,7 +1,7 @@
 *R* Crash Course CBS
 ================
 Florian M. Hollenbach & Rasmus Corlin Christensen
-2023-01-30
+2023-02-01
 
 # Getting Started in *R* & RStudio
 
@@ -345,14 +345,14 @@ a line behind the `#` symbol will not be executed by *R*.
 
 <figure>
 <img src="images/comments.jpeg" style="width:20.0%"
-alt="Practice good ommenting (via Prairie World Comics)" />
-<figcaption aria-hidden="true">Practice good ommenting (via Prairie
+alt="Practice good commenting (via Prairie World Comics)" />
+<figcaption aria-hidden="true">Practice good commenting (via Prairie
 World Comics)</figcaption>
 </figure>
 
 </center>
 
-## Variabletypes
+## Types of Variables
 
 As with any program, there are different types of variables/data in *R*.
 The types you will encounter closely follow types of variables you
@@ -370,7 +370,8 @@ will cover “functions” in more general terms later).
 
 *Character* data is anything that includes non-numeric characters and is
 not logical. Characters are known as *strings* in Stata. In *R*,
-character variables are depicted and entered inside quotation marks.
+character variables are depicted and entered inside quotation marks. You
+can not perform mathematical calculations on characters.
 
 ``` r
 "Florian" ## florian is of type character
@@ -397,14 +398,16 @@ class("florian")
     ## [1] "123"
 
 ``` r
-### this would not work, but try it: "1" + "3"R won't perform calculations on character objects
+### this would throw an error, but try it: 
+### "1" + "3"   
+### R won't perform calculations on character objects
 ```
 
-*Numeric* data is any variables that are *real* numbers, those are the
-objects that you can perform mathematical operations on. For our
-purposes, we will use the terms *numeric* and *double* interchangeably.
-Even if you enter a “full” number, *R* will interpret as being numeric
-type, i.e., `1` is interpreted as `1.0`.
+*Numeric* data is any variables that are *real* numbers, You can perform
+mathematical operations on numeric variables. For our purposes, we will
+use the terms *numeric* and *double* interchangeably. Even if you enter
+a “full” number (integer), *R* will interpret as being numeric type,
+i.e., `1` is interpreted as `1.0` (unless otherwise specificed).
 
 ``` r
 1 ## is numeric
@@ -443,7 +446,7 @@ take the following values: “brown”, “black”, “blond”. Factor variabl
 can be unordered (such as hair color) or have an intrinsic order. For
 example, if you are describing education levels as a categorical
 variable, we usually have a clear order: “no degree”, “high school”,
-“Bachelor”, post-graduate degree”, etc. You might remember ordered
+“Bachelor”, “post-graduate degree”, etc. You might remember ordered
 categorical variables as *ordinal* variables. *R* can accommodate both
 unordered and ordered categorical variables.
 
@@ -458,10 +461,9 @@ education ## as you can see, R denotes the order of the different levels
     ## [4] post-graduate degree
     ## Levels: Bachelor < high school < no degree < post-graduate degree
 
-*Logical* variables can take only two values `TRUE` or `FALSE`, which is
-interpreted by *R* in binary form as `1` and `0`. The output of logical
-operations is always of type *logical*. We can use *logical* variables
-to run conditional operations.
+*Logical* variables can take only two values `TRUE` or `FALSE`. The
+output of logical operations is always of type *logical*. We can use
+*logical* variables to run conditional operations.
 
 ``` r
 1 == 1 ## TRUE
@@ -474,6 +476,17 @@ to run conditional operations.
 ```
 
     ## [1] FALSE
+
+**Fun fact**: `TRUE` and `FALSE` are represented as by *R* in binary
+form as `1` and `0` and can be used in mathematical operations (more
+later). What do you think would be the result of `(1 == 1)/2` Try it
+out.
+
+``` r
+1 == 1 ## TRUE
+```
+
+    ## [1] TRUE
 
 ## Objects? What are objects?
 
@@ -503,14 +516,14 @@ and use one consistently. In this course, the examples will all use the
 `<-` assignment operator. You can think of the arrow assignment symbol
 `<-` as `gets`.
 
-For example, say we might want *R* to remember an object that contains
-my name, so we assign the word ‘Florian’ to the object called name.
-Object names have to start with a letter but can include numbers and
-other symbols. They cannot include empty spaces. It is good practice to
-only use lowercase letters, numbers, and `_` in your object names.[^2]
-You should always try use reasonable and informative names for your
-objects, so that you can remember what are the contents of a given
-object.
+For example, say we might want to create an object in *R* to save names
+in. Let’s create an object that contains my name, so we assign the word
+‘Florian’ to the object called name. Object names have to start with a
+letter but can include numbers and other symbols. They cannot include
+empty spaces. It is good practice to only use lowercase letters,
+numbers, and `_` in your object names.[^2] **You should always try use
+reasonable and informative names for your objects, so that you can
+remember what are the contents of a given object.**
 
 ``` r
 name <- "Florian" ## object 'name' gets assigned the character vector 'Florian'
@@ -520,7 +533,10 @@ In this course we will primarily use *function*, *data frames*, and
 *vectors*. *Functions* usually take one or more inputs (called
 arguments), perform some operation on the input, and generate an output.
 For example, the `sqrt()` operator mentioned above is a function that
-takes one *argument*.
+takes one *argument*. If a function takes multiple arguments, they are
+usually separated by a comma, e.g., `plot(x, y)`. We will use a lot of
+different functions, some of which will use one, some will use many
+arguments.
 
 ``` r
 sqrt(9) ## sqrt() is the function, the input here is 9, the function takes the input and calculates the square root, it then outputs the result
@@ -708,11 +724,11 @@ student_df$birth_year ## access the birth year variable
 
 ## Vectorization
 
-One of the great things about R is that it is vectorized, this means
-that operations can be done on the whole vector without going through
-each element individually. For example, say we want to have the height
-in cm instead of m, so we need to multiply each of the students’ heights
-by 100. We can just multiply the whole variable by 100 and *R*
+One of the great things about R is that it is vectorized. Vectorization
+means that operations can be done on the whole vector without going
+through each element individually. For example, say we want to have the
+height in cm instead of m, so we need to multiply each of the students’
+heights by 100. We can just multiply the whole variable by 100 and *R*
 automatically does so for each element.
 
 ``` r
@@ -788,27 +804,26 @@ fortune()
 ```
 
     ## 
-    ## Ivo Welch: Thanks. I will put in a suggestion that the docs refer to q() in
-    ## 'see also' for 'stop'.
-    ## Brian D. Ripley: I don't think anyone else is confusing 'exit' with 'stop',
-    ## though. I hope you don't when driving ....
-    ##    -- Ivo Welch and Brian D. Ripley
-    ##       R-help (March 2004)
+    ## I have it on good authority that a few of the statements in Bolker (2008) are
+    ## out of date or slightly incorrect :-) .
+    ##    -- Ben Bolker (in reply to a user that cited his 2008 practical guide to
+    ##       generalized linear mixed models)
+    ##       R-SIG-Mixed-Models (August 2013)
 
 ### Tidyverse
 
 Now let’s try something that you will likely use going forward, the
 standout “tidyverse” for R.
 
-The *tidyverse* is acollection of R packages designed for data science.
+The *tidyverse* is a collection of R packages designed for data science.
 All packages share an underlying design philosophy, grammar, and data
-structures. You can do read data, do data analysis, visualisation and
-more.
+structures. You can use packages in the *tidyverse* to read data, do
+data analysis, visualisation and more.
 
 We can install and load the package as follows:
 
 ``` r
-install.packages("tidyverse",repos="https://cloud.r-project.org")
+install.packages("tidyverse", repos="https://cloud.r-project.org")
 
 library(tidyverse)
 ```
@@ -823,8 +838,8 @@ below.
 
 To be perfectly honest, any data science and programming journey relies
 *heavily* on help. One of the great things about the R system is that
-there is a *ton* of help to be found, from internal RStudi resources, to
-package documentation, online developer communities (like
+there is a *ton* of help to be found, from internal RStudio resources,
+to package documentation, online developer communities (like
 [Stackoverflow](https://stackoverflow.com/)), and much, much more.
 
 ### Online resources
@@ -864,10 +879,10 @@ function, for example, enter the command `help(lm)` or `help("lm")`, or
 Many packages include *vignettes*, which are discursive documents meant
 to illustrate and explain facilities in the package. You can discover
 vignettes by accessing the help page for a package, or via the
-browseVignettes() function: the command `browseVignettes()` opens a list
-of vignettes from all of your installed packages in your browser, while
-`browseVignettes(package=package-name)` (e.g.,
-`browseVignettes(package="survival")`) shows the vignettes, if any, for
+`browseVignettes()` function: the command `browseVignettes()` opens a
+list of vignettes from all of your installed packages in your browser,
+while `browseVignettes(package=package-name)` (e.g.,
+`browseVignettes(package="tidyverse")`) shows the vignettes, if any, for
 a particular package. `vignette()` is employed similarly, but displays a
 list of vignettes in text form.
 
@@ -889,24 +904,24 @@ encountered.
 ### Reading data
 
 R can read or write just about anything from text files, just about any
-existing database backend, specialised files (xls,xlsx, statistics
+existing database backend, specialised files (xls, xlsx, statistics
 packages), via connections from programs, URLs, and more.
 
 `Tidyverse` has a package called `readr` which is great for importing
 data into R.
 
-Most of `readr`’s functions are concerned with turning flat files into
-data frames:
+Most of `readr`’s functions are concerned with reading data from files
+into data frames:
 
-- read_csv() reads comma delimited files,
-- read_csv2() reads semicolon separated files (common in countries where
-  , is used as the decimal place),
-- read_tsv() reads tab delimited files, and read_delim() reads in files
-  with any delimiter.
+- `read_csv()` reads comma delimited files,
+- `read_csv2()` reads semicolon separated files (common in countries
+  where , is used as the decimal place),
+- `read_tsv()` reads tab delimited files, and `read_delim()` reads in
+  files with any delimiter.
 
 These functions all have similar syntax: once you’ve mastered one, you
 can use the others with ease. For the rest of this chapter we’ll focus
-on read_csv(). Not only are csv files one of the most common forms of
+on `read_csv()`. Not only are csv files one of the most common forms of
 data storage, but once you understand read_csv(), you can easily apply
 your knowledge to all the other functions in readr.
 
@@ -925,7 +940,7 @@ Let’s try loading .csv file called heights.csv from an online location,
 and saving that to an object called `heights`
 
 ``` r
-heights <- read_csv("https://raw.githubusercontent.com/phdskat/RCrashcourse2/main/heights.csv")
+heights <- read_csv("https://raw.githubusercontent.com/fhollenbach/RCrashcourse/main/heights.csv")
 ```
 
     ## Rows: 1192 Columns: 6
@@ -937,30 +952,17 @@ heights <- read_csv("https://raw.githubusercontent.com/phdskat/RCrashcourse2/mai
     ## ℹ Use `spec()` to retrieve the full column specification for this data.
     ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 
-We can do the exact same from your loca data - if you download the
-`heights.csv` file from the [RCrashcourse2
-repository](https://github.com/phdskat/RCrashcourse2).
+We can do the exact same from your local data - if you download the
+`heights.csv` file from the [RCrashcourse
+repository](https://github.com/fhollenbach/RCrashcourse) or Canvas.
 
 You then have to put the data somewhere useful for the package to load
-your data.
-
-One common thing to do can do is place it right next to your R project
-files, if you have set up an R project. R’s starting point when load
-files is that they are placed in the R project folder, so that you can
-easily read it:
+your data. For example, you may create a folder for all the files for
+this class, e.g., “QuantII”.
 
 ``` r
-heights <- read_csv("heights.csv")
+heights <- read_csv("~/Desktop/QuantII/heights.csv")### this depends on the location of your file
 ```
-
-    ## Rows: 1192 Columns: 6
-    ## ── Column specification ────────────────────────────────────────────────────────
-    ## Delimiter: ","
-    ## chr (2): sex, race
-    ## dbl (4): earn, height, ed, age
-    ## 
-    ## ℹ Use `spec()` to retrieve the full column specification for this data.
-    ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 
 When you run `read_csv()` it prints out a column specification that
 gives the name and type of each column.
@@ -975,9 +977,8 @@ Often you’ll need to create some new variables or summaries, or maybe
 you just want to rename the variables or reorder the observations in
 order to make the data a little easier to work with.
 
-Here, we’ll go through how to (over)view your data, how to over(view)
-your data, basic data transformation, and how to do basic exploratory
-data analysis.
+Here, we’ll go through how to (over)view your data, basic data
+transformation, and how to do basic exploratory data analysis.
 
 ### Viewing your data
 
@@ -988,7 +989,7 @@ matrix-like R object. To view all the contents of a defined object, use
 the `View()` function:
 
 ``` r
-#View(heights)
+View(heights)
 ```
 
 ### Glance at data
@@ -1044,7 +1045,8 @@ head(heights)
 ``` r
 # Or we can pass the data object, with the pipe, to the head() function. It's the same outcome. We will use this going forward.
 
-heights %>% head()
+heights %>% 
+  head()
 ```
 
     ## # A tibble: 6 × 6
@@ -1070,7 +1072,8 @@ arguments are the expressions that filter the data frame. For example,
 we can select everyone aged exactly 45 in the data:
 
 ``` r
-heights %>% filter(age==45)
+heights %>% 
+  filter(age==45)
 ```
 
     ## # A tibble: 19 × 6
@@ -1349,7 +1352,7 @@ ggplot(data = heights) +
   geom_point(mapping = aes(x = sex, y = earn))
 ```
 
-![](CourseNotes_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
+![](CourseNotes_files/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
 
 The plot shows a strong relationship between sex and earnings. In simple
 terms, males tend to earn more than women. Does this confirm or refute
