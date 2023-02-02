@@ -1,7 +1,7 @@
 *R* Crash Course CBS
 ================
 Florian M. Hollenbach & Rasmus Corlin Christensen
-2023-02-01
+2023-02-02
 
 # Getting Started in *R* & RStudio
 
@@ -745,6 +745,8 @@ values.
 student_df$height_in_meters <- student_df$height*100 ## multiply each value by 100 and assign to new variable
 ```
 
+### Briefly talk about RStudio Project & Workspace Setting
+
 ## **Packages**
 
 Packages are the fundamental units of R code. They include reusable R
@@ -755,8 +757,8 @@ By default, R installs a set of packages during installation. More
 packages can be added later, when they are needed for some specific
 purpose.
 
-There is an *infinite* amount of packages available that can help you
-do, literally, anything: from [basic data
+There is an almost *infinite* amount of packages available that can help
+you do almost anything: from [basic data
 analysis](https://www.tidyverse.org/), [sending
 emails](https://github.com/rpremraj/mailR) or [writing
 blogs](https://rpubs.com/yanalytics/rwordpress) inside R, all the way to
@@ -783,16 +785,21 @@ install.packages("[packagename]")
 For example, we can install this from the R Project repo:
 
 ``` r
-install.packages("fortunes",repos="https://cloud.r-project.org")
+install.packages("fortunes")
 ```
 
 After installing, we *load* the package using the `library()` function,
 as so.
 
-You **always** want to load all the necessary packages at the top of
-your script.
+**Important** You only need to *install* a package once on your
+computer, so it is okay to do so directly in the console … no need to
+install a package every time you open R. On the other hand, you need to
+load a package every time you open up RStudio and want to use the
+package. You **always** want to load all the necessary packages at the
+top of your script.
 
 ``` r
+### let's load all the packages we use in this script
 library("fortunes")
 ```
 
@@ -804,11 +811,16 @@ fortune()
 ```
 
     ## 
-    ## I have it on good authority that a few of the statements in Bolker (2008) are
-    ## out of date or slightly incorrect :-) .
-    ##    -- Ben Bolker (in reply to a user that cited his 2008 practical guide to
-    ##       generalized linear mixed models)
-    ##       R-SIG-Mixed-Models (August 2013)
+    ## Rahul: Microsoft's being a part of this makes me worried about R's future. It's
+    ## like a Michelin star restaurant becoming part of a McDonald's franchise chain.
+    ## Andrew Gelman: I dunno, R's not quite a Michelin-starred restaurant. It's more
+    ## like a food truck.
+    ## Daniel Lakeland: I would say if R is like a food truck, it's a TARDIS food
+    ## truck that's bigger on the inside and offers a vast array of multi-ethnic
+    ## cuisine which, if not all entirely tasty, is at least A rated on sanitation.
+    ##    -- Rahul, Andrew Gelman, and Daniel Lakeland (in a discussion about Excel
+    ##       interfaces and Microsoft being part of the new R Consortium)
+    ##       AndrewGelman.com (July 2015)
 
 ### Tidyverse
 
@@ -823,83 +835,20 @@ data analysis, visualisation and more.
 We can install and load the package as follows:
 
 ``` r
-install.packages("tidyverse", repos="https://cloud.r-project.org")
+install.packages("tidyverse", dependencies = TRUE)
 
 library(tidyverse)
 ```
+
+*This installs a lot of different packages and may take a while.* In
+addition, you may get an error. Let me know if you are having trouble
+with the installation.
 
 With `tidyverse`, we can do some of the basic things needed, including
 reading data, wrangling data, and visualising data. We’ll get to that
 below.
 
-------------------------------------------------------------------------
-
-# **Where to get help and inspiration?**
-
-To be perfectly honest, any data science and programming journey relies
-*heavily* on help. One of the great things about the R system is that
-there is a *ton* of help to be found, from internal RStudio resources,
-to package documentation, online developer communities (like
-[Stackoverflow](https://stackoverflow.com/)), and much, much more.
-
-### Online resources
-
-The notes below draw heavily on some these resources, in particular (all
-freely available online):
-
-- Hadley Wickham’s book [R for Data
-  Science](https://r4ds.had.co.nz/index.html).
-- Dirk Eddelbuettel’s [Data Science Programming Methods
-  lectures](https://stat447.com/).
-- Kieran Healy’s [Data Visualization: A practical
-  introduction](https://socviz.co/)
-- [RStudio Cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
-
-Two bits we’ll use below, tidyverse and ggplot2, you can find package
-details here: - [tidyverse](https://www.tidyverse.org/) -
-[ggplot2](https://ggplot2.tidyverse.org/index.html)
-
-### Help functions in RStudio
-
-You can also find help right here in RStudio.
-
-The `help()` function and `?` help operator in R provide access to the
-documentation pages for R functions, data sets, and other objects, both
-for packages in the standard R distribution and for contributed
-packages. To access documentation for the standard `lm` (linear model)
-function, for example, enter the command `help(lm)` or `help("lm")`, or
-`?lm` or `?"lm"` (i.e., the quotes are optional):
-
-``` r
-?lm()
-```
-
-### Vignettes
-
-Many packages include *vignettes*, which are discursive documents meant
-to illustrate and explain facilities in the package. You can discover
-vignettes by accessing the help page for a package, or via the
-`browseVignettes()` function: the command `browseVignettes()` opens a
-list of vignettes from all of your installed packages in your browser,
-while `browseVignettes(package=package-name)` (e.g.,
-`browseVignettes(package="tidyverse")`) shows the vignettes, if any, for
-a particular package. `vignette()` is employed similarly, but displays a
-list of vignettes in text form.
-
-### R Help on the Internet
-
-There are internet search sites that are specialized for R searches,
-including [search.r-project.org](https://www.search.r-project.org).
-
-It is also possible to use a general search site like Google, by
-qualifying the search with “R” or the name of an R package (or both). It
-can be particularly helpful to paste an error message into a search
-engine to find out whether others have solved a problem that you
-encountered.
-
-------------------------------------------------------------------------
-
-# **Data loading and wrangling**
+## **Data loading and wrangling**
 
 ### Reading data
 
@@ -1099,13 +1048,15 @@ heights %>%
     ## 18   4000   64.2 female    16    45 white   
     ## 19  60000   71.8 male      12    45 white
 
-When you run that line of code, the `dplyr` package in tidyverse
-executes the filtering operation and returns a new data frame. If you
-want to save the result, you’ll need to use the assignment operator,
-`<-`:
+**Important** When you run that line of code, the `dplyr` package in
+tidyverse executes the filtering operation and returns a new data frame.
+If you want to save the result, you’ll need to use the assignment
+operator, `<-`:, the initial object would be unchanged, unless you
+overwrite it.
 
 ``` r
-age45 <- heights %>% filter(age == 45)
+age45 <- heights %>% 
+  filter(age == 45)
 ```
 
 ### Arranging
@@ -1117,7 +1068,8 @@ provide more than one column name, each additional column will be used
 to break ties in the values of preceding columns:
 
 ``` r
-heights %>% arrange(age)
+heights %>% 
+  arrange(age)
 ```
 
     ## # A tibble: 1,192 × 6
@@ -1138,7 +1090,8 @@ heights %>% arrange(age)
 Use `desc()` to re-order by a column in descending order:
 
 ``` r
-heights %>% arrange(desc(age))
+heights %>% 
+  arrange(desc(age))
 ```
 
     ## # A tibble: 1,192 × 6
@@ -1166,24 +1119,29 @@ of the variables.
 
 ``` r
 # Select columns by name
-
-select(heights, sex, age, race)
+heights %>%
+  select(height, sex, age, race)
 ```
 
-    ## # A tibble: 1,192 × 3
-    ##    sex      age race    
-    ##    <chr>  <dbl> <chr>   
-    ##  1 male      45 white   
-    ##  2 female    58 white   
-    ##  3 female    29 white   
-    ##  4 female    91 other   
-    ##  5 female    39 white   
-    ##  6 female    26 white   
-    ##  7 female    49 white   
-    ##  8 male      46 white   
-    ##  9 male      21 hispanic
-    ## 10 male      26 white   
+    ## # A tibble: 1,192 × 4
+    ##    height sex      age race    
+    ##     <dbl> <chr>  <dbl> <chr>   
+    ##  1   74.4 male      45 white   
+    ##  2   65.5 female    58 white   
+    ##  3   63.6 female    29 white   
+    ##  4   63.1 female    91 other   
+    ##  5   63.4 female    39 white   
+    ##  6   64.4 female    26 white   
+    ##  7   61.7 female    49 white   
+    ##  8   72.7 male      46 white   
+    ##  9   72.0 male      21 hispanic
+    ## 10   72.2 male      26 white   
     ## # … with 1,182 more rows
+
+#### Question 5
+
+Use the `heights` data set and create a new object, that only includes
+data for the women in the `heights` data set.
 
 ### Add new variables
 
@@ -1193,7 +1151,6 @@ columns that are functions of existing columns. That’s the job of
 
 ``` r
 # we can use the pipe to first add a new column, then arrange by it, so we get a list of the tallest people (in cm)
-
 heights %>% 
   mutate(heightcm = height * 2.54) %>% 
   arrange(-heightcm)
@@ -1213,6 +1170,17 @@ heights %>%
     ##  9 27000   76.0 male     12    39 white     193.
     ## 10 40000   75.6 male     16    38 black     192.
     ## # … with 1,182 more rows
+
+Again, if you do not use the assignment operator, the new variable would
+not be added to the dataframe object. So to actually make a change to
+our dataset object, we need to write:
+
+``` r
+# we can use the pipe to first add a new column, then arrange by it, so we get a list of the tallest people (in cm)
+heights <- heights %>% 
+  mutate(heightcm = height * 2.54) %>% 
+  arrange(-heightcm)
+```
 
 ### Summarise
 
@@ -1247,7 +1215,9 @@ There are *many* summary functions available beyond `mean()`:
 - Count: n(), n_distinct()
 - Logical: any(), all()
 
-------------------------------------------------------------------------
+#### Question 6
+
+Calculate the average salary for women.
 
 # **Simple regression analysis**
 
@@ -1255,13 +1225,14 @@ In R, with the `heights` data, we can do a simple linear regression to
 predict a quantitative outcome y on the basis of one single predictor
 variable x.
 
-For instance, we can try to see if the variable `age` is a predictor of
-`earn`, using the base R `lm()` function (linear model).
+For instance, we can try to see if the variable `earn` (income) has a
+relationship with `height`, i.e., do taller people earn more? We can use
+the base R `lm()` function (linear model).
 
 The lm command takes the variables in the format:
 
 ``` r
-lm([target variable] ~ [predictor variables], data = [data source])
+lm([dependent/outcome variable] ~ [independent/predictor variables], data = [name of data object])
 ```
 
 So we do as follows:
@@ -1269,24 +1240,22 @@ So we do as follows:
 ``` r
 # create the model
 
-model <- lm(earn ~ age, data = heights)
-
-# see the model
-
+model <- lm(earn ~ heightcm, data = heights)
+# see the model results
 model
 ```
 
     ## 
     ## Call:
-    ## lm(formula = earn ~ age, data = heights)
+    ## lm(formula = earn ~ heightcm, data = heights)
     ## 
     ## Coefficients:
-    ## (Intercept)          age  
-    ##    19041.53        99.41
+    ## (Intercept)     heightcm  
+    ##    -58611.9        481.1
 
-The output tells us that the predicted earnings for someone aged 0 is
-just above 19.000, and for every additional 1 year, the average person
-is expected to earn just about 100 more.
+The output tells us that the predicted earnings for someone with height
+= 0 is -58612, and for every additional 1 cm in height, the average
+person is expected to earn just about 481 more.
 
 To review the results in more detail, we can use the `summary()`
 function:
@@ -1297,22 +1266,22 @@ summary(model)
 
     ## 
     ## Call:
-    ## lm(formula = earn ~ age, data = heights)
+    ## lm(formula = earn ~ heightcm, data = heights)
     ## 
     ## Residuals:
     ##    Min     1Q Median     3Q    Max 
-    ## -25098 -12622  -3667   6883 177579 
+    ## -30043 -11422  -3608   6443 173488 
     ## 
     ## Coefficients:
-    ##             Estimate Std. Error t value Pr(>|t|)    
-    ## (Intercept) 19041.53    1571.26  12.119  < 2e-16 ***
-    ## age            99.41      35.46   2.804  0.00514 ** 
+    ##              Estimate Std. Error t value Pr(>|t|)    
+    ## (Intercept) -58611.90    9525.57  -6.153 1.04e-09 ***
+    ## heightcm       481.08      55.95   8.598  < 2e-16 ***
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     ## 
-    ## Residual standard error: 19420 on 1190 degrees of freedom
-    ## Multiple R-squared:  0.006561,   Adjusted R-squared:  0.005727 
-    ## F-statistic:  7.86 on 1 and 1190 DF,  p-value: 0.005137
+    ## Residual standard error: 18900 on 1190 degrees of freedom
+    ## Multiple R-squared:  0.05849,    Adjusted R-squared:  0.0577 
+    ## F-statistic: 73.93 on 1 and 1190 DF,  p-value: < 2.2e-16
 
 Here we can see, for instance, the p-values, the R-squared, and so on,
 which we can use to evaluate the linear model.
@@ -1332,31 +1301,25 @@ system and applying it in many places.
 
 ### First steps
 
-Let’s use our first graph to answer a question:
+Let’s use our first graph to plot the data from the previous regression.
 
-Do males people earn more than females? You probably already have an
-answer, but try to make your answer precise. What does the relationship
-between sex and earnings look like?
-
-You can test your answer with the `heights` data frame we have used
-throughout. A data frame is a rectangular collection of variables (in
-the columns) and observations (in the rows).
+What does the relationship between age and income look like?
 
 ### Creating a ggplot
 
-To plot the sex-earn relationship, run this code to put `sex` on the
-x-axis and `earn` on the y-axis:
+To plot the age-earn relationship, run this code to put `age`
+(independent variable) on the x-axis and `earn` (dependent variable) on
+the y-axis:
 
 ``` r
 ggplot(data = heights) + 
-  geom_point(mapping = aes(x = sex, y = earn))
+  geom_point(mapping = aes(x = heightcm, y = earn))
 ```
 
 ![](CourseNotes_files/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
 
-The plot shows a strong relationship between sex and earnings. In simple
-terms, males tend to earn more than women. Does this confirm or refute
-your hypothesis?
+The plot shows a strong relationship between height and earnings. In
+simple terms, taller folks tend to earn a bit more than shorter workers.
 
 With ggplot2, you begin a plot with the function `ggplot()`. `ggplot()`
 creates a coordinate system that you can add layers to. The first
@@ -1364,18 +1327,19 @@ argument of `ggplot()` is the dataset to use in the graph. So
 `ggplot(data = heights)` creates an empty graph, but it’s not very
 interesting so I’m not going to show it here.
 
-You complete your graph by adding one or more layers to `ggplot()`. The
-function `geom_point()` adds a layer of points to your plot, which
-creates a scatterplot. ggplot2 comes with many geom functions that each
-add a different type of layer to a plot. You’ll learn a whole bunch of
-them throughout this chapter.
+You complete your graph by adding one or more layers to `ggplot()`. To
+add layers to the plot, you use the layer functions which always start
+with `geom_`. For example, the function `geom_point()` adds a layer of
+points to your plot, which creates a scatterplot. ggplot2 comes with
+many geom functions that each add a different type of layer to a plot.
+You’ll learn a whole bunch of them throughout the course.
 
-Each geom function in ggplot2 takes a `mapping` argument. This defines
-how variables in your dataset are mapped to visual properties. The
-`mapping` argument is always paired with `aes()`, and the x and y
-arguments of aes() specify which variables to map to the x and y axes.
-ggplot2 looks for the mapped variables in the `data` argument, in this
-case, `heights`.
+Each geom layer in ggplot2 takes a `mapping` argument. This defines how
+variables in your dataset are mapped to visual properties. The `mapping`
+argument is always paired with `aes()`, and the x and y arguments of
+aes() specify which variables to map to the x and y axes. ggplot2 looks
+for the mapped variables in the `data` argument, in this case,
+`heights`.
 
 ### A graphing template
 
@@ -1385,12 +1349,95 @@ below with a dataset, a geom function, or a collection of mappings.
 
 ``` r
 ggplot(data = <DATA>) + 
-  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
+  <GEOM_LAYER>(mapping = aes(<MAPPINGS>))
 ```
 
-------------------------------------------------------------------------
+You can find an overview over the different `geom_layers` here: [geom
+layers](https://ggplot2.tidyverse.org/reference/#layers). You can also
+add multiple layers to a plot. For example, to add a regression line
+through the scatterplot, we would write:
 
-# **Extra stuff (if we have the time):**
+``` r
+ggplot(data = heights) + 
+  geom_point(mapping = aes(x = heightcm, y = earn)) + 
+  geom_smooth(mapping = aes(x = heightcm, y = earn), method = lm)
+```
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+![](CourseNotes_files/figure-gfm/unnamed-chunk-26-1.png)<!-- -->
+
+#### Question 7
+
+What do you think is the slope of the blue line?
+
+Run the same regression on the dataset that only includes women. What is
+the result?
+
+## **Where to get help and inspiration?**
+
+To be perfectly honest, any data science and programming journey relies
+*heavily* on help. One of the great things about the R system is that
+there is a *ton* of help to be found, from internal RStudio resources,
+to package documentation, online developer communities (like
+[Stackoverflow](https://stackoverflow.com/)), and much, much more.
+
+### Online resources
+
+The notes below draw heavily on some these resources, in particular (all
+freely available online):
+
+- Hadley Wickham’s book [R for Data
+  Science](https://r4ds.had.co.nz/index.html).
+- Dirk Eddelbuettel’s [Data Science Programming Methods
+  lectures](https://stat447.com/).
+- Kieran Healy’s [Data Visualization: A practical
+  introduction](https://socviz.co/)
+- [Posit/RStudio Cheatsheets](https://posit.co/resources/cheatsheets/)
+
+Two bits we’ll use below, tidyverse and ggplot2, you can find package
+details here: - [tidyverse](https://www.tidyverse.org/) -
+[ggplot2](https://ggplot2.tidyverse.org/index.html)
+
+### Help functions in RStudio
+
+You can also find help right here in RStudio.
+
+The `help()` function and `?` help operator in R provide access to the
+documentation pages for R functions, data sets, and other objects, both
+for packages in the standard R distribution and for contributed
+packages. To access documentation for the standard `lm` (linear model)
+function, for example, enter the command `help(lm)` or `help("lm")`, or
+`?lm` or `?"lm"` (i.e., the quotes are optional):
+
+``` r
+?lm()
+```
+
+### Vignettes
+
+Many packages include *vignettes*, which are discursive documents meant
+to illustrate and explain facilities in the package. You can discover
+vignettes by accessing the help page for a package, or via the
+`browseVignettes()` function: the command `browseVignettes()` opens a
+list of vignettes from all of your installed packages in your browser,
+while `browseVignettes(package=package-name)` (e.g.,
+`browseVignettes(package="tidyverse")`) shows the vignettes, if any, for
+a particular package. `vignette()` is employed similarly, but displays a
+list of vignettes in text form.
+
+### R Help on the Internet
+
+There are internet search sites that are specialized for R searches,
+including [search.r-project.org](https://www.search.r-project.org).
+
+It is also possible to use a general search site like Google, by
+qualifying the search with “R” or the name of an R package (or both). It
+can be particularly helpful to paste an error message into a search
+engine to find out whether others have solved a problem that you
+encountered.
+
+## Extra stuff (if we have the time)
 
 ### Flows
 
