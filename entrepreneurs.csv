@@ -1,0 +1,2317 @@
+Age,Highschool,Internet,BusinessPlan,Group,Female,Married,NumberWorkers,Loan,OperatesFirm,WorkHours
+25,0,1,36,treated,0,1,NA,NA,1,72
+27,0,1,55,treated,1,1,NA,0,1,23
+35,0,0,46,treated,0,0,9,0,1,36
+27,0,0,58,treated,0,0,NA,NA,1,104
+28,0,0,57,treated,0,0,NA,0,NA,NA
+37,0,1,54,treated,0,1,2,1,1,10
+30,0,0,59,treated,1,0,4,0,1,30
+27,0,1,52,treated,0,0,0,0,NA,NA
+31,0,1,40,treated,0,0,0,0,1,57
+39,0,1,30,treated,0,1,6,0,1,126
+23,0,0,42,treated,1,1,NA,NA,1,15
+31,1,1,44,treated,0,0,6,0,1,60
+28,0,1,58,treated,0,0,1,0,1,30
+36,0,0,58,treated,0,1,NA,NA,1,NA
+31,0,0,40,treated,0,1,NA,0,1,66
+27,1,0,36,treated,0,0,NA,0,0,0
+32,0,1,48,treated,0,1,NA,0,1,50
+28,1,0,50,treated,0,1,7,1,1,48
+23,0,1,48,treated,0,0,NA,NA,1,48
+33,0,0,48,treated,0,1,NA,NA,1,47
+26,1,0,59,treated,0,0,NA,NA,1,72
+35,0,1,64,treated,0,1,10,0,1,65
+29,0,1,42,treated,1,0,5,0,1,15
+34,0,1,63,treated,1,1,0,0,1,60
+29,0,0,63,treated,0,0,NA,0,1,60
+27,0,1,42,treated,1,0,NA,NA,1,48
+36,0,0,44,treated,0,1,NA,NA,1,58
+24,0,1,52,treated,0,0,NA,NA,0,0
+33,0,0,57,treated,0,0,NA,NA,1,72
+27,0,0,62,treated,1,0,NA,NA,NA,NA
+28,0,0,33,treated,0,0,NA,0,1,40
+33,0,1,52,treated,0,1,NA,NA,1,47
+28,0,0,42,treated,1,0,NA,NA,1,40
+26,0,1,51,treated,0,0,3,0,1,40
+28,0,1,68,treated,0,1,NA,NA,1,96
+35,1,1,37,treated,1,1,NA,0,1,40
+25,0,1,59,treated,0,0,13,0,0,0
+27,0,0,32,treated,0,0,6,0,NA,NA
+24,0,0,55,treated,1,1,0,0,1,35
+34,0,1,36,treated,0,1,7,0,NA,NA
+20,1,0,51,treated,0,0,13,0,1,40
+23,0,1,41,treated,0,0,NA,NA,1,52
+31,0,0,36,treated,0,1,NA,NA,1,32
+37,0,1,54,treated,0,1,7,0,NA,NA
+28,0,0,62,treated,0,0,NA,0,1,80
+27,0,1,67,treated,0,0,NA,NA,0,0
+26,0,0,64,treated,0,0,NA,NA,1,70
+24,0,0,63,treated,0,0,NA,NA,1,54
+29,1,0,56,treated,0,0,NA,NA,1,66
+29,0,0,55,treated,0,0,NA,NA,0,0
+28,0,1,63,treated,0,0,NA,NA,1,48
+27,0,0,45,treated,0,0,4,0,1,60
+36,0,1,38,treated,0,1,1,0,NA,NA
+28,0,1,65,treated,0,0,0,0,1,NA
+26,1,0,55,treated,0,0,NA,NA,NA,NA
+26,0,0,55,treated,1,0,NA,NA,0,0
+32,0,0,42,treated,0,1,NA,NA,1,42
+29,0,0,41,treated,0,1,10,0,1,50
+36,0,0,39,treated,0,1,NA,0,1,72
+29,0,1,66,treated,0,0,NA,NA,NA,NA
+26,0,0,37,treated,0,0,NA,NA,1,43
+26,0,0,52,treated,0,0,NA,NA,1,56
+31,0,1,33,treated,0,0,9,0,1,10
+34,0,0,52,treated,0,1,3,0,1,7
+35,0,0,59,treated,0,0,NA,NA,1,15
+36,1,1,42,treated,0,1,5,0,1,42
+29,0,1,41,treated,0,0,2,0,1,48
+34,0,0,56,treated,1,1,4,0,1,60
+29,0,1,56,treated,0,0,2,0,1,55
+25,0,1,60,treated,0,0,NA,0,1,42
+28,0,0,38,treated,0,0,NA,NA,1,10
+34,0,0,55,treated,1,1,NA,NA,1,78
+35,0,1,57,treated,0,1,8,0,NA,NA
+23,0,0,65,treated,0,0,NA,NA,0,0
+36,0,1,47,treated,0,1,7,0,1,52
+34,0,1,59,treated,0,1,NA,NA,1,68
+32,0,1,67,treated,0,0,NA,NA,0,0
+34,0,0,32,treated,0,0,4,0,1,72
+36,1,0,38,treated,0,1,NA,0,1,72
+24,0,0,57,treated,0,0,NA,NA,NA,NA
+37,0,1,39,treated,0,1,5,1,NA,NA
+24,1,0,57,treated,0,0,2,1,1,70
+29,0,1,55,treated,1,0,0,0,NA,NA
+36,0,0,44,treated,0,1,25,0,1,40
+39,0,0,41,treated,1,1,NA,NA,1,40
+37,0,1,44,treated,0,0,NA,NA,1,82
+21,1,0,60,treated,0,0,NA,NA,1,82
+28,0,0,49,treated,0,0,0,0,1,18
+31,0,1,34,treated,0,1,NA,0,NA,NA
+28,0,0,71,treated,0,0,NA,NA,0,0
+30,0,1,58,treated,1,1,0,0,0,0
+28,0,0,59,treated,0,0,NA,NA,1,30
+30,0,0,46,treated,0,0,15,0,1,48
+23,0,0,41,treated,0,0,NA,NA,NA,NA
+38,0,0,42,treated,0,1,NA,NA,1,40
+34,0,1,37,treated,0,0,NA,NA,1,50
+26,0,1,48,treated,0,0,26,0,1,25
+28,0,0,53,treated,1,0,3,0,1,52
+28,0,0,55,treated,0,1,8,1,1,57
+36,0,0,45,treated,1,1,6,0,1,64
+38,1,0,47,treated,0,1,5,0,1,66
+21,0,0,44,treated,1,0,NA,NA,NA,NA
+28,0,1,37,treated,0,0,4,0,1,45
+26,0,1,59,treated,0,0,3,0,0,0
+28,0,0,53,treated,1,0,NA,NA,0,0
+37,0,0,33,treated,0,1,3,0,1,50
+29,0,1,56,treated,0,0,NA,NA,0,0
+23,0,1,63,treated,1,0,NA,NA,1,60
+31,0,0,36,treated,0,0,9,0,NA,NA
+32,0,0,51,treated,0,0,4,0,NA,NA
+26,0,1,35,treated,0,0,NA,NA,0,0
+39,0,1,33,treated,1,1,NA,NA,1,48
+19,1,1,59,treated,0,0,NA,0,0,0
+28,0,1,54,treated,0,1,NA,NA,1,80
+31,0,0,50,treated,0,0,7,0,1,54
+25,0,0,64,treated,0,0,14,0,1,20
+31,0,1,53,treated,0,0,5,0,1,35
+31,0,1,40,treated,1,1,NA,0,NA,NA
+28,0,0,42,treated,0,1,NA,0,1,28
+28,0,0,68,treated,1,1,NA,NA,NA,NA
+35,0,1,44,treated,0,1,NA,0,1,82
+26,0,0,48,treated,1,0,NA,NA,NA,NA
+30,0,0,64,treated,0,0,NA,NA,NA,NA
+28,0,1,55,treated,0,0,NA,NA,1,45
+27,0,0,41,treated,0,0,2,0,1,84
+39,0,0,44,treated,0,1,NA,NA,NA,NA
+21,1,0,45,treated,0,0,NA,NA,NA,NA
+26,0,0,49,treated,0,1,NA,NA,NA,NA
+29,0,0,38,treated,1,1,NA,NA,1,21
+38,0,1,53,treated,0,1,4,0,1,NA
+30,0,1,41,treated,0,0,5,0,1,46
+24,0,1,51,treated,0,0,NA,NA,1,56
+30,0,0,37,treated,0,0,NA,0,1,63
+25,0,1,39,treated,0,1,NA,NA,NA,NA
+30,0,0,46,treated,0,0,NA,NA,1,42
+35,0,0,38,treated,0,1,15,0,1,35
+32,0,1,64,treated,0,1,2,NA,1,102
+29,0,1,37,treated,0,1,4,0,1,NA
+26,0,0,65,treated,0,0,NA,NA,0,0
+28,0,0,66,treated,0,0,NA,NA,NA,NA
+31,1,1,36,treated,0,1,6,0,0,0
+29,0,1,52,treated,0,0,5,0,1,70
+37,0,1,41,treated,0,1,6,0,0,0
+33,0,1,49,treated,0,0,13,0,1,30
+38,0,0,60,treated,0,1,NA,NA,1,70
+25,0,1,31,treated,0,0,5,0,1,80
+45,0,1,51,treated,1,1,7,0,NA,NA
+31,0,0,55,treated,0,1,2,0,1,54
+27,0,1,58,treated,0,0,1,0,1,60
+32,1,1,39,treated,0,0,7,0,1,60
+27,0,1,45,treated,0,0,NA,NA,1,57
+24,0,0,52,treated,0,0,NA,NA,0,0
+32,0,0,44,treated,0,1,NA,NA,0,0
+22,1,0,47,treated,0,0,15,0,1,64
+40,0,1,65,treated,1,0,NA,NA,NA,NA
+30,0,1,66,treated,0,1,NA,NA,NA,NA
+35,0,1,56,treated,1,0,NA,0,1,8
+37,0,1,49,treated,0,1,NA,0,1,52
+26,0,0,52,treated,0,0,NA,NA,1,70
+28,0,1,61,treated,1,1,NA,0,1,65
+30,0,1,60,treated,0,0,NA,NA,NA,NA
+33,0,0,50,treated,0,0,0,0,1,52
+36,0,1,59,treated,0,0,NA,NA,1,10
+30,0,0,48,treated,1,1,NA,NA,1,54
+27,0,1,47,treated,0,0,8,0,1,72
+28,0,0,54,treated,0,0,NA,NA,0,0
+34,0,0,53,treated,0,0,NA,0,1,91
+36,0,1,51,treated,0,1,4,0,1,35
+34,0,1,45,treated,0,1,3,0,1,48
+33,0,1,45,treated,0,0,NA,NA,1,35
+32,0,1,50,treated,0,1,3,0,1,50
+24,0,1,47,treated,0,0,NA,NA,NA,NA
+33,1,0,39,treated,0,1,4,0,1,60
+29,0,0,37,treated,1,0,3,0,1,NA
+35,0,1,59,treated,1,1,NA,NA,1,48
+26,1,0,53,treated,0,0,NA,NA,1,72
+37,0,1,55,treated,0,0,3,0,1,60
+28,0,0,71,treated,0,0,NA,NA,NA,NA
+32,0,1,40,treated,1,1,4,0,1,60
+27,0,1,54,treated,0,0,4,0,1,60
+24,1,0,58,treated,0,0,NA,NA,1,78
+32,0,1,50,treated,0,0,NA,NA,1,40
+24,0,1,48,treated,0,0,NA,NA,0,0
+39,0,1,53,treated,0,1,1,0,NA,NA
+26,1,0,51,treated,0,0,NA,NA,1,50
+34,0,1,63,treated,0,0,1,0,1,60
+39,0,1,41,treated,0,1,7,0,1,50
+31,0,1,54,treated,0,1,16,0,1,40
+31,0,0,61,treated,0,1,4,0,1,70
+29,0,0,52,treated,0,1,NA,NA,NA,NA
+34,0,0,69,treated,0,1,NA,NA,0,0
+35,0,1,51,treated,0,1,NA,NA,1,60
+31,0,1,73,treated,1,0,NA,0,1,46
+25,0,0,49,treated,0,0,12,0,0,0
+32,1,0,59,treated,0,0,3,0,1,49
+26,0,0,41,treated,0,0,NA,NA,NA,NA
+40,0,0,56,treated,0,0,1,0,0,0
+39,0,0,35,treated,0,1,2,0,1,28
+26,0,0,35,treated,0,0,NA,NA,1,56
+27,0,1,54,treated,0,0,NA,0,1,60
+22,1,0,55,treated,1,0,NA,NA,1,66
+35,1,0,45,treated,0,1,4,0,NA,NA
+28,0,1,53,treated,0,0,NA,NA,0,0
+34,0,0,46,treated,0,1,20,0,NA,NA
+29,0,1,52,treated,1,1,6,0,1,72
+28,0,0,52,treated,0,1,NA,NA,1,96
+38,0,1,66,treated,1,1,2,0,1,84
+36,0,1,44,treated,0,0,NA,0,1,60
+40,0,1,34,treated,0,1,4,0,1,48
+28,0,0,38,treated,0,0,5,0,NA,NA
+34,0,1,56,treated,0,0,0,0,0,0
+25,0,1,31,treated,0,0,2,0,1,48
+28,0,0,34,treated,0,1,3,0,1,72
+31,0,1,33,treated,0,1,NA,NA,1,65
+30,0,0,53,treated,0,1,NA,NA,1,38
+33,0,1,53,treated,0,0,3,0,1,40
+30,0,1,47,treated,0,1,12,1,0,0
+30,1,0,45,treated,1,1,0,0,1,60
+30,0,1,60,treated,0,0,NA,0,1,NA
+36,0,1,33,treated,0,0,5,0,1,98
+29,0,1,47,treated,0,1,NA,0,1,70
+38,1,1,41,treated,0,1,NA,NA,1,15
+35,0,0,44,treated,0,1,1,0,1,24
+30,0,0,49,treated,0,1,3,0,1,49
+32,0,1,54,treated,0,0,NA,0,1,9
+39,1,1,53,treated,0,1,NA,0,NA,NA
+27,0,0,44,treated,0,0,6,0,1,72
+28,0,1,50,treated,1,0,2,0,1,72
+28,0,0,69,treated,0,0,NA,NA,1,78
+30,1,1,51,treated,0,0,10,0,1,108
+31,0,0,58,treated,0,0,NA,NA,1,58
+26,0,0,44,treated,0,0,2,0,1,94
+35,0,1,53,treated,1,0,11,0,1,50
+37,0,1,63,treated,0,1,7,0,NA,NA
+35,0,1,34,treated,0,1,21,1,1,72
+27,0,1,52,treated,0,0,NA,0,1,45
+34,0,1,45,treated,0,1,3,0,NA,NA
+21,0,1,55,treated,0,0,NA,NA,NA,NA
+32,0,1,59,treated,0,1,0,0,0,0
+39,0,1,47,treated,0,1,2,0,1,56
+25,1,1,50,treated,0,0,1,0,1,60
+34,0,1,50,treated,0,1,6,0,1,50
+38,0,0,38,treated,0,0,NA,NA,1,0
+33,0,0,45,treated,0,0,NA,NA,1,56
+26,0,0,62,treated,0,0,0,0,1,15
+36,0,1,50,treated,0,0,4,1,NA,NA
+37,0,0,36,treated,0,1,NA,0,1,11
+34,0,1,42,treated,0,0,NA,NA,1,55
+22,1,0,48,treated,1,0,NA,NA,1,60
+27,0,0,44,treated,0,0,8,0,1,72
+31,0,0,54,treated,0,0,0,0,0,0
+27,0,0,61,treated,0,0,NA,0,1,56
+35,0,1,53,treated,0,1,6,0,NA,NA
+37,0,0,31,treated,1,1,2,0,1,45
+35,0,1,52,treated,0,1,2,0,1,72
+34,0,0,54,treated,0,1,NA,NA,1,30
+34,0,0,59,treated,0,1,6,0,1,75
+29,0,1,57,treated,0,0,NA,NA,NA,NA
+39,0,1,68,treated,0,1,NA,NA,0,0
+22,1,0,32,treated,0,0,NA,0,1,40
+34,0,1,62,treated,1,1,NA,NA,1,12
+22,0,1,61,treated,0,0,NA,NA,NA,NA
+23,0,0,37,treated,1,0,NA,0,NA,NA
+35,1,1,42,treated,0,1,NA,0,1,16
+24,0,0,58,treated,0,0,NA,NA,1,42
+28,0,1,55,treated,0,0,0,0,1,30
+31,0,1,34,treated,0,0,7,0,1,66
+38,0,1,57,treated,0,1,5,1,1,40
+30,0,0,44,treated,0,0,6,0,1,72
+35,0,0,57,treated,0,0,NA,NA,1,60
+40,0,1,63,treated,0,1,NA,NA,1,58
+31,0,0,37,treated,0,0,NA,NA,1,72
+31,0,0,53,treated,0,0,NA,NA,1,42
+33,1,0,52,treated,1,0,5,0,1,49
+30,0,0,56,treated,0,0,NA,NA,1,75
+32,0,1,59,treated,0,0,NA,NA,1,NA
+27,0,0,35,treated,1,0,5,0,NA,NA
+34,0,0,49,treated,0,1,4,0,1,30
+25,0,1,67,treated,0,0,8,0,0,0
+27,1,1,55,treated,0,1,NA,NA,1,NA
+29,0,0,58,treated,0,0,NA,NA,1,49
+31,0,1,36,treated,0,1,NA,0,NA,NA
+27,0,0,45,treated,0,0,NA,NA,1,108
+29,0,1,59,treated,0,0,NA,NA,1,40
+30,0,0,42,treated,0,0,NA,0,1,53
+23,0,0,72,treated,0,0,NA,NA,1,NA
+28,0,0,62,treated,0,0,NA,NA,1,35
+19,1,0,34,treated,0,0,NA,NA,NA,NA
+36,1,0,44,treated,0,1,5,0,1,126
+33,0,1,64,treated,0,1,NA,NA,1,48
+26,1,1,57,treated,0,0,NA,NA,1,NA
+32,0,0,48,treated,0,0,NA,NA,0,0
+26,1,1,53,treated,0,0,NA,NA,1,77
+30,0,1,59,treated,0,1,5,0,1,8
+27,0,1,65,treated,0,0,NA,0,NA,NA
+26,0,1,46,treated,0,1,NA,0,1,9
+25,0,1,41,treated,0,0,NA,0,1,60
+24,1,0,63,treated,0,0,NA,0,1,65
+30,0,0,34,treated,0,0,3,0,1,43
+28,1,1,59,treated,0,0,10,0,0,0
+34,0,1,58,treated,0,1,NA,NA,0,0
+28,0,0,50,treated,0,1,NA,NA,1,56
+32,0,0,48,treated,0,1,NA,NA,0,0
+24,0,1,61,treated,0,0,NA,NA,1,NA
+39,0,1,49,treated,0,1,2,0,1,76
+27,0,0,48,treated,0,0,NA,0,1,45
+33,0,0,51,treated,0,1,3,0,1,18
+28,0,0,56,treated,0,0,NA,NA,1,42
+40,1,0,54,treated,0,0,5,0,1,36
+37,1,0,56,treated,0,1,NA,NA,1,49
+24,0,1,33,treated,0,0,2,0,NA,NA
+25,0,0,60,treated,0,0,NA,NA,1,42
+22,0,1,64,treated,1,0,NA,NA,1,48
+35,0,0,48,treated,1,1,16,0,1,60
+36,0,0,62,treated,0,1,NA,NA,1,70
+29,0,0,54,treated,1,1,NA,NA,1,95
+40,0,1,59,treated,0,1,6,0,0,0
+28,0,1,49,treated,0,0,5,0,1,72
+29,0,1,31,treated,1,1,NA,NA,1,55
+31,0,0,42,treated,0,1,8,0,1,60
+34,0,1,61,treated,1,1,NA,NA,1,55
+36,0,1,40,treated,0,0,6,0,1,30
+27,0,0,49,treated,0,0,NA,NA,1,18
+31,0,0,41,treated,0,1,19,0,1,60
+34,0,1,41,treated,0,1,1,0,1,50
+33,0,1,65,treated,1,1,6,0,NA,NA
+29,0,0,45,treated,0,0,3,0,1,78
+23,0,1,30,treated,0,0,7,0,1,52
+38,0,1,69,treated,0,0,2,0,1,54
+31,0,0,55,treated,1,1,4,1,1,78
+28,0,1,48,treated,0,0,18,0,1,66
+32,0,0,50,treated,0,0,0,0,1,49
+30,0,0,65,treated,0,0,NA,NA,1,60
+33,0,0,42,treated,1,1,10,0,1,126
+31,0,1,45,treated,0,0,2,0,1,40
+25,0,0,35,treated,0,0,NA,NA,1,20
+27,0,0,36,treated,0,0,NA,NA,0,0
+25,0,0,48,treated,0,0,NA,NA,1,82
+36,0,0,47,treated,0,1,6,0,NA,NA
+29,0,0,47,treated,0,0,11,0,1,60
+33,0,1,52,treated,0,0,4,0,1,80
+29,0,0,50,treated,0,0,7,0,1,54
+26,1,0,35,treated,0,0,3,0,1,84
+25,0,1,44,treated,0,0,19,0,1,75
+30,0,0,57,treated,0,0,NA,NA,1,51
+35,0,1,33,treated,1,0,NA,0,NA,NA
+33,0,0,58,treated,0,1,NA,NA,1,60
+35,0,1,61,treated,1,0,NA,NA,1,45
+29,0,0,48,treated,0,0,NA,NA,NA,NA
+26,0,1,45,treated,1,1,NA,0,NA,NA
+38,0,0,41,treated,0,1,4,0,1,36
+38,0,0,48,treated,0,1,2,0,1,70
+38,1,0,39,treated,0,1,5,0,1,60
+24,0,0,54,treated,0,0,NA,NA,1,60
+30,0,1,59,treated,0,0,NA,NA,1,55
+35,0,1,45,treated,1,1,NA,0,1,70
+24,1,0,36,treated,0,0,NA,NA,1,36
+21,0,1,49,treated,1,0,NA,NA,NA,NA
+27,0,0,41,treated,0,0,NA,NA,1,56
+29,1,0,47,treated,0,0,NA,0,0,0
+29,0,0,44,treated,0,1,NA,NA,1,48
+28,0,0,48,treated,0,0,NA,NA,1,20
+39,0,1,43,treated,0,1,10,0,1,48
+28,1,0,59,treated,0,1,5,0,0,0
+26,0,1,56,treated,0,0,NA,NA,0,0
+27,0,1,53,treated,1,0,2,0,1,30
+27,0,1,61,treated,0,0,7,1,1,48
+34,0,0,64,treated,0,1,NA,NA,1,9
+37,0,0,48,treated,0,1,5,0,1,48
+29,0,1,68,treated,0,0,3,0,NA,NA
+27,0,0,36,treated,1,0,3,0,1,70
+28,0,1,51,treated,0,0,NA,NA,0,0
+35,1,1,44,treated,0,1,7,0,1,48
+32,0,1,57,treated,0,0,NA,NA,NA,NA
+30,0,1,48,treated,0,0,NA,NA,NA,NA
+36,0,1,32,treated,0,0,16,0,1,50
+36,0,0,41,treated,0,1,1,0,1,50
+33,0,1,60,treated,0,1,0,0,0,0
+25,0,0,59,treated,0,0,NA,0,1,57
+40,0,1,34,treated,0,1,NA,NA,0,0
+27,0,1,41,treated,0,0,NA,NA,1,NA
+33,1,0,45,treated,0,1,0,0,1,60
+33,1,1,44,treated,0,0,4,0,1,84
+28,0,0,58,treated,0,0,NA,0,1,72
+29,0,1,37,treated,0,1,3,0,1,52
+28,0,1,51,treated,0,1,5,0,1,NA
+30,0,1,55,treated,0,0,NA,NA,0,0
+30,0,0,41,treated,0,0,NA,0,1,36
+23,1,0,56,treated,0,0,NA,NA,0,0
+26,0,0,60,treated,0,0,4,0,1,54
+25,0,1,48,treated,0,0,NA,NA,1,54
+34,0,0,46,treated,0,1,NA,NA,0,0
+29,0,0,41,treated,0,0,NA,NA,1,50
+29,0,0,42,treated,0,0,NA,NA,0,0
+32,0,1,70,treated,0,0,NA,NA,1,42
+32,0,0,46,treated,1,1,18,1,1,70
+33,0,1,71,treated,0,0,NA,NA,NA,NA
+28,0,1,42,treated,0,0,NA,NA,1,60
+31,0,0,46,treated,0,0,0,0,NA,NA
+27,0,1,53,treated,0,0,NA,NA,1,15
+24,0,1,55,treated,0,0,NA,NA,1,78
+33,0,0,44,treated,0,1,NA,NA,0,0
+25,0,1,52,treated,1,1,NA,0,1,NA
+25,0,0,65,treated,0,0,NA,NA,1,72
+22,0,0,40,treated,0,0,NA,NA,1,47
+26,0,1,45,treated,1,0,NA,0,NA,NA
+30,0,1,54,treated,0,0,46,0,1,66
+31,0,1,69,treated,0,1,NA,NA,1,84
+31,0,0,64,treated,0,0,NA,NA,1,84
+26,0,0,37,treated,0,0,NA,NA,1,70
+31,0,1,60,treated,1,0,11,0,NA,NA
+28,0,1,57,treated,0,0,NA,0,0,0
+29,0,1,59,treated,0,0,NA,NA,1,54
+36,0,1,38,treated,0,1,2,0,1,40
+34,1,1,65,treated,1,0,NA,NA,NA,NA
+26,0,0,52,treated,0,0,NA,NA,1,49
+42,0,0,44,treated,0,1,NA,NA,NA,NA
+26,0,0,50,treated,0,0,NA,NA,0,0
+31,0,0,60,treated,0,0,NA,NA,1,92
+26,0,1,48,treated,0,1,NA,NA,1,45
+29,0,1,58,treated,0,0,2,0,1,30
+28,0,1,67,treated,0,1,NA,NA,1,35
+37,1,0,45,treated,0,1,14,0,1,50
+30,0,0,37,treated,0,0,16,1,1,54
+34,1,0,58,treated,1,0,7,0,1,77
+32,0,0,66,treated,0,0,4,0,0,0
+25,0,0,54,treated,0,0,NA,NA,0,0
+28,0,1,52,treated,0,0,NA,NA,0,0
+31,0,1,70,treated,0,1,NA,NA,0,0
+29,0,0,57,treated,0,0,NA,NA,0,0
+30,0,0,55,treated,0,0,NA,NA,1,9
+24,1,1,53,treated,1,0,NA,NA,1,60
+33,0,0,43,treated,0,1,12,0,NA,NA
+30,0,1,54,treated,0,0,NA,NA,1,60
+25,0,0,55,treated,0,0,NA,NA,1,92
+36,1,0,44,treated,0,1,NA,NA,NA,NA
+38,0,1,36,treated,0,1,12,0,1,72
+27,0,0,57,treated,0,0,NA,NA,NA,NA
+34,0,1,47,treated,0,1,8,0,1,12
+35,0,1,54,treated,0,0,NA,NA,NA,NA
+34,0,0,31,treated,0,0,11,0,1,42
+29,0,1,49,treated,0,1,17,0,1,38
+25,0,1,55,treated,0,0,NA,NA,1,96
+28,0,0,56,treated,0,0,NA,NA,1,36
+34,0,0,52,treated,0,1,7,0,1,5
+34,1,0,48,treated,0,0,NA,NA,1,70
+39,0,0,53,treated,0,1,NA,0,1,55
+37,0,1,44,treated,0,1,NA,0,1,126
+36,0,0,56,treated,0,0,NA,NA,0,0
+27,0,0,52,treated,0,0,2,0,1,72
+36,0,0,51,treated,1,1,2,0,1,100
+30,0,0,54,treated,0,1,NA,NA,1,36
+31,0,0,54,treated,0,1,NA,NA,0,0
+34,0,1,53,treated,0,1,12,0,NA,NA
+33,0,1,52,treated,0,1,29,0,1,35
+35,0,0,53,treated,0,1,NA,0,0,0
+35,0,1,47,treated,1,1,NA,1,1,45
+25,0,0,40,treated,0,0,NA,0,1,60
+29,0,0,54,treated,1,0,NA,NA,1,48
+32,0,1,46,treated,0,1,NA,NA,0,0
+26,0,1,51,treated,1,1,3,0,NA,NA
+26,0,0,35,treated,0,0,10,0,NA,NA
+35,0,0,56,treated,0,0,NA,NA,0,0
+29,0,1,65,treated,0,0,0,0,1,72
+29,0,1,55,treated,0,0,NA,NA,0,0
+30,0,0,63,treated,0,1,NA,NA,1,24
+31,0,1,54,treated,1,1,NA,NA,1,NA
+38,0,1,65,treated,0,1,31,0,1,40
+26,0,0,45,treated,1,0,NA,NA,1,60
+40,0,1,57,treated,0,0,NA,NA,NA,NA
+37,0,1,44,treated,0,0,0,0,NA,NA
+26,1,0,55,treated,0,0,NA,NA,1,NA
+23,1,0,56,treated,0,0,NA,NA,NA,NA
+31,0,1,57,treated,1,1,NA,NA,0,0
+30,0,0,61,treated,0,0,NA,NA,1,94
+27,0,1,66,treated,0,0,0,0,1,48
+25,0,0,63,treated,1,0,1,0,NA,NA
+26,0,0,49,treated,0,0,NA,NA,1,48
+32,0,1,58,treated,0,0,NA,0,1,20
+32,0,1,57,treated,0,1,19,0,1,56
+30,0,1,60,treated,0,1,NA,NA,0,0
+40,0,1,53,treated,0,1,3,0,NA,NA
+31,0,1,44,treated,0,1,6,0,1,69
+33,0,1,59,treated,1,1,NA,0,NA,NA
+26,0,0,54,treated,0,0,1,0,1,36
+26,1,1,43,treated,0,0,0,0,1,45
+30,0,1,53,treated,1,1,4,0,1,35
+33,0,1,54,treated,0,0,NA,0,1,40
+23,0,1,51,treated,0,0,5,0,1,48
+27,0,1,59,treated,1,1,NA,0,1,30
+28,0,0,64,treated,0,0,NA,NA,0,0
+39,1,0,59,treated,0,1,5,0,1,60
+28,0,1,32,treated,0,0,9,0,1,126
+27,0,0,45,treated,1,0,NA,1,1,35
+32,0,0,34,treated,0,1,NA,NA,1,30
+34,0,1,54,treated,0,1,NA,NA,1,8
+30,1,1,52,treated,0,0,NA,NA,1,72
+23,0,1,48,treated,1,0,NA,NA,0,0
+33,0,1,51,treated,0,1,4,0,1,NA
+28,0,0,59,treated,0,1,NA,NA,NA,NA
+26,0,0,57,treated,0,0,NA,NA,1,42
+28,0,1,50,treated,0,0,2,1,1,100
+27,0,1,52,treated,0,0,4,0,1,48
+24,0,0,58,treated,0,0,NA,NA,1,72
+27,0,1,57,treated,1,1,1,0,1,18
+34,0,1,55,treated,0,1,NA,NA,0,0
+31,0,1,39,treated,1,1,13,1,1,52
+39,0,1,38,treated,1,1,10,1,1,30
+26,0,1,49,treated,0,0,4,0,1,72
+39,0,1,62,treated,0,1,NA,NA,NA,NA
+36,0,0,52,treated,0,0,NA,NA,NA,NA
+27,0,1,56,treated,1,0,NA,0,1,62
+22,1,0,55,treated,1,0,NA,NA,0,0
+29,0,0,46,treated,0,0,NA,0,1,6
+31,0,0,45,treated,0,0,10,0,1,60
+30,0,0,54,treated,0,1,NA,NA,1,40
+26,0,1,55,treated,0,0,1,0,1,11
+23,0,0,55,treated,0,0,1,0,1,50
+23,1,0,31,treated,0,0,NA,0,1,70
+33,0,1,42,treated,1,1,10,0,1,48
+26,0,1,66,treated,0,0,0,0,1,66
+25,1,1,40,treated,1,1,NA,NA,1,NA
+27,0,1,59,treated,0,0,NA,NA,1,40
+31,0,0,47,treated,0,0,NA,NA,1,5
+32,0,0,52,treated,0,1,NA,0,1,48
+32,0,1,62,treated,0,1,NA,0,1,35
+28,0,1,49,treated,1,1,NA,0,1,56
+36,0,1,43,treated,0,1,3,0,1,NA
+28,0,0,58,treated,1,1,NA,NA,0,0
+31,0,1,47,treated,1,1,2,0,1,96
+40,0,1,33,treated,0,1,NA,NA,NA,NA
+21,1,0,61,treated,1,0,0,0,0,0
+39,0,1,56,treated,0,1,21,1,1,72
+32,0,1,69,treated,0,1,NA,NA,1,98
+41,0,0,59,treated,0,1,7,0,0,0
+36,0,1,57,treated,0,1,7,0,1,72
+30,0,0,57,treated,0,0,NA,NA,1,15
+22,0,1,54,treated,0,0,NA,NA,1,40
+30,0,1,43,treated,0,0,3,0,1,60
+28,0,0,48,treated,0,0,NA,NA,1,70
+24,0,1,49,treated,0,0,0,0,1,11
+36,0,1,53,treated,0,1,NA,NA,0,0
+29,0,0,42,treated,0,0,NA,NA,1,63
+29,0,1,55,treated,0,0,NA,NA,1,60
+39,1,0,60,treated,0,1,NA,0,0,0
+28,0,0,30,treated,1,0,5,0,1,48
+23,0,0,64,treated,0,0,1,0,0,0
+36,1,1,37,treated,0,0,NA,0,1,72
+30,0,1,35,treated,1,0,4,0,NA,NA
+27,0,1,57,treated,1,0,0,0,0,0
+35,0,0,68,treated,1,1,NA,NA,0,0
+22,1,1,44,treated,0,0,NA,0,NA,NA
+23,0,0,71,treated,0,0,NA,NA,0,0
+25,0,1,62,treated,0,0,NA,NA,1,NA
+32,0,1,38,treated,0,0,4,0,1,9
+30,0,1,43,treated,0,0,4,0,1,36
+32,0,0,50,treated,0,0,4,0,NA,NA
+35,0,1,61,treated,0,0,NA,NA,1,60
+28,0,1,57,treated,0,0,4,0,1,72
+40,0,1,53,treated,0,1,NA,0,1,70
+22,0,0,65,treated,0,0,NA,NA,1,14
+24,0,1,64,treated,1,1,0,0,1,50
+32,0,0,54,treated,0,0,NA,NA,1,40
+36,0,1,64,treated,0,1,2,0,1,65
+35,0,1,56,treated,0,1,2,0,1,60
+35,0,1,31,treated,0,1,2,0,1,18
+36,0,0,45,treated,0,0,7,0,1,46
+34,0,0,35,treated,0,1,NA,NA,1,18
+32,0,1,30,treated,0,0,5,0,1,9
+35,0,0,55,treated,0,0,NA,NA,0,0
+34,0,1,61,treated,0,1,NA,NA,0,0
+34,0,0,39,treated,0,1,10,0,1,25
+27,1,1,56,treated,0,0,2,0,0,0
+31,0,1,59,treated,0,0,NA,NA,0,0
+27,0,1,42,treated,0,0,5,0,1,34
+32,0,0,53,treated,0,1,NA,NA,1,9
+29,0,0,54,treated,0,0,NA,NA,1,60
+27,0,0,42,treated,0,1,5,0,1,42
+31,0,0,57,treated,1,0,1,0,NA,NA
+24,1,0,58,treated,0,0,0,NA,0,0
+35,1,1,57,treated,0,1,6,0,1,72
+29,0,0,42,treated,1,0,NA,NA,NA,NA
+29,0,1,46,treated,1,1,15,0,NA,NA
+29,0,0,48,treated,0,0,NA,NA,1,54
+28,1,0,59,treated,0,1,18,0,NA,NA
+26,0,1,57,treated,1,0,0,0,1,48
+32,0,0,46,treated,0,1,3,0,1,47
+33,0,1,58,treated,0,1,0,0,1,48
+34,0,1,43,treated,1,0,NA,0,1,60
+25,0,1,60,treated,1,0,NA,NA,1,80
+29,0,0,55,treated,0,0,0,0,1,45
+31,0,1,54,treated,0,1,7,0,1,70
+30,0,1,47,treated,0,1,NA,0,NA,NA
+24,0,1,46,treated,0,0,NA,0,1,70
+29,0,1,38,treated,0,1,NA,0,NA,NA
+34,0,0,55,treated,0,1,3,0,1,60
+24,0,0,61,treated,0,0,NA,NA,1,50
+28,0,0,44,treated,0,1,NA,NA,1,72
+34,0,1,41,treated,0,0,NA,NA,1,60
+33,0,0,59,treated,0,0,NA,0,1,70
+34,0,0,52,treated,0,1,NA,NA,1,75
+37,0,0,41,treated,0,1,NA,NA,1,35
+39,0,1,49,treated,0,1,7,0,1,50
+28,0,0,55,treated,0,0,4,0,0,0
+37,0,1,45,treated,1,1,3,0,NA,NA
+37,0,1,52,treated,0,1,4,0,1,25
+36,1,0,55,treated,0,0,NA,NA,1,46
+29,0,1,57,treated,0,0,NA,NA,NA,NA
+38,0,0,43,treated,0,1,3,0,1,37
+25,0,0,64,treated,0,0,NA,NA,0,0
+29,0,0,59,treated,0,0,NA,NA,1,72
+28,0,1,52,treated,0,0,NA,NA,1,66
+39,0,1,55,treated,0,1,1,0,1,48
+27,0,1,60,treated,0,0,NA,NA,1,48
+39,0,1,45,treated,0,0,5,0,NA,NA
+27,0,1,57,treated,0,0,NA,NA,0,0
+30,1,1,31,treated,0,0,NA,0,1,54
+36,0,1,32,treated,0,0,15,0,1,23
+36,0,0,63,treated,0,0,NA,NA,1,10
+29,0,0,54,treated,0,1,NA,NA,1,30
+30,0,1,44,treated,1,0,2,0,1,56
+35,0,0,49,treated,1,1,5,0,1,50
+39,0,1,41,treated,0,1,7,0,1,32
+40,0,1,50,treated,0,1,5,0,1,84
+33,0,1,63,treated,0,1,13,0,1,30
+24,1,0,38,treated,0,1,12,1,1,70
+37,0,0,51,treated,0,0,2,0,1,24
+22,0,0,55,treated,0,0,NA,NA,1,55
+30,0,0,43,treated,0,1,NA,NA,NA,NA
+27,0,0,56,treated,0,0,11,0,1,96
+31,0,0,53,treated,0,1,NA,NA,0,0
+27,0,1,63,treated,0,0,NA,NA,1,96
+36,0,1,65,treated,0,1,3,0,1,NA
+36,0,0,42,treated,0,0,NA,NA,1,40
+20,0,1,56,treated,0,0,NA,NA,0,0
+33,0,0,56,treated,0,1,16,0,1,48
+25,0,0,51,treated,0,0,4,0,1,36
+26,0,1,52,treated,0,0,NA,NA,0,0
+27,0,1,70,treated,1,0,NA,NA,1,66
+29,0,1,56,treated,0,0,NA,NA,1,60
+31,0,0,54,treated,0,0,NA,NA,0,0
+29,0,1,64,treated,1,0,NA,NA,0,0
+28,0,1,51,treated,0,0,3,0,1,42
+29,0,1,51,treated,1,0,100,0,NA,NA
+34,0,0,40,treated,0,1,NA,NA,1,48
+32,1,0,44,treated,0,0,NA,NA,0,0
+22,1,0,30,treated,0,1,15,0,1,40
+30,0,0,53,treated,0,0,NA,NA,1,12
+34,0,1,50,treated,0,1,NA,1,1,50
+26,0,0,58,treated,0,1,NA,NA,1,12
+24,0,1,44,treated,0,0,NA,NA,1,42
+31,0,0,59,treated,0,1,NA,NA,1,50
+34,1,0,50,treated,0,1,6,0,1,70
+33,0,1,62,treated,0,1,NA,NA,1,98
+29,0,0,42,treated,0,0,5,0,1,60
+32,0,1,60,treated,0,1,NA,NA,1,60
+29,0,0,33,treated,0,0,NA,NA,1,52
+32,0,1,59,treated,1,1,NA,NA,1,35
+33,0,1,52,treated,1,1,2,0,1,60
+35,0,1,55,treated,1,0,NA,0,NA,NA
+33,0,0,54,treated,0,1,7,0,1,65
+39,0,1,44,treated,0,1,3,0,NA,NA
+27,0,1,54,treated,0,0,5,0,1,126
+23,0,0,37,treated,0,0,NA,NA,1,40
+22,0,0,65,treated,0,0,NA,NA,1,60
+24,0,1,59,treated,1,1,NA,NA,1,20
+24,1,1,44,treated,1,1,NA,NA,1,21
+25,0,1,44,treated,0,1,21,0,1,42
+27,0,0,40,treated,0,0,3,0,1,72
+27,0,0,41,treated,0,1,8,1,1,50
+29,0,1,48,treated,0,1,6,0,1,126
+26,1,1,46,treated,0,0,NA,NA,0,0
+27,0,0,64,treated,0,0,NA,NA,1,60
+36,0,1,61,treated,0,0,NA,NA,1,40
+26,0,0,49,treated,0,0,6,0,1,66
+26,1,0,53,treated,0,0,2,0,1,50
+23,0,0,60,treated,0,0,NA,NA,1,36
+32,0,0,52,treated,0,0,NA,NA,1,8
+27,0,1,66,treated,0,0,NA,NA,0,0
+38,0,1,50,treated,1,1,3,0,1,40
+27,0,1,57,treated,0,0,0,0,1,1
+29,0,1,46,treated,1,1,NA,NA,1,50
+30,0,1,52,treated,1,1,3,0,NA,NA
+37,0,0,46,treated,1,0,7,0,1,56
+23,0,1,37,treated,1,1,NA,NA,1,40
+30,0,1,58,treated,0,0,5,0,NA,NA
+27,0,0,60,treated,0,0,NA,NA,1,120
+34,0,1,49,treated,0,0,10,0,1,48
+35,0,0,52,treated,0,1,NA,0,1,56
+31,0,1,44,treated,0,0,5,0,1,38
+37,0,0,30,treated,0,1,18,0,NA,NA
+22,0,1,51,treated,0,0,NA,NA,NA,NA
+30,0,1,57,treated,0,0,NA,NA,NA,NA
+24,0,1,58,treated,0,0,NA,NA,1,24
+30,0,1,56,treated,0,0,NA,NA,1,66
+29,0,1,59,treated,0,0,NA,NA,1,48
+28,0,0,38,treated,0,0,NA,NA,1,49
+26,0,0,57,treated,0,0,NA,NA,NA,NA
+27,0,0,40,treated,0,0,15,0,1,78
+31,0,0,43,treated,0,0,NA,NA,0,0
+40,0,0,54,treated,0,1,8,0,1,56
+29,0,0,52,treated,0,0,NA,NA,0,0
+28,1,0,57,treated,0,0,NA,NA,1,56
+30,0,0,55,treated,0,1,NA,NA,NA,NA
+30,0,1,55,treated,1,1,25,0,1,54
+35,0,1,45,treated,0,0,5,0,1,56
+29,0,1,39,treated,0,0,NA,NA,0,0
+26,0,1,60,treated,0,0,NA,NA,NA,NA
+31,0,0,41,treated,0,0,3,0,1,80
+35,0,1,53,treated,0,1,NA,NA,NA,NA
+32,1,0,39,treated,0,1,27,0,1,91
+30,1,0,34,treated,0,0,NA,NA,0,0
+38,0,0,56,treated,0,1,NA,NA,0,0
+27,0,0,57,treated,1,0,NA,NA,0,0
+28,0,0,37,treated,0,0,NA,0,1,30
+29,0,1,51,treated,1,0,16,0,1,18
+29,0,1,54,treated,1,0,3,0,1,30
+30,0,0,58,treated,0,0,3,0,1,72
+31,0,0,45,treated,0,0,NA,NA,1,40
+25,0,1,55,treated,0,0,NA,NA,1,66
+36,0,0,52,treated,1,1,NA,NA,NA,NA
+24,0,0,50,treated,0,0,5,0,1,60
+40,1,0,60,treated,1,0,15,0,1,84
+36,0,1,57,treated,0,1,NA,NA,1,57
+30,0,1,58,treated,0,1,NA,NA,0,0
+24,0,0,40,treated,0,0,NA,NA,0,0
+29,0,0,58,treated,1,0,NA,NA,1,NA
+28,0,1,45,treated,0,0,NA,NA,NA,NA
+40,0,0,41,treated,0,0,NA,0,1,35
+30,0,0,53,control,0,0,1,0,1,16
+37,0,1,36,control,0,0,7,0,1,50
+37,0,0,53,control,0,1,NA,NA,1,42
+24,0,0,45,control,0,0,NA,NA,0,0
+25,0,1,52,control,0,0,0,0,1,20
+40,0,1,52,control,0,1,2,0,1,50
+28,0,1,47,control,0,0,6,0,1,60
+38,0,1,39,control,0,1,7,0,1,10
+30,0,0,37,control,0,0,NA,NA,1,63
+35,0,0,58,control,0,1,NA,NA,0,0
+38,0,0,54,control,0,1,1,0,1,1
+25,0,0,36,control,1,0,0,0,0,0
+27,0,1,59,control,1,0,NA,NA,0,0
+22,0,1,64,control,0,0,7,0,1,49
+26,0,1,66,control,0,0,NA,NA,0,0
+36,0,0,57,control,0,1,0,0,NA,NA
+33,0,1,58,control,0,0,NA,NA,NA,NA
+39,1,0,57,control,0,1,NA,0,NA,NA
+32,0,1,52,control,1,1,4,0,1,56
+34,0,1,58,control,0,1,21,0,1,8
+26,0,0,54,control,0,0,NA,NA,0,0
+25,0,1,49,control,0,0,NA,NA,1,30
+26,0,1,44,control,0,1,24,1,0,0
+35,0,1,38,control,0,1,1,0,1,40
+26,0,0,69,control,0,0,NA,NA,NA,NA
+33,0,0,62,control,1,1,NA,NA,NA,NA
+38,0,0,58,control,0,1,2,0,0,0
+30,0,0,54,control,1,0,NA,NA,0,0
+34,0,0,54,control,0,0,NA,0,NA,NA
+30,0,1,46,control,0,0,7,1,1,66
+30,0,1,57,control,0,1,NA,NA,1,60
+25,0,1,65,control,1,0,NA,0,0,0
+29,0,0,45,control,0,0,NA,NA,0,0
+28,0,0,60,control,0,0,NA,NA,1,17
+30,0,1,52,control,0,1,NA,NA,1,40
+27,0,0,50,control,0,0,NA,NA,1,11
+33,0,0,48,control,0,1,3,0,1,60
+28,0,1,43,control,1,0,11,0,1,68
+34,0,0,35,control,1,0,5,0,1,50
+30,0,1,51,control,0,1,30,0,NA,NA
+24,0,0,73,control,0,0,NA,NA,0,0
+26,0,1,61,control,0,0,NA,NA,NA,NA
+34,0,1,64,control,0,1,12,0,1,8
+36,0,1,55,control,0,1,0,0,NA,NA
+26,0,0,52,control,0,0,4,0,NA,NA
+33,0,1,63,control,0,0,3,0,1,40
+31,1,0,37,control,0,1,10,0,1,45
+26,0,1,70,control,0,0,NA,NA,1,15
+26,1,0,39,control,0,1,4,0,1,84
+28,0,1,53,control,0,1,12,0,0,0
+27,0,0,49,control,0,0,NA,NA,0,0
+25,0,1,62,control,0,0,NA,NA,1,5
+26,0,0,56,control,0,0,NA,NA,NA,NA
+27,0,1,60,control,1,0,NA,NA,0,0
+30,0,0,53,control,0,0,NA,NA,0,0
+26,0,1,57,control,0,0,NA,NA,0,0
+40,0,1,54,control,0,1,NA,0,NA,NA
+38,0,0,49,control,0,1,NA,NA,0,0
+33,0,1,59,control,0,1,3,0,1,44
+30,0,0,62,control,0,0,8,0,1,72
+34,0,1,52,control,0,0,NA,0,NA,NA
+30,1,1,63,control,0,0,NA,NA,NA,NA
+39,0,1,40,control,0,1,5,0,NA,NA
+27,0,0,62,control,0,0,NA,0,NA,NA
+28,1,0,70,control,0,0,NA,NA,0,0
+26,0,1,68,control,0,0,4,1,1,20
+23,0,0,45,control,0,0,10,0,1,56
+30,1,1,52,control,1,1,NA,NA,0,0
+29,0,1,56,control,1,1,NA,NA,0,0
+34,1,0,66,control,0,1,5,0,NA,NA
+37,0,1,37,control,1,1,2,0,1,12
+29,0,1,56,control,1,1,NA,0,0,0
+31,0,0,67,control,0,0,NA,NA,0,0
+34,0,1,45,control,1,1,9,0,1,48
+28,0,0,60,control,0,0,NA,NA,0,0
+27,0,0,39,control,1,0,2,0,1,60
+38,0,0,42,control,0,0,NA,NA,1,20
+33,0,0,35,control,0,0,4,0,1,42
+26,0,1,55,control,1,1,NA,NA,1,54
+26,0,1,58,control,0,0,NA,NA,NA,NA
+23,1,0,37,control,0,0,10,0,1,16
+27,0,0,56,control,0,0,NA,NA,NA,NA
+39,1,0,51,control,0,1,22,0,NA,NA
+35,0,1,61,control,0,0,0,0,1,18
+31,0,0,37,control,0,0,NA,NA,0,0
+27,0,1,57,control,0,0,NA,NA,0,0
+35,1,0,51,control,0,1,2,0,1,48
+26,0,0,46,control,0,0,5,0,1,60
+29,0,0,57,control,0,1,NA,NA,NA,NA
+38,0,1,59,control,0,1,5,0,1,49
+29,0,0,34,control,0,0,1,0,0,0
+32,0,1,40,control,0,0,8,0,1,32
+27,0,1,51,control,1,1,3,0,1,24
+30,0,1,55,control,0,1,NA,NA,0,0
+32,0,0,38,control,0,0,30,0,NA,NA
+31,0,0,60,control,0,0,NA,NA,1,48
+31,0,0,50,control,0,1,NA,NA,NA,NA
+27,0,0,62,control,0,0,NA,NA,0,0
+38,0,1,64,control,0,0,NA,NA,NA,NA
+29,0,1,39,control,0,1,18,0,1,12
+25,0,0,64,control,0,0,NA,NA,0,0
+34,0,0,43,control,1,1,NA,NA,1,18
+26,0,0,52,control,0,0,NA,NA,0,0
+32,0,0,45,control,0,0,NA,NA,NA,NA
+29,0,0,56,control,0,0,NA,NA,1,48
+30,0,0,54,control,0,0,NA,0,NA,NA
+38,0,1,40,control,0,1,2,0,1,56
+29,0,0,66,control,0,0,NA,NA,NA,NA
+27,0,0,36,control,0,1,NA,NA,1,50
+29,0,1,54,control,1,1,0,0,0,0
+29,0,1,55,control,0,1,4,0,1,60
+28,0,0,56,control,0,0,NA,NA,1,72
+30,0,1,54,control,1,1,NA,NA,0,0
+36,0,1,45,control,0,1,2,0,1,36
+40,0,1,45,control,0,1,8,0,1,126
+26,0,0,55,control,0,0,NA,NA,NA,NA
+37,0,1,51,control,0,1,NA,NA,1,119
+35,0,1,48,control,0,1,5,0,1,30
+32,0,0,35,control,0,0,NA,NA,0,0
+29,0,0,49,control,0,0,NA,NA,0,0
+40,0,0,43,control,0,1,NA,NA,1,40
+28,0,1,62,control,0,0,0,0,0,0
+39,0,1,65,control,0,1,14,0,NA,NA
+32,0,1,71,control,0,1,NA,NA,NA,NA
+34,0,1,49,control,0,1,8,1,NA,NA
+23,0,1,53,control,0,0,NA,NA,1,NA
+31,0,0,55,control,1,1,NA,0,0,0
+31,0,0,63,control,0,0,NA,NA,0,0
+25,0,0,43,control,0,0,NA,NA,1,30
+28,0,1,52,control,0,0,NA,NA,0,0
+25,0,1,37,control,1,0,3,0,0,0
+33,0,0,55,control,0,1,NA,NA,NA,NA
+23,1,0,34,control,0,0,NA,NA,0,0
+26,0,1,57,control,0,1,NA,NA,0,0
+80,0,0,47,control,0,1,28,0,NA,NA
+32,0,1,46,control,0,0,3,0,1,30
+27,0,0,50,control,0,0,NA,NA,0,0
+34,0,1,67,control,0,1,NA,0,NA,NA
+40,1,1,52,control,1,1,2,0,1,40
+27,0,0,65,control,0,0,NA,NA,0,0
+30,0,0,60,control,0,0,NA,NA,1,66
+25,0,1,56,control,0,0,NA,0,NA,NA
+32,0,1,36,control,0,0,NA,0,1,52
+28,0,1,40,control,1,0,NA,NA,1,10
+31,0,0,58,control,1,0,NA,NA,0,0
+25,0,1,64,control,0,0,NA,NA,NA,NA
+27,0,1,66,control,0,0,NA,NA,1,20
+25,0,0,54,control,0,0,NA,NA,NA,NA
+27,0,0,34,control,0,0,2,0,1,40
+27,0,0,45,control,0,0,12,0,1,28
+26,0,0,35,control,0,0,NA,0,1,90
+30,0,1,32,control,1,1,4,0,NA,NA
+32,0,1,40,control,0,0,NA,NA,0,0
+32,0,1,54,control,0,0,NA,NA,0,0
+26,0,0,47,control,0,0,4,0,1,60
+35,0,1,37,control,1,1,11,0,NA,NA
+35,0,0,38,control,0,1,1,0,1,25
+26,1,0,70,control,0,0,NA,NA,0,0
+28,0,1,39,control,0,0,NA,NA,1,18
+25,0,1,48,control,0,0,NA,NA,0,0
+29,1,0,37,control,0,0,6,0,1,91
+33,0,1,59,control,0,0,NA,NA,1,15
+24,0,1,61,control,1,0,NA,NA,1,60
+27,0,0,57,control,0,0,NA,NA,NA,NA
+40,1,0,41,control,0,1,NA,NA,1,60
+27,0,0,43,control,0,0,NA,NA,0,0
+33,0,0,58,control,1,0,NA,NA,1,21
+28,0,0,55,control,0,0,NA,NA,1,60
+28,0,1,31,control,0,0,NA,NA,1,70
+31,0,1,62,control,0,0,1,0,NA,NA
+32,0,0,60,control,0,0,NA,NA,0,0
+23,0,1,61,control,1,0,1,NA,NA,NA
+36,0,1,56,control,0,1,NA,NA,1,36
+36,0,1,56,control,1,1,NA,NA,1,8
+29,0,0,61,control,0,0,0,0,NA,NA
+25,0,0,61,control,0,0,NA,0,0,0
+34,0,1,53,control,0,1,NA,NA,1,10
+24,1,1,56,control,1,1,6,0,1,60
+26,0,0,61,control,0,0,NA,NA,NA,NA
+37,1,1,65,control,0,1,NA,NA,NA,NA
+35,0,1,39,control,0,1,14,0,NA,NA
+34,0,1,65,control,0,1,8,0,1,48
+33,0,0,46,control,0,1,NA,NA,1,21
+31,0,0,55,control,1,0,NA,0,NA,NA
+31,0,1,40,control,1,1,4,0,NA,NA
+30,0,0,51,control,0,0,NA,NA,0,0
+31,0,1,63,control,0,1,NA,0,0,0
+27,0,1,61,control,1,1,NA,NA,0,0
+31,0,1,59,control,0,0,NA,NA,1,52
+30,0,1,62,control,0,0,NA,NA,1,50
+31,0,0,65,control,0,1,NA,0,1,30
+26,0,0,56,control,0,0,NA,NA,0,0
+29,0,1,50,control,1,1,NA,NA,0,0
+26,0,0,60,control,0,0,NA,NA,NA,NA
+29,0,1,50,control,0,1,NA,0,1,21
+26,0,0,64,control,1,0,NA,NA,0,0
+27,1,0,40,control,0,1,NA,NA,NA,NA
+30,0,0,40,control,0,0,NA,NA,1,60
+28,0,1,43,control,0,0,NA,0,1,20
+26,0,0,42,control,0,0,NA,0,0,0
+29,0,0,54,control,0,0,16,0,0,0
+29,0,1,59,control,0,0,NA,NA,1,90
+30,0,0,36,control,0,0,NA,0,1,90
+36,0,1,52,control,0,1,5,0,1,12
+26,0,1,34,control,1,1,5,0,1,NA
+29,0,1,64,control,0,1,2,1,1,72
+29,0,0,56,control,0,0,NA,NA,1,72
+29,0,1,55,control,0,1,2,0,1,45
+27,0,1,38,control,0,0,7,1,1,22
+25,0,0,48,control,0,1,2,0,1,35
+26,0,0,58,control,1,0,NA,NA,NA,NA
+27,1,1,49,control,0,0,0,0,0,0
+22,1,1,56,control,0,1,NA,NA,0,0
+35,0,0,35,control,0,0,NA,NA,0,0
+29,0,0,60,control,0,1,NA,0,1,35
+19,1,1,58,control,1,0,3,0,NA,NA
+35,0,0,44,control,0,1,NA,NA,1,120
+35,1,1,58,control,0,1,28,0,NA,NA
+29,0,0,42,control,0,0,NA,0,1,40
+20,1,0,56,control,0,0,NA,NA,1,90
+26,0,0,34,control,0,0,NA,NA,1,66
+27,0,0,57,control,0,0,NA,0,0,0
+21,1,0,46,control,0,0,NA,NA,0,0
+29,0,0,66,control,0,0,NA,NA,NA,NA
+32,0,1,64,control,0,1,12,0,1,30
+21,1,0,44,control,1,0,NA,NA,0,0
+34,0,1,56,control,1,1,NA,NA,1,60
+27,0,1,62,control,0,0,4,0,1,50
+26,0,0,43,control,0,0,NA,NA,1,30
+29,0,0,57,control,1,0,NA,NA,0,0
+34,0,1,48,control,1,1,2,0,NA,NA
+32,0,1,60,control,0,1,5,0,0,0
+33,0,1,47,control,0,1,3,0,NA,NA
+32,1,0,56,control,0,1,NA,NA,1,72
+39,1,1,44,control,0,1,6,0,1,78
+40,0,1,45,control,1,1,5,0,1,48
+31,0,0,55,control,0,0,0,0,1,54
+28,0,0,65,control,0,0,NA,NA,0,0
+29,0,0,54,control,0,1,NA,NA,1,48
+37,0,1,62,control,0,1,NA,NA,0,0
+25,0,1,45,control,0,0,NA,NA,0,0
+25,0,1,64,control,0,0,NA,NA,NA,NA
+30,1,0,37,control,0,1,NA,NA,NA,NA
+36,0,0,43,control,1,1,NA,NA,1,65
+28,0,0,46,control,0,0,NA,1,0,0
+31,0,0,40,control,1,0,NA,NA,0,0
+25,0,1,54,control,1,0,NA,NA,NA,NA
+31,0,0,53,control,0,0,NA,NA,1,40
+21,0,0,71,control,0,0,NA,NA,NA,NA
+34,0,0,59,control,0,1,NA,NA,1,14
+28,0,1,44,control,0,0,2,0,1,15
+25,0,0,35,control,0,0,NA,NA,1,10
+28,0,1,56,control,0,0,NA,NA,0,0
+34,0,1,55,control,0,0,NA,NA,0,0
+33,0,1,55,control,0,1,3,0,0,0
+30,0,1,48,control,1,1,8,0,1,50
+35,0,0,53,control,0,0,11,0,1,49
+31,0,0,61,control,0,0,NA,NA,1,120
+36,0,1,51,control,0,1,7,0,1,56
+29,0,1,54,control,0,0,NA,NA,0,0
+32,0,1,65,control,0,0,NA,NA,NA,NA
+26,0,1,59,control,0,0,NA,NA,0,0
+34,0,1,66,control,0,1,5,0,1,12
+29,0,0,38,control,0,0,NA,NA,1,11
+28,0,1,58,control,1,0,0,0,NA,NA
+30,0,0,35,control,1,0,2,0,NA,NA
+30,0,0,56,control,0,0,NA,1,0,0
+26,0,1,56,control,0,0,NA,NA,1,60
+32,0,0,54,control,1,0,NA,NA,0,0
+31,0,1,57,control,0,0,9,0,1,126
+29,0,0,62,control,1,1,NA,0,0,0
+31,0,1,53,control,0,0,4,0,1,65
+36,0,0,37,control,0,1,0,0,NA,NA
+27,0,1,57,control,0,0,1,0,NA,NA
+27,0,0,61,control,0,1,NA,NA,1,36
+36,0,1,45,control,0,0,10,0,1,60
+29,1,0,50,control,0,1,12,1,1,72
+26,0,0,54,control,0,0,5,0,1,57
+26,0,1,57,control,0,0,NA,NA,1,25
+37,0,1,60,control,1,1,5,0,0,0
+33,0,0,37,control,0,1,9,0,1,80
+40,1,0,53,control,0,1,7,0,NA,NA
+25,0,0,63,control,0,0,NA,NA,0,0
+28,0,1,38,control,0,0,NA,NA,NA,NA
+36,1,1,52,control,1,1,12,0,1,66
+30,0,1,55,control,1,1,5,1,1,37
+34,0,1,59,control,0,1,2,0,1,30
+35,0,0,47,control,0,1,NA,NA,NA,NA
+38,0,1,59,control,0,1,NA,NA,0,0
+35,0,1,47,control,0,1,NA,0,1,63
+33,0,1,67,control,0,1,NA,NA,1,56
+32,0,1,55,control,0,1,NA,NA,1,45
+27,0,1,60,control,0,0,NA,NA,0,0
+27,1,0,52,control,0,1,5,0,0,0
+25,0,1,54,control,1,1,NA,NA,1,13
+25,0,0,52,control,0,0,0,0,0,0
+26,0,1,57,control,0,0,NA,NA,0,0
+26,0,1,55,control,1,1,0,0,1,12
+32,0,1,40,control,0,1,NA,NA,0,0
+32,0,1,59,control,0,0,NA,NA,1,48
+26,0,1,53,control,1,0,NA,0,NA,NA
+36,0,1,36,control,0,0,NA,NA,NA,NA
+27,0,1,53,control,0,1,NA,NA,1,48
+24,1,1,73,control,1,1,25,0,NA,NA
+38,0,1,58,control,1,1,15,0,NA,NA
+30,0,1,53,control,0,0,NA,NA,1,70
+35,0,0,51,control,0,1,NA,NA,1,70
+25,0,0,56,control,0,0,NA,NA,0,0
+22,0,1,61,control,1,0,NA,NA,0,0
+29,1,1,64,control,0,0,NA,NA,0,0
+37,0,0,58,control,0,1,NA,1,0,0
+24,0,0,60,control,0,0,NA,NA,1,24
+26,0,1,70,control,0,0,4,0,1,70
+27,0,1,58,control,0,0,3,0,NA,NA
+31,0,1,63,control,0,1,NA,NA,1,30
+32,0,0,59,control,0,1,NA,NA,0,0
+22,0,0,60,control,1,0,1,0,0,0
+27,1,1,66,control,0,1,NA,NA,NA,NA
+34,0,1,43,control,0,0,NA,0,1,64
+30,0,0,46,control,0,1,9,0,1,10
+22,0,0,35,control,0,0,NA,NA,1,70
+38,0,0,47,control,0,1,NA,0,1,36
+27,0,0,59,control,0,0,NA,NA,0,0
+21,0,1,63,control,0,0,NA,NA,1,14
+35,0,0,44,control,0,1,20,0,1,21
+32,0,0,40,control,0,0,4,0,0,0
+27,0,0,55,control,0,0,NA,NA,0,0
+32,0,0,55,control,0,1,NA,NA,1,78
+28,0,0,55,control,0,0,NA,NA,NA,NA
+32,0,0,46,control,0,0,NA,0,1,96
+36,0,0,38,control,0,1,NA,NA,1,40
+38,0,1,37,control,0,1,3,0,NA,NA
+33,0,1,67,control,1,0,NA,NA,1,60
+32,0,1,40,control,0,1,NA,NA,NA,NA
+33,0,0,50,control,1,1,4,0,1,8
+38,0,0,39,control,0,1,15,0,0,0
+35,1,0,53,control,0,1,0,0,1,60
+39,0,1,52,control,0,1,6,0,1,48
+28,0,0,55,control,0,0,5,0,1,36
+27,0,1,47,control,0,0,10,0,1,92
+25,0,1,65,control,0,0,NA,NA,1,30
+23,1,0,33,control,0,0,11,0,1,12
+28,0,0,57,control,0,0,NA,NA,0,0
+27,0,1,53,control,1,0,4,0,0,0
+35,0,0,59,control,0,1,NA,NA,NA,NA
+29,0,0,64,control,0,1,NA,NA,0,0
+37,0,0,46,control,0,0,12,0,0,0
+33,0,1,59,control,0,0,NA,NA,0,0
+38,0,0,64,control,1,1,NA,NA,NA,NA
+28,0,1,56,control,1,0,3,0,NA,NA
+38,1,0,64,control,0,1,NA,NA,1,84
+26,1,1,47,control,0,0,NA,NA,NA,NA
+26,0,0,60,control,0,0,1,0,NA,NA
+35,0,1,41,control,1,1,4,0,1,8
+23,1,1,65,control,0,0,NA,NA,0,0
+28,0,1,57,control,0,0,NA,NA,0,0
+32,0,1,40,control,0,0,NA,NA,0,0
+26,0,0,65,control,0,0,0,0,1,40
+33,0,0,56,control,0,0,NA,NA,1,30
+33,0,1,61,control,0,1,0,0,NA,NA
+26,0,0,61,control,0,0,NA,NA,1,60
+31,0,0,52,control,0,0,NA,NA,0,0
+27,0,1,59,control,0,0,NA,NA,NA,NA
+34,0,0,47,control,0,1,NA,0,1,40
+32,0,1,60,control,0,0,2,0,NA,NA
+39,0,0,44,control,0,1,NA,0,NA,NA
+35,0,1,51,control,0,1,0,0,0,0
+26,0,1,62,control,0,0,4,0,1,67
+31,0,0,51,control,0,0,4,0,1,65
+27,0,0,59,control,0,0,NA,NA,1,52
+21,1,0,47,control,0,0,NA,NA,NA,NA
+37,0,1,53,control,0,1,NA,0,0,0
+40,0,1,56,control,0,1,11,0,NA,NA
+34,0,1,50,control,0,1,NA,NA,0,0
+37,0,1,53,control,0,0,NA,NA,NA,NA
+25,0,1,53,control,1,0,NA,NA,1,10
+32,0,0,70,control,0,1,NA,0,NA,NA
+31,1,0,70,control,0,0,NA,NA,NA,NA
+39,0,0,40,control,0,1,10,1,1,66
+32,0,1,65,control,0,1,5,0,1,48
+33,0,0,69,control,1,0,NA,NA,0,0
+31,0,1,49,control,0,0,6,0,0,0
+37,0,1,58,control,0,1,13,0,1,66
+23,1,1,62,control,0,0,1,0,0,0
+39,0,0,48,control,0,1,6,0,1,14
+27,0,0,38,control,0,0,NA,NA,1,20
+24,0,0,63,control,0,0,NA,NA,0,0
+28,0,1,58,control,1,1,NA,NA,1,60
+23,0,0,63,control,0,0,NA,0,1,42
+29,0,1,36,control,0,0,12,0,1,60
+28,0,1,54,control,0,0,5,0,NA,NA
+25,0,0,56,control,0,0,NA,NA,1,60
+26,1,0,54,control,0,1,8,0,1,84
+30,0,0,54,control,0,0,NA,NA,0,0
+27,0,1,42,control,1,1,0,0,NA,NA
+36,0,0,60,control,0,1,NA,0,1,20
+28,0,1,66,control,1,1,NA,NA,0,0
+39,0,1,42,control,0,1,5,0,1,66
+36,0,0,56,control,0,1,NA,0,NA,NA
+28,0,1,54,control,1,0,NA,NA,NA,NA
+33,0,0,48,control,0,0,4,0,1,30
+28,0,1,52,control,0,0,NA,NA,1,58
+40,0,0,56,control,0,1,10,0,NA,NA
+27,0,0,54,control,0,0,NA,NA,1,35
+31,0,0,72,control,0,1,NA,NA,1,18
+27,0,0,35,control,0,0,NA,NA,1,40
+28,0,1,63,control,0,0,NA,NA,0,0
+24,0,0,33,control,0,0,7,NA,0,0
+32,0,1,54,control,0,1,4,0,NA,NA
+36,0,1,55,control,0,1,NA,NA,NA,NA
+25,0,1,58,control,1,0,NA,NA,NA,NA
+38,0,0,61,control,0,1,NA,0,1,10
+37,0,1,53,control,0,0,NA,NA,1,78
+35,1,0,56,control,0,1,NA,NA,NA,NA
+31,0,1,48,control,1,1,NA,0,NA,NA
+30,0,0,49,control,0,0,1,NA,1,70
+22,1,0,41,control,0,0,NA,NA,0,0
+28,0,1,54,control,1,1,NA,0,NA,NA
+30,0,0,65,control,0,0,2,1,1,36
+27,0,1,58,control,0,0,NA,NA,NA,NA
+31,0,0,42,control,0,0,0,0,0,0
+22,0,0,53,control,0,0,NA,NA,1,NA
+26,0,0,61,control,0,0,NA,NA,0,0
+31,0,0,56,control,0,0,9,0,1,45
+30,0,0,53,control,0,0,NA,NA,0,0
+31,0,0,62,control,0,1,4,0,0,0
+30,1,0,50,control,0,1,NA,NA,1,30
+34,1,1,60,control,0,1,NA,NA,0,0
+35,0,1,39,control,0,1,NA,NA,0,0
+26,1,1,54,control,0,0,NA,0,1,42
+32,0,0,45,control,0,1,NA,NA,0,0
+26,0,0,47,control,0,0,NA,NA,0,0
+25,0,0,56,control,0,0,1,0,NA,NA
+27,0,0,54,control,0,0,NA,NA,0,0
+21,1,0,71,control,0,0,NA,NA,0,0
+25,0,1,64,control,1,0,NA,NA,1,90
+34,0,1,43,control,0,1,7,1,1,48
+30,0,1,60,control,0,0,NA,NA,1,15
+39,0,1,57,control,0,1,16,0,1,47
+34,0,1,61,control,1,0,NA,NA,NA,NA
+32,0,0,46,control,1,1,4,0,1,55
+28,0,0,59,control,0,0,NA,NA,0,0
+27,0,0,38,control,0,1,NA,NA,NA,NA
+25,0,0,46,control,0,0,NA,NA,0,0
+24,0,1,46,control,0,1,5,1,NA,NA
+31,0,1,33,control,0,1,2,0,NA,NA
+29,0,0,48,control,0,0,4,0,1,60
+34,0,0,58,control,0,0,5,0,0,0
+30,0,1,55,control,0,0,6,0,1,52
+27,0,0,62,control,0,0,NA,NA,NA,NA
+19,1,1,63,control,1,1,NA,NA,0,0
+32,0,1,59,control,0,0,NA,NA,NA,NA
+28,0,0,53,control,0,0,NA,NA,0,0
+28,0,1,54,control,0,0,NA,0,NA,NA
+23,0,1,59,control,1,0,NA,NA,1,48
+39,0,0,53,control,0,1,7,0,1,12
+23,0,1,67,control,0,0,3,0,NA,NA
+36,0,1,70,control,1,1,4,0,1,20
+32,0,1,50,control,0,1,NA,0,1,60
+29,0,0,60,control,0,0,NA,NA,NA,NA
+24,0,1,42,control,0,0,5,0,0,0
+27,0,1,52,control,0,0,NA,NA,1,80
+23,1,1,56,control,0,0,NA,NA,1,40
+33,0,1,52,control,0,1,0,0,1,48
+31,0,0,49,control,0,0,16,0,NA,NA
+27,0,1,39,control,0,0,7,0,NA,NA
+33,0,1,46,control,0,1,6,1,NA,NA
+32,0,0,55,control,0,1,1,NA,0,0
+26,0,1,59,control,0,0,NA,NA,1,25
+23,0,1,66,control,0,0,4,0,NA,NA
+30,0,1,44,control,0,0,1,0,NA,NA
+26,0,0,52,control,1,0,NA,NA,NA,NA
+23,0,0,44,control,0,0,20,0,0,0
+35,0,1,56,control,1,1,NA,0,1,30
+24,1,0,54,control,0,0,NA,NA,0,0
+32,1,1,45,control,1,1,NA,NA,NA,NA
+36,0,1,62,control,0,0,1,0,1,46
+26,1,0,59,control,0,1,NA,NA,0,0
+38,0,0,50,control,0,1,NA,NA,1,20
+32,0,0,34,control,0,0,NA,NA,0,0
+35,0,1,69,control,0,1,NA,NA,NA,NA
+30,1,1,52,control,0,0,NA,0,NA,NA
+32,0,1,59,control,0,1,26,0,0,0
+21,1,1,64,control,0,0,NA,NA,1,22
+30,0,1,62,control,0,1,3,0,NA,NA
+27,0,0,58,control,0,0,NA,NA,0,0
+35,0,0,67,control,0,1,NA,0,0,0
+24,0,1,59,control,0,0,1,0,NA,NA
+26,1,0,42,control,0,0,NA,NA,1,66
+34,0,1,35,control,1,1,33,0,1,45
+26,0,1,55,control,0,1,NA,NA,NA,NA
+29,0,1,62,control,0,0,NA,NA,1,20
+39,0,0,38,control,0,1,NA,0,1,35
+36,0,1,55,control,1,1,NA,0,0,0
+36,0,1,31,control,0,0,12,0,1,60
+28,1,0,32,control,0,1,12,1,1,82
+25,0,1,56,control,1,0,NA,NA,0,0
+32,0,1,52,control,0,0,NA,NA,1,66
+27,0,1,64,control,0,1,0,0,1,40
+32,0,0,47,control,0,1,1,0,1,NA
+22,0,0,54,control,1,0,NA,NA,1,NA
+30,0,1,63,control,0,0,NA,0,NA,NA
+29,0,1,56,control,0,0,11,0,1,60
+28,0,0,68,control,0,0,NA,NA,0,0
+38,0,1,49,control,0,1,2,1,0,0
+36,0,1,58,control,1,0,NA,NA,0,0
+24,0,0,50,control,0,0,NA,NA,NA,NA
+29,0,1,56,control,0,0,NA,NA,1,120
+27,0,0,35,control,0,0,9,0,1,15
+28,0,0,57,control,0,0,NA,NA,0,0
+26,0,1,71,control,0,0,NA,NA,1,98
+28,0,1,65,control,0,0,NA,NA,1,NA
+30,0,0,62,control,0,1,NA,0,1,54
+29,0,0,61,control,0,0,NA,NA,0,0
+31,0,1,61,control,0,0,NA,NA,0,0
+25,0,1,56,control,0,0,8,NA,1,NA
+34,0,1,57,control,1,1,NA,NA,1,NA
+23,0,1,54,control,0,0,NA,NA,0,0
+32,0,1,37,control,0,1,NA,NA,0,0
+34,0,1,48,control,1,1,2,0,NA,NA
+29,0,1,39,control,1,1,NA,0,NA,NA
+27,0,0,67,control,0,0,8,0,1,42
+30,0,0,41,control,1,1,NA,NA,NA,NA
+35,0,1,57,control,0,0,10,0,1,50
+37,0,1,58,control,0,1,NA,NA,1,50
+22,0,0,43,control,0,0,NA,NA,1,63
+28,0,0,46,control,0,0,NA,NA,0,0
+28,0,0,37,control,1,0,NA,NA,0,0
+24,0,0,46,control,0,0,NA,NA,NA,NA
+28,0,0,50,control,0,0,5,0,NA,NA
+27,0,0,54,control,0,0,NA,NA,1,42
+29,0,1,68,control,0,0,NA,NA,NA,NA
+28,0,1,50,control,0,0,NA,NA,NA,NA
+31,1,0,35,control,0,1,4,0,1,30
+31,0,1,34,control,0,0,40,0,NA,NA
+29,0,1,59,control,0,1,0,0,1,56
+30,0,1,61,control,0,0,NA,NA,0,0
+28,0,0,52,control,0,1,2,0,NA,NA
+28,0,1,73,control,0,0,NA,NA,NA,NA
+29,1,1,44,control,0,0,3,0,1,48
+21,0,1,56,control,0,0,NA,NA,NA,NA
+32,0,0,56,control,0,0,NA,NA,0,0
+34,0,1,41,control,0,1,2,0,1,48
+27,0,1,60,control,1,0,3,0,NA,NA
+28,0,0,58,control,0,0,2,0,1,72
+31,1,0,42,control,0,0,NA,NA,1,21
+37,0,0,50,control,0,1,10,0,0,0
+30,0,0,56,control,0,0,5,0,1,NA
+36,0,1,39,control,1,1,11,0,1,42
+30,0,0,47,control,0,1,1,0,NA,NA
+32,0,0,54,control,0,1,NA,NA,0,0
+28,0,1,44,control,1,1,0,0,0,0
+31,0,1,49,control,0,1,9,0,1,90
+32,0,1,51,control,0,0,3,0,1,57
+36,0,1,54,control,1,0,NA,NA,1,66
+29,0,0,54,control,0,0,2,0,1,13
+30,0,1,36,control,0,0,NA,NA,NA,NA
+24,0,0,48,control,0,0,NA,NA,0,0
+36,0,0,52,control,0,0,4,0,1,30
+37,0,0,57,control,0,0,NA,NA,0,0
+37,0,0,70,control,0,1,NA,0,1,80
+35,0,1,53,control,1,1,5,0,0,0
+32,0,0,61,control,0,0,NA,NA,1,126
+33,0,1,47,control,0,1,1,0,1,70
+38,0,0,57,control,0,1,10,0,1,107
+32,0,1,33,control,0,0,2,0,NA,NA
+32,0,1,58,control,0,1,NA,NA,1,21
+29,0,0,53,control,0,0,NA,NA,0,0
+29,0,0,49,control,0,0,5,0,1,30
+29,0,0,52,control,0,0,NA,NA,0,0
+29,0,0,66,control,1,0,NA,NA,0,0
+23,0,1,61,control,0,0,4,0,NA,NA
+34,0,0,37,control,0,1,NA,NA,NA,NA
+27,0,1,60,control,1,0,0,0,NA,NA
+25,0,0,35,control,0,0,NA,NA,0,0
+27,0,0,47,control,0,0,NA,NA,0,0
+39,0,1,55,control,0,1,2,0,1,42
+24,0,0,36,control,0,0,3,0,1,60
+34,0,0,58,control,0,1,NA,NA,1,60
+27,0,1,64,control,0,1,NA,NA,NA,NA
+28,0,0,46,control,0,1,NA,0,0,0
+38,0,0,61,control,0,1,NA,NA,0,0
+30,0,1,58,control,0,1,NA,NA,NA,NA
+31,0,1,56,control,0,1,4,0,NA,NA
+34,0,0,32,control,0,1,62,0,1,30
+25,0,1,35,control,1,0,2,0,1,40
+30,0,0,59,control,0,1,NA,0,1,48
+30,0,0,65,control,0,0,NA,NA,NA,NA
+32,0,1,59,control,0,1,NA,NA,1,80
+29,0,0,66,control,0,1,NA,NA,0,0
+29,0,0,33,control,1,1,2,0,1,60
+29,0,0,53,control,0,0,NA,NA,NA,NA
+28,0,0,58,control,0,0,0,0,NA,NA
+34,0,0,64,control,0,0,8,0,1,36
+26,1,0,45,control,0,0,NA,NA,1,30
+26,0,0,58,control,0,0,NA,NA,1,28
+32,0,1,58,control,1,1,NA,NA,NA,NA
+30,0,1,58,control,0,1,NA,NA,1,21
+34,0,1,62,control,0,0,NA,NA,1,36
+34,0,1,72,control,0,1,NA,NA,1,30
+35,0,0,59,control,0,1,NA,0,0,0
+31,0,1,54,control,0,0,3,0,1,60
+23,0,1,71,control,0,0,NA,NA,0,0
+29,0,0,57,control,0,0,0,0,1,42
+28,0,0,61,control,1,0,0,0,NA,NA
+29,1,0,30,control,0,1,NA,0,0,0
+29,0,0,54,control,1,0,2,0,NA,NA
+26,0,1,47,control,0,0,NA,NA,1,12
+28,0,0,34,control,0,0,NA,NA,1,72
+28,0,0,43,control,0,0,NA,NA,0,0
+32,0,1,51,control,0,0,4,0,1,66
+27,0,1,58,control,0,0,13,0,NA,NA
+36,0,0,60,control,1,0,NA,NA,0,0
+30,0,0,32,control,0,0,NA,NA,0,0
+35,0,1,44,control,0,0,NA,0,0,0
+30,0,1,35,control,0,1,8,1,1,60
+28,0,1,60,control,1,1,NA,NA,NA,NA
+31,0,0,54,control,0,0,2,0,0,0
+34,0,0,60,control,0,0,NA,NA,0,0
+39,0,1,47,control,1,1,0,0,0,0
+24,0,0,50,control,1,0,NA,NA,0,0
+20,1,1,55,control,0,0,NA,NA,0,0
+27,0,1,60,control,0,0,NA,NA,0,0
+25,0,1,64,control,0,0,NA,NA,0,0
+35,0,1,54,control,0,1,NA,NA,NA,NA
+25,0,1,51,control,0,0,NA,NA,1,6
+34,0,1,57,control,0,0,NA,0,NA,NA
+29,0,1,60,control,0,0,NA,NA,NA,NA
+36,0,0,60,control,0,0,NA,NA,1,77
+25,0,1,69,control,0,0,0,0,0,0
+36,0,0,52,control,0,1,NA,NA,1,35
+33,0,0,53,control,0,1,NA,NA,1,72
+35,0,1,46,control,0,1,5,0,1,80
+29,0,0,58,control,0,1,NA,NA,1,4
+27,0,1,54,control,0,0,NA,NA,NA,NA
+26,1,0,52,control,0,0,NA,NA,0,0
+30,0,0,59,control,0,0,NA,NA,0,0
+37,0,0,37,control,0,1,NA,NA,0,0
+29,0,1,44,control,0,0,9,0,1,21
+31,0,0,56,control,0,0,NA,0,1,42
+34,1,1,35,control,0,1,1,0,1,60
+22,1,1,39,control,0,0,NA,NA,0,0
+28,0,0,62,control,1,1,NA,NA,0,0
+22,0,1,64,control,1,0,3,0,1,30
+26,0,0,30,control,0,1,0,0,1,21
+23,0,1,54,control,0,0,NA,NA,0,0
+24,0,0,56,control,0,0,NA,NA,0,0
+31,0,0,59,control,0,0,NA,NA,NA,NA
+32,0,1,57,control,1,1,12,0,1,95
+28,0,0,58,control,1,1,NA,0,NA,NA
+32,0,1,32,control,0,0,2,0,1,82
+25,0,1,62,control,1,0,15,0,1,42
+32,0,0,61,control,0,0,NA,NA,NA,NA
+27,0,0,47,control,0,0,NA,NA,1,28
+29,1,0,32,control,0,0,3,1,1,35
+25,0,1,60,control,0,0,NA,0,1,NA
+37,0,0,60,control,0,0,4,0,NA,NA
+32,0,1,44,control,0,1,0,0,1,60
+28,0,1,48,control,0,0,2,0,1,54
+31,0,1,43,control,0,0,0,0,1,56
+36,0,1,62,control,0,1,NA,NA,1,48
+25,0,0,54,control,0,0,NA,0,1,48
+21,1,0,57,control,0,0,NA,0,0,0
+39,0,1,65,control,0,1,NA,NA,1,48
+31,0,1,34,control,0,1,15,0,1,90
+26,1,0,49,control,0,0,NA,NA,1,60
+30,0,0,54,control,0,0,NA,NA,NA,NA
+36,0,0,63,control,0,0,2,0,1,87
+22,0,1,62,control,1,0,NA,NA,0,0
+27,1,1,53,control,0,0,5,0,1,54
+33,1,1,45,control,0,1,5,0,1,NA
+26,0,0,61,control,1,0,NA,NA,1,6
+38,0,0,55,control,1,0,NA,NA,NA,NA
+27,0,1,62,control,0,0,NA,0,NA,NA
+26,0,0,58,control,0,0,NA,NA,NA,NA
+37,0,1,66,control,0,1,NA,NA,1,25
+23,1,1,39,control,0,0,NA,NA,0,0
+25,0,1,55,control,0,0,NA,NA,1,9
+23,0,0,64,control,1,0,NA,0,NA,NA
+27,0,0,58,control,1,0,NA,NA,0,0
+26,0,0,43,control,0,0,NA,NA,1,70
+30,0,1,56,control,0,1,NA,0,0,0
+28,0,1,60,control,1,1,NA,NA,NA,NA
+29,0,0,37,control,0,0,3,0,1,60
+35,0,1,60,control,0,1,NA,0,0,0
+38,0,0,57,control,0,0,NA,NA,1,36
+29,0,1,53,control,0,1,NA,NA,1,48
+31,0,0,56,control,0,0,NA,0,1,30
+27,1,1,61,control,1,1,5,NA,NA,NA
+25,0,0,54,control,0,0,NA,NA,NA,NA
+26,0,0,68,control,0,0,NA,NA,1,92
+26,0,1,57,control,1,0,NA,NA,NA,NA
+27,0,0,46,control,0,0,NA,NA,0,0
+36,0,1,68,control,0,1,NA,NA,0,0
+21,0,1,55,control,0,0,NA,NA,0,0
+27,0,1,64,control,0,0,NA,NA,0,0
+40,0,0,59,control,0,1,NA,NA,1,107
+25,0,1,40,control,0,0,NA,NA,0,0
+31,0,0,57,control,0,0,NA,NA,NA,NA
+26,1,1,39,control,0,0,1,0,1,52
+26,0,0,42,control,0,0,10,0,1,45
+26,0,0,30,control,1,0,3,0,1,40
+37,0,0,32,control,0,0,4,1,NA,NA
+27,0,0,45,control,0,0,9,0,1,94
+31,0,1,38,control,0,0,5,0,1,66
+27,0,0,47,control,0,0,NA,NA,0,0
+24,0,0,63,control,0,0,NA,NA,0,0
+32,0,0,47,control,0,0,2,0,1,40
+32,0,0,39,control,0,0,4,0,1,54
+31,0,1,57,control,0,1,0,0,1,126
+23,0,1,61,control,0,0,NA,NA,1,20
+35,1,1,57,control,1,1,NA,NA,0,0
+39,0,1,31,control,0,1,4,0,NA,NA
+34,0,1,62,control,0,1,NA,0,NA,NA
+33,0,0,30,control,0,1,21,0,1,84
+21,0,1,49,control,1,0,NA,NA,NA,NA
+33,0,1,56,control,0,1,NA,NA,NA,NA
+28,0,1,59,control,0,0,0,0,0,0
+25,0,1,55,control,1,0,NA,NA,NA,NA
+33,0,0,36,control,0,0,5,0,1,68
+35,0,0,62,control,1,1,NA,NA,0,0
+35,0,1,58,control,0,1,NA,0,NA,NA
+29,0,0,58,control,0,0,NA,NA,1,7
+28,0,0,58,control,0,0,NA,NA,1,9
+23,0,0,33,control,0,0,NA,NA,0,0
+26,0,0,41,control,0,0,3,0,1,60
+30,0,0,61,control,0,0,4,0,0,0
+28,0,0,60,control,0,0,NA,NA,1,40
+31,0,1,58,control,0,1,NA,0,1,38
+27,0,1,59,control,0,0,NA,NA,0,0
+36,0,0,61,control,1,1,0,0,0,0
+35,0,1,53,control,0,1,6,0,NA,NA
+33,0,0,58,control,0,1,NA,NA,1,70
+28,0,1,73,control,1,0,NA,NA,1,8
+29,0,1,65,control,0,0,13,0,1,25
+32,0,0,68,control,0,0,51,0,1,90
+38,0,1,57,control,0,1,7,0,1,58
+30,0,1,51,control,1,1,0,0,1,63
+22,0,1,54,control,0,0,2,0,0,0
+31,0,0,58,control,0,0,NA,0,NA,NA
+26,1,0,36,control,0,0,18,0,1,80
+30,0,0,33,control,0,1,NA,NA,0,0
+33,0,1,47,control,0,0,NA,0,1,78
+24,1,0,59,control,0,1,NA,NA,NA,NA
+33,0,0,31,control,0,1,NA,NA,1,30
+32,0,1,48,control,0,1,NA,NA,1,54
+25,0,0,59,control,0,0,NA,0,NA,NA
+33,0,0,48,control,0,1,4,0,NA,NA
+24,0,0,66,control,0,0,NA,NA,NA,NA
+26,0,0,43,control,0,0,0,0,1,35
+33,0,1,67,control,0,1,NA,NA,1,48
+26,1,1,51,control,0,0,1,1,1,70
+28,0,0,39,control,0,1,3,0,NA,NA
+26,0,1,50,control,0,0,4,0,1,45
+26,0,0,62,control,0,0,0,0,1,33
+38,0,1,33,control,0,1,9,0,1,32
+30,0,0,39,control,0,1,NA,NA,1,46
+31,0,0,55,control,1,0,0,0,1,38
+25,0,0,63,control,0,0,NA,NA,0,0
+25,0,1,60,control,1,1,0,0,0,0
+32,0,0,43,control,0,0,4,0,1,8
+24,0,0,35,control,0,0,NA,1,0,0
+37,0,1,55,control,0,1,NA,NA,0,0
+24,0,0,55,control,0,0,NA,NA,NA,NA
+28,0,1,53,control,0,0,NA,NA,1,28
+29,0,0,51,control,0,0,8,0,1,42
+29,0,1,66,control,0,1,11,0,1,23
+30,0,1,61,control,0,0,NA,0,NA,NA
+27,0,0,55,control,0,0,NA,NA,0,0
+30,0,0,61,control,1,0,NA,NA,1,60
+32,1,1,63,control,0,1,NA,NA,0,0
+26,0,0,47,control,0,0,NA,NA,0,0
+30,1,0,50,control,0,1,5,0,NA,NA
+32,0,1,56,control,0,1,8,0,NA,NA
+31,0,0,52,control,0,1,NA,0,1,54
+31,0,0,55,control,0,0,NA,NA,0,0
+35,0,0,38,control,0,0,9,0,1,70
+34,0,0,60,control,0,0,NA,NA,1,56
+29,0,1,66,control,1,0,NA,NA,NA,NA
+28,0,0,54,control,0,0,12,0,0,0
+25,0,1,66,control,0,0,NA,NA,NA,NA
+38,0,1,53,control,0,1,NA,NA,1,36
+28,1,1,60,control,0,1,NA,NA,NA,NA
+32,0,0,43,control,1,0,NA,NA,NA,NA
+30,0,1,55,control,0,0,NA,0,0,0
+36,0,0,47,control,0,1,NA,NA,1,40
+29,0,1,42,control,1,1,12,0,1,60
+28,0,0,41,control,0,0,NA,NA,0,0
+31,0,0,45,control,0,0,NA,NA,1,56
+34,0,0,44,control,0,0,2,0,NA,NA
+36,0,0,42,control,0,1,NA,NA,0,0
+22,0,0,71,control,1,0,NA,NA,NA,NA
+28,0,0,50,control,0,1,NA,NA,1,60
+38,0,1,54,control,0,0,NA,0,NA,NA
+30,0,1,47,control,1,1,NA,NA,NA,NA
+23,0,0,67,control,1,0,NA,NA,NA,NA
+37,1,1,55,control,1,1,NA,NA,1,30
+26,0,0,60,control,0,0,NA,NA,NA,NA
+19,0,1,54,control,0,0,26,0,NA,NA
+37,0,1,65,control,0,1,1,0,1,50
+32,0,1,42,control,1,1,NA,0,1,60
+35,0,1,40,control,0,1,9,0,1,48
+33,0,1,52,control,0,1,3,0,NA,NA
+38,1,1,60,control,0,1,9,0,1,60
+39,1,1,62,control,0,0,0,NA,1,54
+25,0,1,59,control,0,0,NA,NA,NA,NA
+38,0,1,67,control,0,1,1,0,1,42
+26,0,1,55,control,1,0,NA,NA,1,2
+32,0,0,59,control,0,0,NA,NA,0,0
+31,0,0,65,control,0,1,NA,NA,NA,NA
+27,0,1,64,control,0,0,0,0,1,56
+27,0,1,67,control,0,0,NA,0,NA,NA
+36,0,1,49,control,0,1,6,1,1,80
+37,0,0,43,control,0,1,25,0,0,0
+35,0,0,36,control,0,1,NA,NA,0,0
+28,0,0,56,control,0,0,2,0,1,60
+26,0,0,63,control,0,0,0,0,1,40
+25,0,1,54,control,0,0,0,1,1,60
+29,0,1,53,control,0,0,NA,NA,0,0
+27,0,0,64,control,0,0,NA,NA,NA,NA
+31,0,1,59,control,0,1,NA,NA,1,16
+26,0,1,31,control,0,0,NA,NA,1,40
+31,0,0,58,control,0,0,NA,NA,NA,NA
+28,0,1,42,control,0,0,NA,NA,0,0
+23,0,0,63,control,0,0,NA,NA,NA,NA
+36,0,1,54,control,0,1,NA,NA,1,3
+40,0,0,57,control,1,1,NA,NA,0,0
+25,0,1,61,control,1,1,NA,NA,0,0
+27,0,0,36,control,1,0,NA,NA,1,0
+30,0,1,56,control,0,0,NA,NA,0,0
+23,0,1,61,control,0,0,5,0,1,63
+26,0,1,66,control,0,0,4,0,1,80
+31,0,1,59,control,0,0,NA,NA,0,0
+28,0,1,59,control,0,0,9,0,NA,NA
+40,0,0,60,control,0,1,NA,NA,1,28
+28,0,0,53,control,0,0,NA,0,0,0
+35,0,0,48,control,0,0,2,1,1,15
+28,0,1,49,control,0,0,2,0,1,60
+29,0,0,48,control,0,0,NA,0,0,0
+29,0,0,62,control,0,0,NA,NA,1,66
+32,0,1,43,control,0,1,6,0,1,18
+39,0,1,57,control,0,1,15,0,1,40
+31,0,0,59,control,0,0,NA,NA,0,0
+39,0,0,54,control,1,1,NA,0,NA,NA
+28,0,0,49,control,0,0,15,0,1,60
+31,0,1,32,control,0,1,NA,NA,0,0
+31,0,0,47,control,0,1,11,0,0,0
+29,0,0,40,control,0,0,8,0,0,0
+37,1,1,51,control,0,1,NA,NA,0,0
+34,1,1,63,control,0,1,6,0,1,98
+27,0,1,49,control,0,0,NA,NA,1,52
+28,0,1,68,control,0,1,NA,NA,NA,NA
+30,0,0,50,control,0,0,NA,NA,1,70
+25,0,1,36,control,0,0,22,0,1,26
+26,0,0,47,control,0,0,NA,0,0,0
+27,0,0,37,control,0,0,NA,NA,1,40
+30,0,0,70,control,0,0,1,0,1,22
+32,0,1,66,control,0,1,NA,NA,NA,NA
+29,0,0,53,control,0,1,2,0,1,8
+27,0,0,60,control,0,0,NA,NA,1,54
+31,0,1,69,control,0,1,NA,NA,NA,NA
+28,0,0,68,control,0,0,1,0,1,44
+30,0,1,63,control,0,0,3,0,1,48
+34,0,0,61,control,0,0,NA,NA,0,0
+23,0,1,63,control,1,0,NA,NA,NA,NA
+35,0,1,64,control,0,1,NA,NA,NA,NA
+26,0,1,56,control,1,0,NA,NA,NA,NA
+36,1,0,45,control,0,1,2,0,0,0
+33,0,1,45,control,0,1,5,0,NA,NA
+30,0,0,58,control,0,0,NA,NA,1,105
+35,0,1,52,control,0,1,NA,NA,1,8
+34,0,1,72,control,1,1,2,0,NA,NA
+30,0,0,37,control,0,1,NA,NA,0,0
+30,0,1,66,control,0,1,NA,NA,0,0
+34,0,0,56,control,0,1,NA,0,1,10
+31,0,1,62,control,0,0,9,NA,1,45
+29,0,0,65,control,0,1,NA,NA,NA,NA
+27,0,1,37,control,0,0,NA,NA,1,82
+25,1,0,31,control,0,1,NA,0,1,49
+24,0,0,51,control,0,0,NA,NA,0,0
+28,0,1,70,control,0,0,NA,NA,1,48
+25,0,0,65,control,0,0,NA,NA,0,0
+32,0,0,53,control,0,0,NA,NA,0,0
+33,0,0,57,control,0,0,6,0,NA,NA
+31,0,1,67,control,0,0,5,1,NA,NA
+25,1,0,58,control,0,0,NA,NA,1,64
+35,0,0,61,control,0,1,NA,NA,1,40
+20,1,0,56,control,1,0,NA,NA,NA,NA
+26,0,0,51,control,0,0,NA,NA,0,0
+26,0,1,50,control,0,0,3,0,NA,NA
+24,0,1,52,control,1,0,8,0,0,0
+36,0,1,56,control,0,1,4,0,1,30
+30,0,0,53,control,0,0,9,0,NA,NA
+27,0,0,42,control,1,0,NA,NA,0,0
+28,0,1,55,control,1,1,0,0,1,60
+35,0,1,55,control,0,0,NA,NA,NA,NA
+31,0,1,44,control,0,1,25,0,NA,NA
+34,0,1,53,control,0,1,NA,NA,1,54
+31,0,0,51,control,0,0,3,0,1,60
+31,0,1,68,control,0,1,3,0,1,60
+39,0,1,54,control,0,1,11,0,1,10
+31,0,0,42,control,0,0,NA,NA,1,20
+25,0,1,39,control,0,0,NA,NA,NA,NA
+35,0,0,61,control,0,1,NA,NA,0,0
+32,0,1,53,control,1,0,NA,NA,0,0
+37,0,1,54,control,0,1,NA,NA,0,0
+39,0,0,42,control,0,1,NA,NA,NA,NA
+36,0,0,64,control,0,0,1,0,1,60
+28,0,0,65,control,0,0,NA,NA,0,0
+26,0,0,55,control,1,0,NA,NA,0,0
+31,0,1,55,control,0,0,0,0,0,0
+28,0,1,56,control,0,0,3,0,1,54
+26,0,0,58,control,0,0,NA,0,0,0
+30,0,1,60,control,0,0,NA,NA,NA,NA
+28,0,0,73,control,0,0,NA,NA,1,66
+24,0,1,54,control,1,0,NA,NA,1,15
+33,0,0,57,control,0,0,0,0,0,0
+36,1,0,40,control,0,1,NA,NA,0,0
+30,0,0,44,control,1,0,0,0,0,0
+39,0,1,71,control,1,1,NA,0,NA,NA
+31,0,0,59,control,0,0,NA,0,0,0
+31,0,0,62,control,1,1,4,0,1,60
+32,0,1,51,control,1,1,2,0,1,20
+26,1,1,63,control,0,0,NA,0,0,0
+27,0,0,56,control,0,0,NA,NA,1,20
+34,0,1,54,control,0,1,NA,0,0,0
+29,0,1,49,control,0,1,NA,0,NA,NA
+24,0,0,54,control,0,0,NA,NA,0,0
+39,0,0,38,control,0,1,2,0,0,0
+36,0,1,48,control,0,1,7,0,1,23
+34,0,1,61,control,0,1,NA,NA,1,48
+19,0,1,52,control,1,0,NA,NA,1,NA
+31,0,0,54,control,1,1,NA,NA,0,0
+21,1,0,31,control,0,0,NA,NA,1,72
+29,0,1,64,control,0,1,NA,0,NA,NA
+30,0,0,49,control,0,0,NA,NA,0,0
+39,0,1,52,control,0,1,10,0,1,48
+36,0,1,62,control,0,1,NA,0,1,30
+33,0,1,43,control,0,1,2,0,NA,NA
+31,0,1,36,control,0,1,10,0,1,40
+28,0,1,53,control,0,0,NA,NA,0,0
+22,0,0,57,control,0,0,NA,NA,0,0
+34,0,0,60,control,0,0,NA,NA,0,0
+35,1,0,43,control,0,0,3,0,NA,NA
+23,0,0,57,control,0,0,NA,NA,NA,NA
+25,0,0,53,control,0,0,NA,NA,1,NA
+35,0,1,54,control,0,0,12,1,1,105
+19,1,1,55,control,0,0,NA,NA,1,30
+33,0,1,48,control,0,0,NA,NA,NA,NA
+36,0,1,59,control,0,1,25,0,1,42
+39,0,0,32,control,0,1,5,0,1,11
+32,0,1,39,control,0,1,4,0,1,20
+27,0,0,51,control,0,0,NA,NA,0,0
+27,0,1,55,control,1,0,NA,NA,0,0
+36,0,1,56,control,0,1,NA,NA,1,50
+26,0,1,66,control,1,0,0,0,NA,NA
+40,0,1,53,control,1,1,NA,NA,1,36
+27,0,1,62,control,1,0,0,0,0,0
+24,0,0,65,control,0,0,NA,NA,1,66
+30,0,0,57,control,1,0,NA,NA,1,NA
+32,0,0,60,control,1,0,NA,NA,NA,NA
+27,0,1,49,control,1,1,5,0,NA,NA
+29,0,1,64,control,0,1,NA,0,NA,NA
+36,0,1,51,control,0,1,8,0,1,120
+30,0,0,59,control,0,1,1,0,1,60
+36,0,0,42,control,0,0,NA,NA,1,40
+28,0,0,66,control,1,0,NA,NA,1,30
+34,0,1,61,control,1,1,NA,NA,NA,NA
+28,0,0,53,control,0,0,NA,NA,0,0
+26,0,1,59,control,0,0,NA,NA,1,30
+27,0,1,60,control,0,0,1,0,1,70
+39,0,1,38,control,0,1,NA,NA,0,0
+37,0,1,53,control,0,1,0,0,0,0
+25,0,0,63,control,0,0,NA,NA,0,0
+33,0,0,57,control,0,1,8,0,NA,NA
+24,0,1,56,control,0,0,NA,NA,1,54
+35,0,0,35,control,0,1,NA,NA,NA,NA
+21,1,1,65,control,0,0,NA,NA,0,0
+25,0,0,50,control,1,1,0,0,0,0
+31,0,1,37,control,0,1,2,0,NA,NA
+28,0,1,43,control,0,0,1,0,0,0
+33,0,1,31,control,0,1,3,1,1,56
+34,0,1,47,control,0,1,NA,1,1,70
+25,0,0,59,control,0,0,0,0,NA,NA
+33,0,1,58,control,1,1,2,0,1,10
+37,0,1,60,control,0,1,NA,NA,0,0
+28,1,0,43,control,0,0,NA,NA,1,50
+33,0,1,44,control,1,1,13,0,1,50
+23,0,1,56,control,0,0,1,0,1,80
+28,0,1,53,control,0,0,NA,NA,1,10
+33,0,1,56,control,0,1,0,0,NA,NA
+28,0,0,41,control,0,0,3,0,0,0
+27,0,1,54,control,0,1,NA,0,1,60
+28,0,0,56,control,0,0,NA,NA,0,0
+25,0,1,59,control,1,1,NA,NA,0,0
+21,1,0,50,control,0,0,NA,NA,1,108
+38,0,1,50,control,0,1,NA,0,1,18
+23,0,0,62,control,0,0,NA,NA,0,0
+26,0,0,59,control,0,1,NA,NA,1,6
+32,0,1,53,control,0,0,NA,NA,NA,NA
+24,1,1,55,control,0,0,NA,1,1,45
+31,0,1,59,control,0,0,0,0,NA,NA
+31,0,1,73,control,0,0,NA,NA,1,48
+34,1,0,59,control,0,0,NA,NA,0,0
+27,0,0,73,control,0,0,NA,NA,NA,NA
+38,0,1,51,control,0,1,NA,0,1,40
+26,1,0,53,control,1,0,0,0,1,60
+28,1,0,39,control,0,1,NA,NA,1,10
+32,0,1,59,control,0,1,4,0,0,0
+29,1,1,43,control,0,1,5,0,1,60
+26,0,0,43,control,0,0,NA,NA,1,72
+27,0,0,62,control,0,1,NA,NA,0,0
+35,0,0,54,control,0,1,2,0,NA,NA
+25,0,0,63,control,0,0,NA,NA,1,28
+28,0,0,43,control,0,0,NA,NA,1,30
+31,0,1,60,control,0,0,NA,NA,0,0
+28,0,0,39,control,1,1,4,0,1,20
+31,0,0,35,control,0,0,NA,0,NA,NA
+37,0,0,33,control,0,1,NA,NA,1,84
+32,0,1,54,control,0,0,NA,NA,1,60
+29,0,1,51,control,0,0,10,1,1,18
+29,0,1,59,control,0,0,NA,NA,1,48
+30,0,1,66,control,0,0,NA,NA,1,50
+34,0,0,38,control,1,1,2,0,1,42
+28,0,1,47,control,0,0,10,0,NA,NA
+32,0,1,42,control,1,1,9,0,1,40
+26,0,1,65,control,0,0,NA,NA,1,40
+33,0,1,63,control,0,1,NA,NA,1,50
+30,0,0,53,control,1,1,NA,NA,0,0
+36,0,1,57,control,0,1,NA,NA,1,120
+33,0,0,41,control,0,0,NA,NA,0,0
+34,0,1,33,control,0,1,1,0,0,0
+40,0,1,40,control,1,1,3,0,NA,NA
+23,0,1,43,control,0,0,NA,NA,NA,NA
+38,0,1,59,control,0,1,1,0,1,35
+36,1,0,41,control,0,1,15,0,1,9
+38,0,0,60,control,0,1,NA,NA,1,72
+33,0,1,60,control,0,0,2,0,NA,NA
+29,0,1,36,control,0,1,0,0,0,0
+29,0,1,61,control,0,0,NA,NA,1,72
+26,1,0,42,control,0,1,35,1,1,60
+30,0,1,64,control,0,1,NA,NA,NA,NA
+31,0,0,59,control,0,0,NA,NA,1,20
+34,1,1,41,control,0,0,4,0,1,78
+39,0,0,47,control,0,1,10,0,0,0
+36,0,1,56,control,0,0,2,0,0,0
+34,0,1,50,control,0,0,NA,NA,1,40
+28,0,1,69,control,1,0,NA,NA,NA,NA
+34,0,1,43,control,0,0,23,0,NA,NA
+31,0,0,53,control,0,0,2,0,1,42
+35,0,1,65,control,1,1,NA,0,NA,NA
+27,0,0,46,control,0,0,NA,0,0,0
+35,1,0,64,control,0,0,4,0,1,60
+24,0,0,56,control,0,0,NA,NA,1,60
+26,0,1,60,control,0,0,NA,NA,1,56
+27,0,0,58,control,0,0,NA,NA,1,84
+37,0,0,51,control,1,0,NA,0,1,60
+30,0,1,57,control,0,0,11,0,1,50
+28,0,0,46,control,0,0,NA,NA,1,70
+23,0,1,52,control,0,0,2,0,1,48
+36,1,0,40,control,0,1,NA,0,NA,NA
+37,0,1,59,control,1,1,4,0,NA,NA
+40,1,1,55,control,0,1,31,0,1,30
+36,0,0,50,control,0,1,2,0,1,66
+29,0,0,51,control,0,1,20,0,1,20
+40,0,1,65,control,0,1,4,0,1,50
+29,1,0,56,control,0,1,NA,NA,0,0
+33,0,1,65,control,0,0,3,0,1,54
+31,0,1,62,control,0,1,0,0,0,0
+24,0,1,53,control,1,0,NA,NA,NA,NA
+21,1,1,55,control,0,0,0,0,0,0
+25,0,0,64,control,0,0,NA,NA,1,42
+29,0,0,44,control,0,0,9,0,1,56
+31,0,1,65,control,0,1,NA,NA,1,42
+29,0,1,60,control,0,0,NA,NA,0,0
+33,0,0,63,control,0,1,0,0,1,10
+28,0,1,38,control,0,0,5,0,0,0
+28,0,0,63,control,0,1,NA,0,0,0
+28,0,0,50,control,0,0,20,0,NA,NA
+37,0,1,54,control,0,1,NA,NA,0,0
+32,0,0,63,control,0,1,2,NA,NA,NA
+24,0,1,57,control,1,0,NA,NA,1,NA
+31,0,1,41,control,0,1,4,0,1,56
+21,1,0,41,control,0,0,NA,NA,0,0
+24,0,0,61,control,0,0,12,0,NA,NA
+36,0,1,46,control,0,1,10,0,1,120
+26,0,0,58,control,0,1,NA,NA,1,42
+23,0,1,65,control,1,0,NA,NA,0,0
+37,0,0,49,control,0,1,5,0,NA,NA
+37,0,0,51,control,0,1,NA,NA,0,0
+28,0,0,60,control,0,0,NA,NA,0,0
+31,0,1,60,control,0,0,5,0,NA,NA
+25,0,0,68,control,0,0,2,0,0,0
+36,0,1,51,control,0,1,1,0,1,40
+30,0,1,60,control,1,0,NA,NA,NA,NA
+21,1,1,54,control,0,0,13,1,NA,NA
+31,0,1,62,control,0,1,NA,NA,NA,NA
+31,0,0,70,control,0,1,NA,NA,NA,NA
+26,0,0,51,control,0,0,NA,NA,0,0
+36,0,0,61,control,1,1,NA,NA,NA,NA
+22,0,1,45,control,0,0,NA,NA,1,11
+31,0,0,54,control,0,1,1,0,1,12
+25,0,0,59,control,0,0,NA,NA,1,11
+30,0,1,55,control,0,0,NA,NA,1,20
+29,0,0,52,control,0,1,3,0,1,72
+30,0,0,55,control,0,0,NA,NA,1,30
+40,0,1,58,control,0,0,NA,NA,NA,NA
+24,0,1,69,control,0,0,54,0,NA,NA
+40,0,1,55,control,0,1,NA,NA,1,28
+32,0,1,58,control,0,0,NA,NA,1,30
+38,1,0,36,control,0,1,39,0,1,66
+35,0,0,45,control,0,1,5,0,1,46
+26,0,1,55,true winners,0,0,NA,0,1,50
+35,0,1,81,true winners,0,1,0,0,1,56
+29,0,1,78,true winners,0,0,0,0,NA,NA
+39,0,1,61,true winners,1,1,7,0,1,32
+22,1,0,69,true winners,1,0,16,0,1,15
+36,1,0,54,true winners,0,1,11,0,1,56
+30,0,1,67,true winners,1,1,NA,NA,NA,NA
+29,0,1,70,true winners,0,0,0,0,1,60
+38,0,0,72,true winners,0,1,2,0,1,50
+31,0,0,58,true winners,0,1,NA,1,1,110
+31,0,1,61,true winners,0,0,14,0,1,84
+36,1,1,84,true winners,0,1,NA,0,1,48
+29,0,1,60,true winners,0,1,3,0,1,94
+38,0,0,69,true winners,0,1,15,0,1,56
+36,0,1,74,true winners,0,1,16,0,NA,NA
+36,0,0,67,true winners,0,0,5,0,1,70
+35,0,1,79,true winners,1,1,7,0,1,70
+32,0,1,75,true winners,0,1,0,NA,0,0
+36,0,1,72,true winners,0,1,8,0,1,82
+31,0,1,67,true winners,0,1,9,0,1,NA
+37,0,1,76,true winners,0,1,12,0,1,84
+33,0,1,68,true winners,0,1,5,0,NA,NA
+29,0,1,71,true winners,0,0,NA,NA,1,66
+29,0,1,45,true winners,0,1,3,0,1,20
+35,0,0,51,true winners,0,1,48,0,1,86
+39,0,1,64,true winners,1,1,3,0,1,60
+32,0,1,83,true winners,1,1,35,0,NA,NA
+40,0,0,81,true winners,0,0,3,0,1,NA
+37,0,1,56,true winners,1,1,5,0,NA,NA
+33,0,1,68,true winners,1,1,8,1,NA,NA
+27,1,0,50,true winners,0,0,NA,0,0,0
+28,0,1,69,true winners,0,1,17,0,1,35
+27,0,0,71,true winners,0,0,3,0,NA,NA
+28,1,0,59,true winners,0,1,5,0,1,78
+31,0,1,65,true winners,0,0,7,0,1,70
+30,0,1,58,true winners,1,1,18,0,1,35
+30,0,1,58,true winners,1,1,3,0,NA,NA
+36,0,1,53,true winners,0,0,3,0,1,48
+33,0,1,67,true winners,0,1,12,0,1,36
+28,0,1,65,true winners,0,1,6,0,1,60
+27,0,1,59,true winners,0,0,16,1,1,40
+33,0,1,78,true winners,0,0,NA,NA,1,40
+35,0,1,74,true winners,0,1,3,0,1,72
+27,0,1,63,true winners,0,0,NA,NA,NA,NA
+34,0,0,60,true winners,0,1,32,1,NA,NA
+31,0,1,57,true winners,0,0,8,0,1,48
+39,0,0,72,true winners,0,1,NA,NA,1,52
+28,0,1,67,true winners,0,1,NA,NA,1,50
+33,0,1,75,true winners,0,0,NA,NA,1,12
+34,0,1,60,true winners,0,0,8,0,1,60
+29,0,1,79,true winners,0,0,NA,NA,1,72
+39,0,1,62,true winners,0,1,2,0,1,NA
+31,0,1,53,true winners,0,1,14,0,1,80
+29,0,0,53,true winners,1,0,6,0,1,30
+26,1,0,76,true winners,0,0,NA,NA,1,60
+29,0,1,75,true winners,0,0,0,0,1,70
+32,0,1,75,true winners,1,1,40,0,1,50
+28,0,0,50,true winners,0,0,NA,NA,1,60
+26,0,0,75,true winners,1,0,NA,NA,1,54
+27,0,0,56,true winners,0,0,NA,0,1,56
+37,0,0,80,true winners,0,0,5,0,NA,NA
+29,0,1,78,true winners,0,0,3,0,NA,NA
+35,0,1,49,true winners,0,1,11,0,NA,NA
+29,0,1,71,true winners,0,1,4,0,1,28
+31,0,1,55,true winners,0,1,7,0,1,80
+29,0,0,53,true winners,0,0,10,0,1,72
+37,0,1,47,true winners,0,1,3,0,NA,NA
+33,0,0,72,true winners,0,0,NA,NA,1,60
+35,0,1,64,true winners,0,1,3,0,NA,NA
+23,0,1,59,true winners,0,0,1,0,0,0
+30,0,1,58,true winners,0,0,17,0,1,NA
+28,0,1,76,true winners,0,1,6,0,1,52
+26,0,0,65,true winners,1,0,3,0,1,72
+31,0,1,62,true winners,0,1,30,0,1,48
+38,0,0,57,true winners,0,1,11,0,1,30
+22,1,0,55,true winners,0,0,3,0,1,60
+38,0,1,60,true winners,0,1,4,0,1,23
+35,0,0,79,true winners,0,1,3,NA,NA,NA
+39,0,1,53,true winners,0,1,4,0,1,84
+32,1,1,54,true winners,0,0,5,0,1,60
+28,0,1,63,true winners,1,0,1,0,1,18
+32,0,1,63,true winners,0,1,3,1,1,76
+40,0,0,61,true winners,0,1,12,0,1,40
+28,0,1,78,true winners,1,1,NA,NA,NA,NA
+25,0,0,84,true winners,0,0,0,0,1,40
+27,0,0,61,true winners,1,0,4,0,0,0
+26,0,0,64,true winners,0,1,NA,NA,1,42
+29,0,1,55,true winners,1,0,0,0,NA,NA
+32,1,1,78,true winners,0,1,45,0,1,60
+40,0,1,66,true winners,0,1,45,0,1,63
+36,0,1,56,true winners,0,1,15,0,1,60
+27,0,1,62,true winners,0,0,NA,0,1,63
+38,0,1,66,true winners,0,0,5,0,1,56
+35,0,1,57,true winners,0,1,6,0,1,60
+40,1,0,39,true winners,0,1,5,0,1,30
+39,0,1,71,true winners,0,1,2,0,1,56
+34,0,1,65,true winners,1,1,NA,0,NA,NA
+40,0,1,66,true winners,0,1,30,0,1,49
+18,1,1,74,true winners,1,0,NA,NA,0,0
+32,0,0,65,true winners,0,1,19,0,0,0
+32,0,1,85,true winners,0,0,NA,NA,1,42
+38,0,1,58,true winners,0,1,3,0,NA,NA
+38,0,1,78,true winners,1,1,NA,NA,NA,NA
+33,1,0,50,true winners,1,0,27,0,NA,NA
+22,0,1,85,true winners,0,0,6,NA,1,40
+27,0,1,80,true winners,0,0,14,0,1,32
+28,1,1,66,true winners,1,0,2,0,1,12
+38,0,1,57,true winners,0,1,7,1,NA,NA
+30,0,0,54,true winners,0,1,5,0,NA,NA
+29,0,0,78,true winners,0,0,4,0,1,25
+38,0,1,81,true winners,0,1,76,0,1,48
+33,0,1,58,true winners,1,1,4,1,1,48
+23,0,1,66,true winners,1,0,10,0,NA,NA
+28,0,1,70,true winners,0,1,NA,NA,1,70
+27,0,1,70,true winners,0,0,2,0,1,60
+36,0,0,64,true winners,1,1,12,1,1,60
+29,0,1,72,true winners,0,0,12,0,NA,NA
+31,0,0,61,true winners,0,1,NA,0,NA,NA
+33,0,0,68,true winners,0,1,NA,NA,1,12
+28,0,0,75,true winners,0,0,NA,NA,0,0
+34,0,1,65,true winners,1,1,7,0,1,NA
+36,0,1,59,true winners,1,1,NA,NA,NA,NA
+27,0,1,52,true winners,0,0,5,0,NA,NA
+26,0,1,76,true winners,0,0,NA,NA,0,0
+36,0,1,55,true winners,1,1,13,0,NA,NA
+28,0,1,57,true winners,0,0,3,0,1,84
+36,0,1,77,true winners,1,1,5,0,1,72
+32,1,1,78,true winners,0,1,3,0,1,72
+33,0,0,59,true winners,0,1,3,0,1,72
+31,0,1,57,true winners,0,1,2,0,1,40
+31,0,1,62,true winners,0,0,2,0,1,48
+31,0,0,60,true winners,0,1,9,0,1,70
+22,0,0,56,true winners,0,0,4,0,1,40
+35,0,1,62,true winners,0,0,2,0,1,60
+40,0,1,58,true winners,1,1,5,0,1,120
+39,0,0,48,true winners,0,1,NA,NA,1,20
+31,1,0,59,true winners,0,1,19,1,1,12
+27,0,0,75,true winners,0,1,10,0,1,60
+36,0,0,66,true winners,0,1,5,1,1,52
+38,0,1,59,true winners,0,1,3,0,1,91
+37,0,0,49,true winners,0,1,NA,0,1,65
+29,0,1,79,true winners,0,1,NA,NA,1,NA
+39,0,0,59,true winners,0,1,3,0,1,54
+25,0,0,89,true winners,0,0,NA,NA,1,34
+34,0,0,74,true winners,0,1,13,0,1,72
+36,0,1,53,true winners,0,1,6,0,1,24
+34,1,1,52,true winners,1,1,1,0,1,15
+31,0,0,68,true winners,0,1,15,0,1,18
+26,1,1,56,true winners,0,0,5,0,1,72
+35,0,1,71,true winners,0,1,3,0,1,18
+30,0,0,67,true winners,0,1,7,0,NA,NA
+38,0,0,79,true winners,0,1,39,1,1,66
+39,0,0,56,true winners,0,1,NA,0,1,54
+33,0,0,68,true winners,0,0,0,0,NA,NA
+28,0,1,68,true winners,0,0,8,0,1,48
+35,0,1,56,true winners,0,1,NA,0,1,1
+27,0,1,63,true winners,0,0,2,0,NA,NA
+36,0,0,59,true winners,0,1,9,0,1,50
+34,1,1,67,true winners,0,1,7,0,NA,NA
+38,0,1,63,true winners,1,1,4,0,1,30
+27,0,0,58,true winners,0,0,NA,NA,1,66
+31,0,0,68,true winners,0,0,4,0,1,12
+30,0,1,62,true winners,0,1,7,0,1,6
+31,0,1,67,true winners,0,0,6,0,1,45
+35,0,1,80,true winners,0,0,NA,NA,1,1
+38,0,0,62,true winners,0,1,20,0,1,48
+24,0,1,80,true winners,0,0,NA,NA,1,10
+25,0,1,79,true winners,1,0,NA,NA,1,72
+30,0,1,76,true winners,0,0,NA,NA,1,80
+34,0,1,59,true winners,0,0,4,0,1,40
+33,0,1,87,true winners,0,1,NA,NA,1,NA
+39,1,1,78,true winners,0,1,15,0,1,60
+27,0,0,75,true winners,0,0,NA,NA,1,48
+31,0,1,75,true winners,0,1,8,1,1,60
+31,0,1,71,true winners,0,0,5,0,1,75
+28,0,1,77,true winners,0,0,6,0,1,70
+27,0,1,74,true winners,0,0,NA,NA,1,42
+37,0,0,52,true winners,0,1,65,1,1,57
+26,0,0,69,true winners,0,0,NA,NA,0,0
+39,0,0,56,true winners,0,0,3,0,1,30
+19,1,1,71,true winners,0,0,4,0,1,10
+26,0,1,72,true winners,0,0,3,0,1,62
+34,0,1,66,true winners,0,1,5,1,1,72
+29,0,0,68,true winners,0,0,NA,NA,1,40
+40,0,0,68,true winners,0,1,NA,0,1,65
+34,0,1,68,true winners,0,1,0,0,NA,NA
+26,0,1,76,true winners,1,1,NA,NA,0,0
+33,0,1,60,true winners,1,1,5,1,1,60
+25,0,1,68,true winners,0,0,NA,NA,1,56
+33,1,0,41,true winners,0,1,9,0,1,70
+30,0,1,73,true winners,1,1,NA,1,1,1
+32,0,1,66,true winners,0,1,NA,0,1,48
+34,0,1,64,true winners,0,1,7,0,1,72
+30,0,1,52,true winners,0,0,3,0,1,47
+27,0,1,60,true winners,0,1,7,0,1,105
+33,0,1,74,true winners,0,1,NA,0,NA,NA
+39,0,1,54,true winners,0,1,4,0,1,40
+22,1,0,60,true winners,0,0,31,0,1,40
+36,1,0,43,true winners,0,1,7,0,1,60
+25,1,1,56,true winners,0,0,2,0,NA,NA
+27,0,0,54,true winners,0,0,6,0,1,24
+27,0,1,69,true winners,0,0,NA,NA,0,0
+36,0,1,63,true winners,0,1,NA,0,NA,NA
+30,0,1,88,true winners,0,1,8,0,1,50
+32,0,0,58,true winners,0,1,22,0,NA,NA
+33,0,1,76,true winners,0,1,2,0,1,8
+30,0,1,75,true winners,0,0,NA,NA,1,12
+35,0,1,56,true winners,0,1,10,0,1,54
+28,0,0,62,true winners,0,0,4,0,NA,NA
+32,0,1,61,true winners,0,0,11,0,1,38
+30,0,0,61,true winners,1,1,3,0,1,54
+30,0,1,57,true winners,0,0,6,0,1,72
+29,0,0,77,true winners,0,0,NA,0,1,42
+33,0,1,73,true winners,0,1,5,0,1,40
+40,1,0,52,true winners,0,1,3,0,1,82
+39,0,1,78,true winners,0,1,51,1,1,32
+31,0,1,66,true winners,0,1,5,0,1,30
+29,0,1,61,true winners,0,1,3,0,1,66
+31,0,1,55,true winners,0,1,6,1,1,65
+34,0,1,62,true winners,0,1,4,0,NA,NA
+36,0,1,68,true winners,0,1,15,1,1,30
+38,0,1,61,true winners,1,1,9,0,NA,NA
+31,0,1,60,true winners,0,1,8,0,1,56
+34,0,1,70,true winners,0,1,4,0,1,108
+41,0,1,61,true winners,0,1,NA,0,1,42
+27,0,0,54,true winners,0,0,7,0,1,78
+39,0,1,62,true winners,1,1,10,0,1,1
+35,0,1,79,true winners,0,1,2,0,1,42
+28,0,1,68,true winners,0,0,NA,NA,0,0
+33,0,1,59,true winners,0,1,13,0,NA,NA
+28,0,1,60,true winners,0,0,13,1,1,70
+30,0,1,70,true winners,1,1,NA,0,1,30
+29,0,1,54,true winners,1,1,3,0,0,0
+26,0,1,51,true winners,0,0,6,1,1,49
+32,0,1,71,true winners,0,0,NA,NA,1,45
+34,0,1,82,true winners,0,1,2,0,1,30
+26,0,0,67,true winners,0,0,17,0,1,65
+38,0,1,53,true winners,0,1,NA,0,NA,NA
+40,0,1,58,true winners,0,1,10,0,1,38
+31,0,0,50,true winners,0,0,2,1,1,54
+30,0,1,81,true winners,1,1,15,0,1,24
+32,0,1,72,true winners,0,1,4,0,NA,NA
+39,0,1,59,true winners,1,1,34,0,1,9
+33,0,1,63,true winners,1,1,5,0,1,40
+39,0,1,70,true winners,0,1,6,0,NA,NA
+31,0,1,73,true winners,0,1,20,1,1,10
+32,0,0,53,true winners,0,1,7,0,NA,NA
+34,0,1,63,true winners,0,1,6,0,NA,NA
+30,0,1,67,true winners,0,1,5,0,1,45
+31,0,1,63,true winners,0,0,7,0,1,21
+34,0,0,71,true winners,0,1,0,0,1,84
+37,0,0,62,true winners,0,1,30,1,1,66
+34,0,1,86,true winners,1,0,9,0,1,126
+32,0,1,58,true winners,0,0,3,0,1,60
+27,0,0,73,true winners,0,0,NA,NA,0,0
+28,0,1,62,true winners,0,0,NA,0,1,50
+33,0,1,71,true winners,0,0,4,0,1,11
+35,0,1,57,true winners,0,1,6,0,1,84
+31,0,1,59,true winners,0,1,6,0,1,84
+40,0,0,79,true winners,0,1,28,0,0,0
+35,0,1,67,true winners,0,0,7,1,1,72
+39,0,1,52,true winners,0,1,11,0,1,70
+29,0,1,56,true winners,0,1,11,1,1,56
+25,0,0,77,true winners,0,0,NA,NA,1,48
+31,0,1,76,true winners,0,1,6,0,1,60
+33,0,1,53,true winners,0,0,5,0,1,42
+25,0,1,59,true winners,0,0,7,0,1,50
+39,0,0,50,true winners,0,1,14,0,1,35
+33,0,1,57,true winners,0,0,20,0,1,50
+27,0,0,59,true winners,0,0,5,0,1,125
+38,0,1,60,true winners,0,1,5,0,1,42
+36,1,0,59,true winners,0,1,5,0,NA,NA
+38,0,0,74,true winners,0,1,5,0,1,105
+35,0,1,81,true winners,0,1,NA,0,NA,NA
+34,0,1,75,true winners,0,1,NA,0,NA,NA
+37,1,1,63,true winners,0,1,8,0,1,48
+24,0,0,63,true winners,0,0,20,0,NA,NA
+30,0,0,66,true winners,1,1,4,0,1,10
+36,0,1,70,true winners,0,1,5,0,1,72
+35,0,1,79,true winners,1,0,1,0,NA,NA
+40,0,0,76,true winners,0,0,NA,NA,1,45
+22,1,1,53,true winners,0,0,4,0,1,72
+36,0,1,56,true winners,0,1,9,0,1,64
+32,1,0,63,true winners,0,1,8,0,NA,NA
+25,0,0,62,true winners,1,1,2,0,1,21
+36,0,1,55,true winners,0,1,52,0,1,35
+40,0,1,66,true winners,0,1,NA,1,1,50
+24,0,1,64,true winners,0,0,3,0,1,35
+32,1,1,54,true winners,0,1,9,0,1,60
+36,0,0,63,true winners,0,0,NA,0,0,0
+34,0,1,66,true winners,0,1,5,0,1,54
+32,0,1,77,true winners,0,0,3,0,1,25
+31,0,0,64,true winners,0,0,1,0,1,56
+36,0,0,66,true winners,1,1,24,0,1,50
+33,0,1,65,true winners,0,1,5,0,1,48
+35,0,1,70,true winners,0,0,4,0,1,70
+38,0,1,61,true winners,0,1,8,1,1,20
+31,0,1,64,true winners,0,1,3,0,1,90
+34,0,0,74,true winners,0,1,0,0,1,45
+27,0,0,76,true winners,0,0,NA,NA,1,56
+35,0,1,65,true winners,1,1,13,1,1,50
+40,0,1,74,true winners,0,1,NA,NA,0,0
+29,0,0,76,true winners,0,0,0,0,NA,NA
+35,0,1,69,true winners,0,1,8,0,1,30
+33,0,1,66,true winners,1,1,4,0,1,23
+31,0,1,63,true winners,0,1,4,0,NA,NA
+31,0,1,85,true winners,0,0,5,0,1,8
+30,0,1,62,true winners,0,0,7,1,1,40
+38,0,1,65,true winners,0,0,NA,NA,NA,NA
+28,0,1,63,true winners,0,0,1,0,NA,NA
+26,1,0,82,true winners,0,0,NA,NA,1,30
+29,0,1,62,true winners,0,0,44,1,1,45
+28,0,1,56,true winners,0,0,4,0,1,35
+32,0,1,60,true winners,0,0,8,0,1,70
+25,0,1,63,true winners,0,0,1,0,1,40
+23,0,1,55,true winners,1,0,2,0,1,70
+32,0,1,54,true winners,1,0,4,0,1,30
+25,0,1,63,true winners,0,0,11,0,1,77
+30,0,1,68,true winners,0,0,NA,NA,1,60
+37,0,1,81,true winners,0,1,4,NA,1,42
+28,0,0,73,true winners,0,0,7,0,1,82
+32,0,1,65,true winners,0,1,6,0,1,60
+28,0,1,68,true winners,1,1,NA,NA,1,NA
+32,0,1,63,true winners,0,0,NA,0,1,9
+33,1,1,53,true winners,1,1,15,0,1,36
+30,0,0,75,true winners,0,0,0,0,1,19
+30,0,1,58,true winners,0,1,5,1,1,84
+30,0,1,71,true winners,1,1,0,NA,0,0
+30,0,1,91,true winners,0,0,NA,NA,1,96
+20,0,0,74,true winners,0,0,NA,NA,1,45
+30,0,1,71,true winners,0,0,3,0,1,72
+26,0,1,73,true winners,0,0,NA,NA,1,30
+32,0,1,67,true winners,0,1,5,0,1,105
+31,0,1,61,true winners,1,1,4,0,1,72
+26,0,1,72,true winners,0,1,NA,NA,1,56
+34,1,0,55,true winners,0,1,NA,0,1,84
+29,0,1,68,true winners,0,1,0,0,0,0
+35,0,0,67,true winners,0,1,9,0,1,126
+31,0,0,57,true winners,0,1,5,0,1,72
+34,0,1,75,true winners,0,1,18,0,0,0
+35,0,1,44,true winners,0,1,15,0,1,40
+32,0,1,67,true winners,0,0,6,1,1,60
+38,0,0,54,true winners,1,1,2,0,1,75
+33,0,1,75,true winners,0,1,NA,0,1,10
+23,0,0,70,true winners,1,0,8,0,NA,NA
+36,0,0,71,true winners,0,0,NA,1,NA,NA
+37,0,1,64,true winners,1,1,9,1,NA,NA
+25,0,1,76,true winners,0,0,7,0,0,0
+28,0,0,67,true winners,0,0,8,0,1,45
+28,0,1,59,true winners,0,1,6,0,1,48
+34,0,1,46,true winners,0,1,4,0,1,84
+38,0,1,57,true winners,0,0,14,0,1,40
+39,0,1,68,true winners,0,1,NA,0,1,60
+31,0,0,64,true winners,0,0,5,0,1,1
+31,0,1,65,true winners,0,0,7,0,NA,NA
+32,0,0,64,true winners,0,0,4,1,1,90
+32,0,0,53,true winners,0,0,4,0,1,60
+29,0,0,63,true winners,0,0,9,1,1,55
+38,0,1,62,true winners,0,0,2,0,1,100
+26,0,0,60,true winners,0,0,5,0,1,36
+29,0,0,54,true winners,0,0,1,0,1,30
+33,0,1,66,true winners,0,0,5,0,1,75
+38,0,1,60,true winners,0,1,7,0,NA,NA
+27,0,1,71,true winners,1,1,NA,NA,0,0
+32,0,1,78,true winners,1,1,NA,0,1,20
+32,0,1,67,true winners,1,0,6,0,NA,NA
+35,1,0,63,true winners,0,0,5,0,1,60
+37,0,0,67,true winners,0,1,25,0,1,56
+35,0,1,60,true winners,1,0,3,0,1,56
+28,0,1,60,true winners,0,0,NA,0,1,50
+32,0,1,77,true winners,0,1,NA,NA,1,56
+27,0,1,61,true winners,0,0,3,0,1,96
+38,0,0,65,true winners,0,1,35,0,1,54
+26,0,0,72,true winners,1,0,NA,NA,1,55
+35,0,0,61,true winners,0,0,1,0,1,70
+37,0,1,77,true winners,0,1,6,0,1,22
+37,0,0,70,true winners,0,0,NA,NA,1,100
+37,0,0,52,true winners,0,1,30,0,1,66
+38,0,1,62,true winners,0,0,3,0,1,45
+35,0,1,81,true winners,0,1,NA,0,1,56
+26,0,1,61,true winners,1,0,NA,0,1,65
+25,0,1,79,true winners,0,0,8,0,1,64
+40,0,1,74,true winners,0,1,5,0,0,0
+23,0,1,63,true winners,1,0,13,0,NA,NA
+40,1,0,49,true winners,0,1,NA,0,1,52
+38,0,1,67,true winners,0,1,20,0,1,48
+32,0,1,58,true winners,0,1,NA,0,1,110
+28,0,0,74,true winners,0,1,4,0,1,56
+27,0,1,60,true winners,1,0,NA,NA,1,52
+27,0,0,69,true winners,0,0,NA,0,1,8
+39,0,0,62,true winners,0,1,15,0,1,70
+31,0,1,73,true winners,0,0,NA,NA,1,66
+26,0,1,49,true winners,0,0,7,0,1,74
+34,0,1,75,true winners,0,0,NA,NA,NA,NA
+26,0,1,83,true winners,0,1,22,1,1,24
+29,0,1,57,true winners,1,0,8,0,1,54
+31,0,0,65,true winners,0,1,NA,0,1,72
+38,0,1,59,true winners,0,1,3,0,1,30
+37,0,1,63,true winners,0,1,4,0,NA,NA
+33,0,0,53,true winners,0,1,12,0,1,18
+30,0,0,65,true winners,0,1,5,0,1,81
+24,0,0,69,true winners,0,0,NA,NA,0,0
+28,1,1,67,true winners,0,0,0,0,1,50
+30,0,0,48,true winners,0,0,11,1,1,48
+26,0,1,77,true winners,0,0,NA,NA,1,98
+37,0,1,55,true winners,0,1,8,0,1,105
+32,0,1,62,true winners,0,1,5,0,1,72
+36,0,1,59,true winners,0,1,4,0,1,42
+37,0,1,53,true winners,0,1,19,0,1,30
+28,0,1,63,true winners,0,0,NA,NA,1,126
+34,0,0,61,true winners,0,1,11,0,1,46
+39,0,1,61,true winners,0,0,NA,0,NA,NA
+37,0,1,69,true winners,0,1,NA,NA,1,28
+34,0,0,86,true winners,1,1,NA,NA,1,50
+37,0,1,60,true winners,1,1,3,0,1,23
+28,0,0,38,true winners,0,0,10,0,1,56
+34,0,0,61,true winners,0,0,NA,NA,1,54
+24,1,0,78,true winners,1,1,NA,NA,1,72
+31,0,1,54,true winners,0,0,NA,NA,NA,NA
+35,0,1,47,true winners,1,1,4,0,1,36
+31,0,0,47,true winners,0,0,6,0,1,56
+34,1,1,64,true winners,0,1,20,1,NA,NA
+27,0,0,79,true winners,0,0,NA,0,1,74
+27,0,0,59,true winners,0,0,NA,NA,0,0
+38,0,1,67,true winners,0,1,3,0,NA,NA
+30,0,1,62,true winners,0,0,7,1,1,70
+35,0,1,59,true winners,0,1,5,0,1,60
+30,0,1,62,true winners,0,1,4,0,1,NA
+34,0,1,65,true winners,0,1,2,0,1,60
+30,0,0,54,true winners,0,1,6,NA,1,54
+32,0,0,49,true winners,0,0,5,0,1,48
+34,0,1,54,true winners,0,1,0,0,NA,NA
+25,0,1,56,true winners,0,0,1,0,1,50
+30,0,0,79,true winners,0,0,NA,NA,1,58
+27,0,0,59,true winners,0,0,NA,0,1,50
+27,0,0,71,true winners,0,0,NA,NA,0,0
+24,0,0,54,true winners,0,0,26,0,NA,NA
+21,1,1,73,true winners,0,0,11,0,1,50
+36,0,0,60,true winners,0,0,3,0,1,60
+36,0,1,55,true winners,0,1,7,0,1,98
+29,1,0,44,true winners,0,1,18,0,1,58
+29,0,0,77,true winners,1,0,NA,NA,0,0
+29,0,0,76,true winners,0,0,10,1,1,56
+36,0,0,69,true winners,1,1,NA,NA,NA,NA
+33,0,1,56,true winners,1,0,NA,0,1,23
+29,0,1,68,true winners,0,0,17,0,1,35
+29,0,1,72,true winners,1,0,NA,NA,1,48
+24,0,1,85,true winners,1,0,NA,NA,NA,NA
+30,0,0,70,true winners,0,0,0,0,1,23
+36,0,0,53,true winners,0,1,8,0,1,50
+36,0,0,48,true winners,0,1,4,0,1,20
+33,0,1,66,true winners,0,1,12,0,1,40
+35,0,1,60,true winners,0,1,NA,0,1,22
+26,0,0,64,true winners,0,0,8,0,1,81
+34,0,1,56,true winners,0,0,6,1,1,120
+28,0,0,74,true winners,0,0,NA,0,NA,NA
+32,0,0,64,true winners,1,0,NA,NA,1,36
+36,0,0,60,true winners,0,1,7,0,1,60
+34,0,1,63,true winners,0,0,3,0,1,71
+31,1,1,54,true winners,0,0,11,0,1,8
+36,0,1,71,true winners,0,1,2,0,1,NA
+27,0,0,67,true winners,0,0,NA,NA,NA,NA
+40,1,1,50,true winners,0,1,3,0,1,100
+39,0,1,62,true winners,0,1,9,0,1,9
+34,0,0,53,true winners,0,0,6,0,1,66
+36,1,1,58,true winners,0,1,3,0,1,84
+29,0,1,65,true winners,1,1,3,0,1,12
+32,0,1,62,true winners,0,0,NA,0,1,60
+31,0,1,62,true winners,0,1,10,0,1,25
+27,0,0,65,true winners,0,0,NA,NA,1,NA
+39,0,1,70,true winners,0,1,NA,0,1,56
+39,0,0,75,true winners,0,1,NA,NA,0,0
+26,0,1,63,true winners,1,0,5,0,NA,NA
+33,0,0,53,true winners,0,1,7,0,1,56
+37,0,0,56,true winners,0,1,2,0,1,40
