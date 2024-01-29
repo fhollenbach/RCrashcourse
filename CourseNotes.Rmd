@@ -448,7 +448,7 @@ We can install and load the package as follows:
 
 ```{r message=F, eval = FALSE}
 
-install.packages("tidyverse", dependencies = TRUE)
+install.packages("tidyverse", type = "binary")
 
 library(tidyverse)
 
@@ -570,9 +570,14 @@ When you run that line of code, the `dplyr` package in tidyverse executes the fi
 
 ```{r}
 
-age45 <- heights %>% 
+heights_age45 <- heights %>% 
   filter(age == 45)
 
+### or you could overwrite the old object
+# heights <- heights %>% 
+#    filter(age==45)
+### note if you assign the manipulated object to the old object name, 
+### the old object will be replaced by the new manipulated object
 ```
 
 ### Arranging
@@ -604,7 +609,11 @@ It’s not uncommon to get datasets with hundreds or even thousands of variables
 heights %>%
   select(height, sex, age, race)
 
+### or saving a new object
+heights_selected <- heights %>%
+  select(height, sex, age, race)
 ```
+
 
 #### Question 5
 Use the `heights` data set and create a new object, that only includes data for the women in the `heights` data set. 
@@ -619,13 +628,14 @@ heights %>%
   mutate(heightcm = height * 2.54) %>% 
   arrange(-heightcm)
 ```
-Again, if you do not use the assignment operator, the new variable would not be added to the dataframe object. So to actually make a change to our dataset object, we need to write: 
+Again, if you do not use the assignment operator, the new variable would not be added to the dataframe object. To actually make a change to our dataset object, we need to write: 
 
 ```{r}
 # we can use the pipe to first add a new column, then arrange by it, so we get a list of the tallest people (in cm)
 heights <- heights %>% 
   mutate(heightcm = height * 2.54) %>% 
   arrange(-heightcm)
+head(heights) ### now we have a new column in the heights object
 ```
 
 

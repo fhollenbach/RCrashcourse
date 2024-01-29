@@ -889,12 +889,15 @@ fortune()
 ```
 
     ## 
-    ## Michael Mason: Thanks! That worked.
-    ## Martin Maechler: Of course: As in about 99.99% of all cases where Bill Dunlap
-    ## helps.
-    ##    -- Michael Mason and Martin Maechler (after Bill Dunlap helped with a
-    ##       plot.hclust problem)
-    ##       R-help (November 2014)
+    ## Frank Harrell: Here is an easy approach that will yield results only slightly
+    ## less valid than one actually using the response variable:
+    ##   x <- data.frame(x1, x2, x3, x4, ..., other potential predictors)
+    ##   x[ , sample(ncol(x))]
+    ## Andy Liaw: Hmm... Shouldn't that be something like:
+    ##   x[, sample(ncol(x), ceiling(ncol(x) * runif(1)))]
+    ##    -- Frank Harrell and Andy Liaw (about alternative strategies for stepwise
+    ##       regression and 'random parsimony')
+    ##       R-help (May 2005)
 
 ### Tidyverse
 
@@ -909,7 +912,7 @@ data analysis, visualisation and more.
 We can install and load the package as follows:
 
 ``` r
-install.packages("tidyverse", dependencies = TRUE)
+install.packages("tidyverse", type = "binary")
 
 library(tidyverse)
 ```
@@ -1132,8 +1135,14 @@ operator, `<-`:, the initial object would be unchanged, unless you
 overwrite it.
 
 ``` r
-age45 <- heights %>% 
+heights_age45 <- heights %>% 
   filter(age == 45)
+
+### or you could overwrite the old object
+# heights <- heights %>% 
+#    filter(age==45)
+### note if you assign the manipulated object to the old object name, 
+### the old object will be replaced by the new manipulated object
 ```
 
 ### Arranging
@@ -1215,6 +1224,12 @@ heights %>%
     ## 10   72.2 male      26 white   
     ## # ℹ 1,182 more rows
 
+``` r
+### or saving a new object
+heights_selected <- heights %>%
+  select(height, sex, age, race)
+```
+
 #### Question 5
 
 Use the `heights` data set and create a new object, that only includes
@@ -1249,15 +1264,26 @@ heights %>%
     ## # ℹ 1,182 more rows
 
 Again, if you do not use the assignment operator, the new variable would
-not be added to the dataframe object. So to actually make a change to
-our dataset object, we need to write:
+not be added to the dataframe object. To actually make a change to our
+dataset object, we need to write:
 
 ``` r
 # we can use the pipe to first add a new column, then arrange by it, so we get a list of the tallest people (in cm)
 heights <- heights %>% 
   mutate(heightcm = height * 2.54) %>% 
   arrange(-heightcm)
+head(heights) ### now we have a new column in the heights object
 ```
+
+    ## # A tibble: 6 × 7
+    ##    earn height sex      ed   age race  heightcm
+    ##   <dbl>  <dbl> <chr> <dbl> <dbl> <chr>    <dbl>
+    ## 1 60000   77.1 male     17    42 white     196.
+    ## 2 32000   76.8 male     16    30 white     195.
+    ## 3 41000   76.8 male     16    33 white     195.
+    ## 4 28000   76.7 male     14    28 white     195.
+    ## 5 89000   76.5 male     16    41 white     194.
+    ## 6 20000   76.4 male     14    26 white     194.
 
 ### Summarise
 
