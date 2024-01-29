@@ -245,14 +245,7 @@ class(1)
 ```
 
 
-*Factor* data are categorical variables that can be either numeric or character but distinguish a certain (fixed) number of categories. For example, you could have a variable that distinguishes hair color and can take the following values: "brown", "black", "blond". Factor variables can be unordered (such as hair color) or have an intrinsic order. For example, if you are describing education levels as a categorical variable, we usually have a clear order: "no degree", "high school", "Bachelor", "post-graduate degree", etc. You might remember ordered categorical variables as *ordinal* variables. _R_ can accommodate both unordered and ordered categorical variables. 
-
-```{r factor}
-haircolor <- factor(c("brown", "blond", "black")) ## we are creating a factor variable that can take three values: brown, blond, black
-
-education <- factor(c("no degree", "high school", "Bachelor", "post-graduate degree"), ordered = TRUE) ### education is also a factor variable, but with an intrinsic ordering
-education ## as you can see, R denotes the order of the different levels
-```
+*Factor* data are categorical variables that can be either numeric or character but distinguish a certain (fixed) number of categories. For example, you could have a variable that distinguishes hair color and can take the following values: "brown", "black", "blond". Factor variables can be unordered (such as hair color) or have an intrinsic order. For example, if you are describing education levels as a categorical variable, we usually have a clear order: "no degree", "high school", "Bachelor", "post-graduate degree", etc. You might remember ordered categorical variables as *ordinal* variables. _R_ can accommodate both unordered and ordered categorical variables. We will see how these types of variables look later on. 
 
 *Logical* variables can take only two values `TRUE` or `FALSE`. The output of logical operations is always of type *logical*. We can use *logical* variables to run conditional operations. 
 
@@ -262,7 +255,7 @@ education ## as you can see, R denotes the order of the different levels
 1 < 0 ## FALSE
 ```
 
-**Fun fact**: `TRUE` and `FALSE` are represented as by _R_ in binary form as `1` and `0` and can be used in mathematical operations (more later). 
+**Fun fact**: `TRUE` and `FALSE` are represented as by _R_ in binary form as `1` and `0` and can be used in mathematical operations (more on this later). 
 What do you think would be the result of `(1 == 1)/2`
 Try it out. 
 
@@ -280,7 +273,7 @@ _R_ is an *object oriented programming (OOP)* language, which means that everyth
 - lists
 - functions
 
-We will cover each in turn. 
+We will cover each in turn. If you think of the _R_ workspace as a big cabinet, you can think of objects as little drawers in the cabinet, each with with some content. These objects are present in the workspace. You can create new objects, delete objects, and manipulate objects. One of the many advantages of R over Stata is that you can have multiple objects in your workspace at the same time. For example, you could have two different data sets open at the same time or even two different versions of the same data set.
 
 One important operator in _R_ is the **assignment operator**. With the assignment operator we can assign values/numbers/words to objects that are remembered by _R_. There are actually two assignment operators in _R_: 
 
@@ -290,10 +283,10 @@ One important operator in _R_ is the **assignment operator**. With the assignmen
 
 It doesn't really matter which one you use, but you should decide early and use one consistently. In this course, the examples will all use the `<-` assignment operator. You can think of the arrow assignment symbol `<-` as `gets`. 
 
-For example, say we might want to create an object in _R_ to save names in. Let's create an object that contains my name, so we assign the word 'Florian' to the object called name. Object names have to start with a letter but can include numbers and other symbols. They cannot include empty spaces. It is good practice to only use lowercase letters, numbers, and `_` in your object names.^[See here for a complete style guide for programming in R: [https://style.tidyverse.org/index.html](https://style.tidyverse.org/index.html)] __You should always try use reasonable and informative names for your objects, so that you can remember what are the contents of a given object.__
+For example, say we might want to create an object in _R_ to save names in. Let's create an object that contains my name, so we assign the word 'Florian' to the object called name. Object names have to start with a letter but can include numbers and other symbols. Object names cannot include empty spaces and are __not__ surrounded by quotation marks. It is good practice to only use lowercase letters, numbers, and `_` in your object names.^[See here for a complete style guide for programming in R: [https://style.tidyverse.org/index.html](https://style.tidyverse.org/index.html)] __You should always try use reasonable and informative names for your objects, so that you can remember what are the contents of a given object.__
 
 ```{r name assignment}
-name <- "Florian" ## object 'name' gets assigned the character vector 'Florian'
+names <- "Florian" ## object 'name' gets assigned the character vector 'Florian'
 ```
 
 In this course we will primarily use *function*, *data frames*, and *vectors*. *Functions* usually take one or more inputs (called arguments), perform some operation on the input, and generate an output. For example, the `sqrt()` operator mentioned above is a function that takes one *argument*. If a function takes multiple arguments, they are usually separated by a comma, e.g., `plot(x, y)`. We will use a lot of different functions, some of which will use one, some will use many arguments. 
@@ -301,12 +294,13 @@ In this course we will primarily use *function*, *data frames*, and *vectors*. *
 sqrt(9) ## sqrt() is the function, the input here is 9, the function takes the input and calculates the square root, it then outputs the result
 ```
 
-*Vectors* are a simple data structure in _R_ that contain *N* elements of one type. A vector is defined by its length, which is the number of elements it contains. Vectors are created by using the function `c()` (combine) and separating the individual elements by commas. It's important to note that all elements of the vector must be of the same type of variable. For example, if you vector includes numeric and character data, R will automatically make all numbers into characters. To create a simple vector of numbers and assign it to the object `number_example` we would write: 
+*Vectors* are a simple data structure in _R_ that contain *N* elements of one type. A vector is defined by its length, which is the number of elements it contains. Vectors are created by using the function `c()` (combine/concatenate) and separating the individual elements by commas. It's important to note that all elements of the vector must be of the same type of variable. For example, if you vector includes numeric and character data, R will automatically make all numbers into characters. To create a simple vector of numbers and assign it to the object `number_example` we would write: 
 ```{r number example}
 number_example <- c(1, 2, 3, 4, 5) ### object name assignment operator and object contents
 ```
 
-To print the content (or if too large a preview of the content) of an object, you can just type and execute the object name or use the `print()` function. Of course, the object has to exist, i.e., you have to have created it first. You can access specific elements in a vector with square brackets `[]` behind the object name and the specific location number of element.
+To print the content (or if too large a preview of the content) of an object, you can just type and execute the object name or use the `print()` function. Of course, the object has to exist, i.e., you have to have created it first. You can't take a drawer out of the cabinet, if the drawer does not exist. You can access specific elements in a vector with square brackets `[]` behind the object name and the specific location number of element. Note that R starts counting at 1 (other programming languages start at 0, e.g., Python or C++).
+
 ```{r print example}
 number_example ## show all elements
 
@@ -314,6 +308,16 @@ print(number_example) ## print content of object
 
 number_example[1] ## only the first element
 ```
+Let's return to our factor variable type. Here we have two types of factor variables, first unordered and then ordered. We assign those variables to a new object called `haircolor` and `education`.
+
+```{r factor}
+haircolor <- factor(c("brown", "blond", "black")) ## we are creating a factor variable that can take three values: brown, blond, black
+
+education <- factor(c("no degree", "high school", "Bachelor", "post-graduate degree"), ordered = TRUE) ### education is also a factor variable, but with an intrinsic ordering
+education ## as you can see, R denotes the order of the different levels
+```
+
+
 
 *Data frames* are objects that contain multiple (many) observations for multiple variables. You could think of each variable being a vector by itself. Then the variables are bound together into a data frame. Each variable then becomes one column of the data frame. For example, assume we have data on five students. We have recorded their names, height, birth year, and favorite color. 
 
