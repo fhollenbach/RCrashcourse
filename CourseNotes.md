@@ -1,7 +1,7 @@
 *R* Crash Course CBS
 ================
 Florian M. Hollenbach & Rasmus Corlin Christensen
-2023-02-02
+2024-01-29
 
 # Getting Started in *R* & RStudio
 
@@ -9,20 +9,22 @@ In this class we will work with and analyze data in *R*. *R* is a
 programming language that is widely used for data manipulation,
 visualization, and analysis. *R* is an open source program and is free
 for anyone. Many of the functions and packages (more on this later) we
-will use within *R* are written by other *R* users. While we work with
-the *R* program, we will use a different program as the graphical
-interface. Specifically, we will use the RStudio IDE (integrated
-development environment) to work in *R*. Both programs are available for
-free.
+will use within *R* are written by other *R* users. While we work in the
+*R* programming language, we will use a different program as the
+graphical interface. Specifically, we will use the RStudio IDE
+(integrated development environment) to write and execute code in *R*.
+Both programs are available for free. While I recommend that you use
+RStudio, you can also run *R* in the terminal, in the cloud, or in other
+IDEs.
 
 *R* can be tough to learn initially, especially if you have never
 programmed before. You will encounter situations where you are
 completely lost and might have no idea what to do or what the next step
 should be. It is important not to fall into despair. **This is
-completely normal!** Hadley Wickham works for RStudio and is one of the
-most prolific programmers in R. We will work with many of his packages
-throughout the course. As Hadley notes, it is completely normal to feel
-lost when starting to program:
+completely normal!** Hadley Wickham works for the company behind RStudio
+and is one of the most prolific *R* programmers in the world. We will
+work with many of his packages throughout the course. As Hadley notes,
+it is completely normal to feel lost when starting to program:
 <center>
 
 <figure>
@@ -33,14 +35,18 @@ alt="Hadley Wickham" />
 
 </center>
 
-In addition, it is **important that you ask question when you are
-stuck.** We have the discussion forum on Canvas and you should make use
-of it as much as possible. If you are stuck and don’t know where to go
-next, ask in class or in the discussion forum. **There are no stupid
-questions! Be the hero who asks the question that everyone is thinking
-about.**
+**So no despair if you feel lost or stuck!** In addition, it is
+**important that you ask questions** when you are stuck. We have the
+discussion forum on Canvas and you should make use of it as much as
+possible. If you are stuck and don’t know where to go next, ask in class
+or in the discussion forum. **There are no stupid questions! Be the hero
+who asks the question that everyone is thinking about.**
 
-![Alt Text](https://media.giphy.com/media/gg9LCtsjjBninkG52i/giphy.gif)
+<figure>
+<img src="https://media.giphy.com/media/gg9LCtsjjBninkG52i/giphy.gif"
+alt="Alt Text" />
+<figcaption aria-hidden="true">Alt Text</figcaption>
+</figure>
 
 ## Installing *R* & RStudio
 
@@ -49,20 +55,20 @@ The first step is to correctly install *R* on your machine. Please go to
 latest version of *R* for your specific operating system. Once you have
 downloaded the program, follow the general instructions to install *R*.
 
-After installing *R*, we need to install the RStudio IDE. You can
-download the latest version of RStudio
-[here](https://www.rstudio.com/products/rstudio/download/#download).
-Once you have downloaded RStudio, follow the instructions and install
-the program. If you are on Mac, make sure you open RStudio from the
-Applications folder and delete the file in your “Download” folder. You
-do not want to open the program from the Downloads folder.
+After installing *R*, I recommend that you install the RStudio IDE. You
+can download the latest version of RStudio
+[here](https://posit.co/download/rstudio-desktop/). Once you have
+downloaded RStudio, follow the instructions and install the program. If
+you are on Mac, make sure you open RStudio from the Applications folder
+and delete the file in your “Download” folder. You do not want to open
+the program from the Downloads folder.
 
 If you have a lot of trouble installing R and RStudio on your machine,
 you can also use RStudio inside your web brower in the cloud. You can
-sign up for a free account here: <https://rstudio.cloud/>. Note,
-however, that the free version of RStudio Cloud limits you to 25 hours
-of use per month and requires you to be connected to the internet. In
-general, I would encourage you to install the programs on your machine.
+sign up for a free account here: <https://posit.cloud/>. Note, however,
+that the free version of RStudio Cloud limits you to 25 hours of use per
+month and requires you to be connected to the internet. In general, I
+would encourage you to install the programs on your machine.
 
 Once you have installed both programs, open up RStudio. You should see
 something like this:
@@ -75,13 +81,16 @@ something like this:
 
 </center>
 
-This is the RStudio program. We will work with this program when
-manipulating, analyzing, or visualizing any data. Start by looking
-around in RStudio and try to familiarize yourself with the program.
+This is the RStudio IDE. We will work in RStudio to write code to
+manipulate, analyze, or visualize data. In contrast to other programs,
+such as Excel or Stata, you can’t really *point and click* to analyze
+data in R. Instead, we write *code* and then *evaluate* the code.
+
+Start by looking around in RStudio and try to familiarize yourself with
+the program.
 
 You can adjust the appearance (for example, font or background color) if
-you click on RStudio → Preferences → Appearance. (On Mac: Tools → Global
-Options → Appearance)
+you click on Tools → Global Options → Appearance)
 
 ## Getting started with *R* & RStudio
 
@@ -131,7 +140,7 @@ mathematical operators are probably most often used:
 - `sqrt()`: square root
 
 Now try out some calculations yourself! Note that *R* follows standard
-order of operations rules, so it can be important to use parentheses.
+order of operations rules, so it may be important to use parentheses.
 
 ``` r
 7 + 3/5
@@ -219,13 +228,64 @@ lines of code will return. Then run them individually:
 (12 == 3*4 & 3 == 4) | 0 == 0 
 ```
 
+### RStudio Projects, Workspace, and saving
+
+Before we continue, we should briefly talk about RStudio Projects and
+the Workspace.
+
+When you open RStudio, R is running in the background in a new session.
+This session is running in the background and you can execute code in
+the console. However, once you close RStudio, the session is terminated
+and all the code you have written is lost and any data manipulation you
+have done is lost. You always want to start with a new session and a
+clean workspace when starting RStudio (think of starting on a blank
+canvas). To do so, we first want to make sure that the workspace is not
+saved when closing RStudio. Open the Settings again: Tools → Global
+Options → General. Make sure that the option “Restore .RData into
+workspace at startup” is unchecked and that “Save workspace to .RData on
+exit” is set to “Never”. See the screenshot below for the initial
+setting that needs to be changed.
+
+<center>
+
+<figure>
+<img src="images/workspace.png" style="width:40.0%"
+alt="Workspace Seetings" />
+<figcaption aria-hidden="true">Workspace Seetings</figcaption>
+</figure>
+
+</center>
+
+Next we will create a RStudio Project. Projects are a great way to
+organize your work and make sure that you can easily reproduce your
+work. You can think of a project as a folder that contains all the files
+you need for a specific project. You can create a new project by
+clicking on File → New Project or on the Project button in the upper
+right corner of RStudio. Then select “New Directory” and “New Project”.
+You can then name the project and select a location where you want to
+save the project. You should make sensible choices for names and
+location.
+
+I recommend that you now create a Project for this course and save all
+your files for this course in that folder. Within the project folder you
+can create additional subfolders, for example for each class or folders
+for code and data.
+
+When you open RStudio, it will by default load the last project you
+worked on. You can also open a specific project by clicking on File →
+Open Project. When a project is open, the working directory (similar to
+setting the current directory in Stata – the *cd* command) is
+automatically set to the project directory. This means that any files
+you want to load or save will be located in the project directory or
+*relative to it* (We will get back to this later).
+
 ### Comments & Writing Code in Rscripts
 
 The `#` operator is special in *R*, as it denotes comments. Anything
 that in a line written behind the `#` is ignored by *R* and not
-evaluated. Try writing `# 3 + 4` and hit return. You will see that *R*
-does not evaluate the command. The `#` is used to add comments into
-rcode, we will return to the importance of this later.
+evaluated. Go to the console and try writing `# 3 + 4`, then hit return.
+You will see that *R* does not evaluate the command. The `#` is used to
+add comments into rcode, we will return to the importance of this later.
 
 Anything you write in the console is immediately interpreted by *R* once
 you hit `Enter`/`Return`. In general, we could enter any command here in
@@ -237,7 +297,10 @@ point and click to estimate models or created graphs (for example in
 Stata), it is hard to remember exactly what you have done and not
 possible for others to reproduce your code. Think of you using a sheet
 of paper to make a calculation and then immediately discarding the piece
-of paper.
+of paper. This is one of the reasons why it is frowned upon to use the
+point and click interface in Stata or manipulate data in Excel. Once you
+have done something, it is hard to remember exactly what you have done
+and it is impossible for others to reproduce your work.
 
 Instead of working directly in the Console, we write *Rcode* in a basic
 script that we can save (this is equivalent to a do-file, if you have
@@ -245,8 +308,8 @@ worked with Stata before). Writing code in the script will allow us to
 save our code and re-execute the commands at any time in the future.
 Working with scripts also ensures that our work is *reproducible*, i.e.,
 others can go back and check whether our work was correct. This is of
-great importance, especially when doing scientific research, or for your
-professor to check your exam :).
+great importance, especially when doing scientific research, or when
+your professor wants to check your exam :).
 
 To open a new *rscript*, click on the little white plus in the upper
 left corner of RStudio and select `R Script`.
@@ -258,11 +321,13 @@ alt="Opening Rscripts" />
 </center>
 
 Once you have an rscript open, the first step should be to save it
-somewhere sensible. For example, you might create a folder for this
-course and save all rscripts for class in that folder. You should pick a
-name for your rscript that makes sense and reminds you about the
-contents of the script. For example, you could save this first rscript
-as `Rcrashcourse.R` or `Rcrashcourse_day1.R`.
+somewhere sensible. For example, if you have created a Project folder
+for this course, you might create a subfolder that is called *Code* save
+all rscripts for class in that folder (Another option would be to create
+a subfolder for each week). You should pick a name for your rscript that
+makes sense and reminds you about the contents of the script. For
+example, you could save this first rscript as `Rcrashcourse.R` or
+`Rcrashcourse_day1.R`.
 
 **You should practice writing anything you do in *R* in a rscript** and
 execute the code from the script. Start by repeating a few of the simple
@@ -448,18 +513,8 @@ example, if you are describing education levels as a categorical
 variable, we usually have a clear order: “no degree”, “high school”,
 “Bachelor”, “post-graduate degree”, etc. You might remember ordered
 categorical variables as *ordinal* variables. *R* can accommodate both
-unordered and ordered categorical variables.
-
-``` r
-haircolor <- factor(c("brown", "blond", "black")) ## we are creating a factor variable that can take three values: brown, blond, black
-
-education <- factor(c("no degree", "high school", "Bachelor", "post-graduate degree"), ordered = TRUE) ### education is also a factor variable, but with an intrinsic ordering
-education ## as you can see, R denotes the order of the different levels
-```
-
-    ## [1] no degree            high school          Bachelor            
-    ## [4] post-graduate degree
-    ## Levels: Bachelor < high school < no degree < post-graduate degree
+unordered and ordered categorical variables. We will see how these types
+of variables look later on.
 
 *Logical* variables can take only two values `TRUE` or `FALSE`. The
 output of logical operations is always of type *logical*. We can use
@@ -478,9 +533,9 @@ output of logical operations is always of type *logical*. We can use
     ## [1] FALSE
 
 **Fun fact**: `TRUE` and `FALSE` are represented as by *R* in binary
-form as `1` and `0` and can be used in mathematical operations (more
-later). What do you think would be the result of `(1 == 1)/2` Try it
-out.
+form as `1` and `0` and can be used in mathematical operations (more on
+this later). What do you think would be the result of `(1 == 1)/2` Try
+it out.
 
 ``` r
 1 == 1 ## TRUE
@@ -500,7 +555,14 @@ can come in different types, such as:
 - lists
 - functions
 
-We will cover each in turn.
+We will cover each in turn. If you think of the *R* workspace as a big
+cabinet, you can think of objects as little drawers in the cabinet, each
+with with some content. These objects are present in the workspace. You
+can create new objects, delete objects, and manipulate objects. One of
+the many advantages of R over Stata is that you can have multiple
+objects in your workspace at the same time. For example, you could have
+two different data sets open at the same time or even two different
+versions of the same data set.
 
 One important operator in *R* is the **assignment operator**. With the
 assignment operator we can assign values/numbers/words to objects that
@@ -519,14 +581,15 @@ and use one consistently. In this course, the examples will all use the
 For example, say we might want to create an object in *R* to save names
 in. Let’s create an object that contains my name, so we assign the word
 ‘Florian’ to the object called name. Object names have to start with a
-letter but can include numbers and other symbols. They cannot include
-empty spaces. It is good practice to only use lowercase letters,
-numbers, and `_` in your object names.[^2] **You should always try use
-reasonable and informative names for your objects, so that you can
-remember what are the contents of a given object.**
+letter but can include numbers and other symbols. Object names cannot
+include empty spaces and are **not** surrounded by quotation marks. It
+is good practice to only use lowercase letters, numbers, and `_` in your
+object names.[^2] **You should always try use reasonable and informative
+names for your objects, so that you can remember what are the contents
+of a given object.**
 
 ``` r
-name <- "Florian" ## object 'name' gets assigned the character vector 'Florian'
+names <- "Florian" ## object 'name' gets assigned the character vector 'Florian'
 ```
 
 In this course we will primarily use *function*, *data frames*, and
@@ -547,9 +610,9 @@ sqrt(9) ## sqrt() is the function, the input here is 9, the function takes the i
 *Vectors* are a simple data structure in *R* that contain *N* elements
 of one type. A vector is defined by its length, which is the number of
 elements it contains. Vectors are created by using the function `c()`
-(combine) and separating the individual elements by commas. It’s
-important to note that all elements of the vector must be of the same
-type of variable. For example, if you vector includes numeric and
+(combine/concatenate) and separating the individual elements by commas.
+It’s important to note that all elements of the vector must be of the
+same type of variable. For example, if you vector includes numeric and
 character data, R will automatically make all numbers into characters.
 To create a simple vector of numbers and assign it to the object
 `number_example` we would write:
@@ -561,9 +624,11 @@ number_example <- c(1, 2, 3, 4, 5) ### object name assignment operator and objec
 To print the content (or if too large a preview of the content) of an
 object, you can just type and execute the object name or use the
 `print()` function. Of course, the object has to exist, i.e., you have
-to have created it first. You can access specific elements in a vector
+to have created it first. You can’t take a drawer out of the cabinet, if
+the drawer does not exist. You can access specific elements in a vector
 with square brackets `[]` behind the object name and the specific
-location number of element.
+location number of element. Note that R starts counting at 1 (other
+programming languages start at 0, e.g., Python or C++).
 
 ``` r
 number_example ## show all elements
@@ -582,6 +647,21 @@ number_example[1] ## only the first element
 ```
 
     ## [1] 1
+
+Let’s return to our factor variable type. Here we have two types of
+factor variables, first unordered and then ordered. We assign those
+variables to a new object called `haircolor` and `education`.
+
+``` r
+haircolor <- factor(c("brown", "blond", "black")) ## we are creating a factor variable that can take three values: brown, blond, black
+
+education <- factor(c("no degree", "high school", "Bachelor", "post-graduate degree"), ordered = TRUE) ### education is also a factor variable, but with an intrinsic ordering
+education ## as you can see, R denotes the order of the different levels
+```
+
+    ## [1] no degree            high school          Bachelor            
+    ## [4] post-graduate degree
+    ## Levels: Bachelor < high school < no degree < post-graduate degree
 
 *Data frames* are objects that contain multiple (many) observations for
 multiple variables. You could think of each variable being a vector by
@@ -745,8 +825,6 @@ values.
 student_df$height_in_meters <- student_df$height*100 ## multiply each value by 100 and assign to new variable
 ```
 
-### Briefly talk about RStudio Project & Workspace Setting
-
 ## **Packages**
 
 Packages are the fundamental units of R code. They include reusable R
@@ -811,16 +889,12 @@ fortune()
 ```
 
     ## 
-    ## Rahul: Microsoft's being a part of this makes me worried about R's future. It's
-    ## like a Michelin star restaurant becoming part of a McDonald's franchise chain.
-    ## Andrew Gelman: I dunno, R's not quite a Michelin-starred restaurant. It's more
-    ## like a food truck.
-    ## Daniel Lakeland: I would say if R is like a food truck, it's a TARDIS food
-    ## truck that's bigger on the inside and offers a vast array of multi-ethnic
-    ## cuisine which, if not all entirely tasty, is at least A rated on sanitation.
-    ##    -- Rahul, Andrew Gelman, and Daniel Lakeland (in a discussion about Excel
-    ##       interfaces and Microsoft being part of the new R Consortium)
-    ##       AndrewGelman.com (July 2015)
+    ## Michael Mason: Thanks! That worked.
+    ## Martin Maechler: Of course: As in about 99.99% of all cases where Bill Dunlap
+    ## helps.
+    ##    -- Michael Mason and Martin Maechler (after Bill Dunlap helped with a
+    ##       plot.hclust problem)
+    ##       R-help (November 2014)
 
 ### Tidyverse
 
@@ -889,7 +963,7 @@ Let’s try loading .csv file called heights.csv from an online location,
 and saving that to an object called `heights`
 
 ``` r
-heights <- read_csv("https://raw.githubusercontent.com/fhollenbach/RCrashcourse/main/heights.csv")
+heights <- read_csv("https://raw.githubusercontent.com/fhollenbach/RCrashcourse/main/Data/heights.csv")
 ```
 
     ## Rows: 1192 Columns: 6
@@ -906,11 +980,14 @@ We can do the exact same from your local data - if you download the
 repository](https://github.com/fhollenbach/RCrashcourse) or Canvas.
 
 You then have to put the data somewhere useful for the package to load
-your data. For example, you may create a folder for all the files for
-this class, e.g., “QuantII”.
+your data. For example, if you put the folder directly into the Project
+folder and the project is open, then you do not specify a path. If you
+added a “Data” or week specific folder, then you need to specify the
+path *relative* to the project folder.
 
 ``` r
-heights <- read_csv("~/Desktop/QuantII/heights.csv")### this depends on the location of your file
+heights <- read_csv("heights.csv")### if directly in the project folder
+heights <- read_csv("Data/heights.csv")### if in Data folder in the project folder
 ```
 
 When you run `read_csv()` it prints out a column specification that
@@ -1085,7 +1162,7 @@ heights %>%
     ##  8  1000   64.7 female    12    18 white
     ##  9  1000   65.5 male      12    18 white
     ## 10 50000   69.1 male      11    18 white
-    ## # … with 1,182 more rows
+    ## # ℹ 1,182 more rows
 
 Use `desc()` to re-order by a column in descending order:
 
@@ -1107,7 +1184,7 @@ heights %>%
     ##  8  4500   58.0 female     5    85 white
     ##  9 35000   69.9 male       9    84 white
     ## 10 25000   58.9 female    15    83 white
-    ## # … with 1,182 more rows
+    ## # ℹ 1,182 more rows
 
 ### Select
 
@@ -1136,7 +1213,7 @@ heights %>%
     ##  8   72.7 male      46 white   
     ##  9   72.0 male      21 hispanic
     ## 10   72.2 male      26 white   
-    ## # … with 1,182 more rows
+    ## # ℹ 1,182 more rows
 
 #### Question 5
 
@@ -1169,7 +1246,7 @@ heights %>%
     ##  8 16000   76.2 male     15    32 white     193.
     ##  9 27000   76.0 male     12    39 white     193.
     ## 10 40000   75.6 male     16    38 black     192.
-    ## # … with 1,182 more rows
+    ## # ℹ 1,182 more rows
 
 Again, if you do not use the assignment operator, the new variable would
 not be added to the dataframe object. So to actually make a change to

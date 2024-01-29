@@ -394,8 +394,6 @@ We can also create a new variable in the data frame. Once again we use the dolla
 student_df$height_in_meters <- student_df$height*100 ## multiply each value by 100 and assign to new variable
 ```
 
-### Briefly talk about RStudio Project & Workspace Setting
-
 
 ## **Packages**
 
@@ -488,18 +486,19 @@ Let's try loading .csv file called heights.csv from an online location, and savi
 
 ```{r}
 
-heights <- read_csv("https://raw.githubusercontent.com/fhollenbach/RCrashcourse/main/heights.csv")
+heights <- read_csv("https://raw.githubusercontent.com/fhollenbach/RCrashcourse/main/Data/heights.csv")
 
 ```
 
 We can do the exact same from your local data - if you download the `heights.csv` file from the [RCrashcourse repository](https://github.com/fhollenbach/RCrashcourse) or Canvas.
 
-You then have to put the data somewhere useful for the package to load your data. For example, you may create a folder for all the files for this class, e.g., "QuantII". 
+You then have to put the data somewhere useful for the package to load your data. For example, if you put the folder directly into the Project folder and the project is open, then you do not specify a path. If you added a "Data" or week specific folder, then you need to specify the path _relative_ to the project folder. 
 
 
 ```{r eval = FALSE}
 
-heights <- read_csv("~/Desktop/QuantII/heights.csv")### this depends on the location of your file
+heights <- read_csv("heights.csv")### if directly in the project folder
+heights <- read_csv("Data/heights.csv")### if in Data folder in the project folder
 
 ```
 
