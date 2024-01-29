@@ -12,14 +12,14 @@ library(tidyverse)
 # Getting Started in _R_ & RStudio
 
 
-In this class we will work with and analyze data in _R_. _R_ is a programming language that is widely used for data manipulation, visualization, and analysis. _R_ is an open source program and is free for anyone. Many of the functions and packages (more on this later) we will use within _R_ are written by other _R_ users. While we work with the _R_ program, we will use a different program as the graphical interface. Specifically, we will use the RStudio IDE (integrated development environment) to work in _R_. Both programs are available for free. 
+In this class we will work with and analyze data in _R_. _R_ is a programming language that is widely used for data manipulation, visualization, and analysis. _R_ is an open source program and is free for anyone. Many of the functions and packages (more on this later) we will use within _R_ are written by other _R_ users. While we work in the _R_ programming language, we will use a different program as the graphical interface. Specifically, we will use the RStudio IDE (integrated development environment) to write and execute code in _R_. Both programs are available for free. While I recommend that you use RStudio, you can also run _R_ in the terminal, in the cloud, or in other IDEs.
 
-_R_ can be tough to learn initially, especially if you have never programmed before. You will encounter situations where you are completely lost and might have no idea what to do or what the next step should be. It is important not to fall into despair. __This is completely normal!__ Hadley Wickham works for RStudio and is one of the most prolific programmers in R. We will work with many of his packages throughout the course. As Hadley notes, it is completely normal to feel lost when starting to program: 
+_R_ can be tough to learn initially, especially if you have never programmed before. You will encounter situations where you are completely lost and might have no idea what to do or what the next step should be. It is important not to fall into despair. __This is completely normal!__ Hadley Wickham works for the company behind RStudio and is one of the most prolific _R_ programmers in the world. We will work with many of his packages throughout the course. As Hadley notes, it is completely normal to feel lost when starting to program: 
 <center>
 ![Hadley Wickham](images/wickham.jpeg){width=10%}
 </center>
 
-In addition, it is __important that you ask question when you are stuck.__ We have the discussion forum on Canvas and you should make use of it as much as possible. If you are stuck and don't know where to go next, ask in class or in the discussion forum. __There are no stupid questions! Be the hero who asks the question that everyone is thinking about.__
+__So no despair if you feel lost or stuck!__ In addition, it is __important that you ask questions__ when you are stuck. We have the discussion forum on Canvas and you should make use of it as much as possible. If you are stuck and don't know where to go next, ask in class or in the discussion forum. __There are no stupid questions! Be the hero who asks the question that everyone is thinking about.__
 
 ![Alt Text](https://media.giphy.com/media/gg9LCtsjjBninkG52i/giphy.gif)
 
@@ -27,19 +27,21 @@ In addition, it is __important that you ask question when you are stuck.__ We ha
 
 The first step is to correctly install _R_ on your machine. Please go to [https://cloud.r-project.org/](https://cloud.r-project.org/). Then click on the link to download the latest version of _R_ for your specific operating system. Once you have downloaded the program, follow the general instructions to install _R_.
 
-After installing _R_, we need to install the RStudio IDE. You can download the latest version of RStudio [here](https://www.rstudio.com/products/rstudio/download/#download). Once you have downloaded RStudio, follow the instructions and install the program. If you are on Mac, make sure you open RStudio from the Applications folder and delete the file in your "Download" folder. You do not want to open the program from the Downloads folder. 
+After installing _R_, I recommend that you install the RStudio IDE. You can download the latest version of RStudio [here](https://posit.co/download/rstudio-desktop/). Once you have downloaded RStudio, follow the instructions and install the program. If you are on Mac, make sure you open RStudio from the Applications folder and delete the file in your "Download" folder. You do not want to open the program from the Downloads folder. 
 
 
-If you have a lot of trouble installing R and RStudio on your machine, you can also use RStudio inside your web brower in the cloud. You can sign up for a free account here: [https://rstudio.cloud/](https://rstudio.cloud/). Note, however, that the free version of RStudio Cloud limits you to 25 hours of use per month and requires you to be connected to the internet. In general, I would encourage you to install the programs on your machine. 
+If you have a lot of trouble installing R and RStudio on your machine, you can also use RStudio inside your web brower in the cloud. You can sign up for a free account here: [https://posit.cloud/](https://posit.cloud/). Note, however, that the free version of RStudio Cloud limits you to 25 hours of use per month and requires you to be connected to the internet. In general, I would encourage you to install the programs on your machine. 
 
 Once you have installed both programs, open up RStudio. You should see something like this: 
 <center>
 ![RStudio](images/Rstudio.png){width=40%}
 </center>
 
-This is the RStudio program. We will work with this program when manipulating, analyzing, or visualizing any data. Start by looking around in RStudio and try to familiarize yourself with the program. 
+This is the RStudio IDE. We will work in RStudio to write code to manipulate, analyze, or visualize data. In contrast to other programs, such as Excel or Stata, you can't really _point and click_ to analyze data in R. Instead, we write _code_ and then _evaluate_ the code. 
 
-You can adjust the appearance (for example, font or background color) if you click on RStudio &rarr; Preferences &rarr; Appearance. (On Mac: Tools &rarr; Global Options &rarr; Appearance)
+Start by looking around in RStudio and try to familiarize yourself with the program. 
+
+You can adjust the appearance (for example, font or background color) if you click on Tools &rarr; Global Options &rarr; Appearance)
 
 ## Getting started with _R_ & RStudio
 
@@ -74,7 +76,7 @@ After _R_ prints the result of the evaluated command, it once again provides the
 - `sqrt()`: square root
 
 Now try out some calculations yourself! 
-Note that _R_ follows standard order of operations rules, so it can be important to use parentheses.
+Note that _R_ follows standard order of operations rules, so it may be important to use parentheses.
 
 ```{r calculator examples}
 7 + 3/5
@@ -135,22 +137,39 @@ Take 5 minutes to predict and write down what each of the following lines of cod
 
 (12 == 3*4 & 3 == 4) | 0 == 0 
 ```
+### RStudio Projects, Workspace, and saving
+
+Before we continue, we should briefly talk about RStudio Projects and the Workspace. 
+
+When you open RStudio, R is running in the background in a new session. This session is running in the background and you can execute code in the console. However, once you close RStudio, the session is terminated and all the code you have written is lost and any data manipulation you have done is lost. You always want to start with a new session and a clean workspace when starting RStudio (think of starting on a blank canvas). To do so, we first want to make sure that the workspace is not saved when closing RStudio. 
+Open the Settings again: Tools &rarr; Global Options &rarr; General. Make sure that the option "Restore .RData into workspace at startup" is unchecked and that "Save workspace to .RData on exit" is set to "Never". See the screenshot below for the initial setting that needs to be changed.
+
+
+<center>
+![Workspace Seetings](images/workspace.png){width=40%}
+</center>
+
+Next we will create a RStudio Project. Projects are a great way to organize your work and make sure that you can easily reproduce your work. You can think of a project as a folder that contains all the files you need for a specific project. You can create a new project by clicking on File &rarr; New Project or on the Project button in the upper right corner of RStudio. Then select "New Directory" and "New Project". You can then name the project and select a location where you want to save the project. You should make sensible choices for names and location. 
+
+I recommend that you now create a Project for this course and save all your files for this course in that folder. Within the project folder you can create additional subfolders, for example for each class or folders for code and data.
+
+When you open RStudio, it will by default load the last project you worked on. You can also open a specific project by clicking on File &rarr; Open Project. When a project is open, the working directory (similar to setting the current directory in Stata -- the _cd_ command) is automatically set to the project directory. This means that any files you want to load or save will be located in the project directory or _relative to it_ (We will get back to this later).
 
 
 ### Comments & Writing Code in Rscripts
 
-The `#` operator is special in _R_, as it denotes comments. Anything that in a line written behind the `#` is ignored by _R_ and not evaluated. Try writing `# 3 + 4` and hit return. You will see that _R_ does not evaluate the command. The `#` is used to add comments into rcode, we will return to the importance of this later. 
+The `#` operator is special in _R_, as it denotes comments. Anything that in a line written behind the `#` is ignored by _R_ and not evaluated. Go to the console and try writing `# 3 + 4`, then hit return. You will see that _R_ does not evaluate the command. The `#` is used to add comments into rcode, we will return to the importance of this later. 
 
-Anything you write in the console is immediately interpreted by _R_ once you hit `Enter`/`Return`. In general, we could enter any command here in the **Console** and have _R_ execute the command. Executing commands directly in the console is bad practice, however. You should avoid doing so as much as possible. When we write and evaluate code directly in the **Console** it is executed at once and then lost.  Similarly, if you point and click to estimate models or created graphs (for example in Stata), it is hard to remember exactly what you have done and not possible for others to reproduce your code. Think of you using a sheet of paper to make a calculation and then immediately discarding the piece of paper. 
+Anything you write in the console is immediately interpreted by _R_ once you hit `Enter`/`Return`. In general, we could enter any command here in the **Console** and have _R_ execute the command. Executing commands directly in the console is bad practice, however. You should avoid doing so as much as possible. When we write and evaluate code directly in the **Console** it is executed at once and then lost.  Similarly, if you point and click to estimate models or created graphs (for example in Stata), it is hard to remember exactly what you have done and not possible for others to reproduce your code. Think of you using a sheet of paper to make a calculation and then immediately discarding the piece of paper. This is one of the reasons why it is frowned upon to use the point and click interface in Stata or manipulate data in Excel. Once you have done something, it is hard to remember exactly what you have done and it is impossible for others to reproduce your work.
 
-Instead of working directly in the Console, we write _Rcode_ in a basic script that we can save (this is equivalent to a do-file, if you have worked with Stata before). Writing code in the script will allow us to save our code and re-execute the commands at any time in the future. Working with scripts also ensures that our work is _reproducible_, i.e., others can go back and check whether our work was correct. This is of great importance, especially when doing scientific research, or for your professor to check your exam :).  
+Instead of working directly in the Console, we write _Rcode_ in a basic script that we can save (this is equivalent to a do-file, if you have worked with Stata before). Writing code in the script will allow us to save our code and re-execute the commands at any time in the future. Working with scripts also ensures that our work is _reproducible_, i.e., others can go back and check whether our work was correct. This is of great importance, especially when doing scientific research, or when your professor wants to check your exam :).  
 
 To open a new _rscript_, click on the little white plus in the upper left corner of RStudio and select `R Script`.
 <center>
 ![Opening Rscripts](images/rscript.png){width=25%} ![Opening Rscripts](images/rscript2.png){width=22%}
 </center>
 
-Once you have an rscript open, the first step should be to save it somewhere sensible. For example, you might create a folder for this course and save all rscripts for class in that folder. You should pick a name for your rscript that makes sense and reminds you about the contents of the script. For example, you could save this first rscript as `Rcrashcourse.R` or `Rcrashcourse_day1.R`. 
+Once you have an rscript open, the first step should be to save it somewhere sensible. For example, if you have created a Project folder for this course, you might create a subfolder that is called _Code_ save all rscripts for class in that folder (Another option would be to create a subfolder for each week). You should pick a name for your rscript that makes sense and reminds you about the contents of the script. For example, you could save this first rscript as `Rcrashcourse.R` or `Rcrashcourse_day1.R`. 
 
 **You should practice writing anything you do in _R_ in a rscript** and execute the code from the script. Start by repeating a few of the simple calculations that you did above. Write each calculation in a separate line: 
 
