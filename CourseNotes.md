@@ -1,7 +1,7 @@
 *R* Crash Course CBS
 ================
 Florian M. Hollenbach & Rasmus Corlin Christensen
-2024-01-29
+2024-02-02
 
 # Getting Started in *R* & RStudio
 
@@ -889,15 +889,10 @@ fortune()
 ```
 
     ## 
-    ## Frank Harrell: Here is an easy approach that will yield results only slightly
-    ## less valid than one actually using the response variable:
-    ##   x <- data.frame(x1, x2, x3, x4, ..., other potential predictors)
-    ##   x[ , sample(ncol(x))]
-    ## Andy Liaw: Hmm... Shouldn't that be something like:
-    ##   x[, sample(ncol(x), ceiling(ncol(x) * runif(1)))]
-    ##    -- Frank Harrell and Andy Liaw (about alternative strategies for stepwise
-    ##       regression and 'random parsimony')
-    ##       R-help (May 2005)
+    ## I cannot remember if I have been using 14 or 14, I think it was 14 and I am not
+    ## near the machine to check.
+    ##    -- John Kane (confused about his SPSS version)
+    ##       R-help (April 2007)
 
 ### Tidyverse
 
@@ -998,9 +993,10 @@ gives the name and type of each column.
 
 ### Wrangling
 
-Data wrangling is the art of getting your data into R in a useful form
-for visualisation and modelling. Data wrangling is very important:
-without it you can’t work with your own data!
+Data wrangling is the art of getting your data into R and making
+transformations in a useful form for visualisation and modelling. Data
+wrangling is very important: without it you can’t work with your own
+data!
 
 Often you’ll need to create some new variables or summaries, or maybe
 you just want to rename the variables or reorder the observations in
@@ -1075,30 +1071,48 @@ head(heights)
 # Or we can pass the data object, with the pipe, to the head() function. It's the same outcome. We will use this going forward.
 
 heights %>% 
-  head()
+  head(n = 10) ## you can also specify how many rows should be shown
 ```
 
-    ## # A tibble: 6 × 6
-    ##    earn height sex       ed   age race 
-    ##   <dbl>  <dbl> <chr>  <dbl> <dbl> <chr>
-    ## 1 50000   74.4 male      16    45 white
-    ## 2 60000   65.5 female    16    58 white
-    ## 3 30000   63.6 female    16    29 white
-    ## 4 50000   63.1 female    16    91 other
-    ## 5 51000   63.4 female    17    39 white
-    ## 6  9000   64.4 female    15    26 white
+    ## # A tibble: 10 × 6
+    ##     earn height sex       ed   age race    
+    ##    <dbl>  <dbl> <chr>  <dbl> <dbl> <chr>   
+    ##  1 50000   74.4 male      16    45 white   
+    ##  2 60000   65.5 female    16    58 white   
+    ##  3 30000   63.6 female    16    29 white   
+    ##  4 50000   63.1 female    16    91 other   
+    ##  5 51000   63.4 female    17    39 white   
+    ##  6  9000   64.4 female    15    26 white   
+    ##  7 29000   61.7 female    12    49 white   
+    ##  8 32000   72.7 male      17    46 white   
+    ##  9  2000   72.0 male      15    21 hispanic
+    ## 10 27000   72.2 male      12    26 white
 
-### Then pull request it into Florian’s github
+``` r
+#### another function to take an initial look is the glimpse() function
+heights %>% 
+  glimpse()
+```
 
-This is trivial when doing single operations, but when you do multiple
-ones, as we’ll see below, it is incredibly useful!
+    ## Rows: 1,192
+    ## Columns: 6
+    ## $ earn   <dbl> 50000, 60000, 30000, 50000, 51000, 9000, 29000, 32000, 2000, 27…
+    ## $ height <dbl> 74.42444, 65.53754, 63.62920, 63.10856, 63.40248, 64.39951, 61.…
+    ## $ sex    <chr> "male", "female", "female", "female", "female", "female", "fema…
+    ## $ ed     <dbl> 16, 16, 16, 16, 17, 15, 12, 17, 15, 12, 16, 11, 12, 12, 16, 12,…
+    ## $ age    <dbl> 45, 58, 29, 91, 39, 26, 49, 46, 21, 26, 65, 34, 27, 51, 35, 58,…
+    ## $ race   <chr> "white", "white", "white", "other", "white", "white", "white", …
+
+The pipe is trivial when doing single operations, but when you do
+multiple ones, as we’ll see below, it is incredibly useful!
 
 ### Filtering
 
 `filter()` allows you to subset observations based on their values. The
 first argument is the name of the data frame. The second and subsequent
-arguments are the expressions that filter the data frame. For example,
-we can select everyone aged exactly 45 in the data:
+arguments are logical expressions that filter the data frame. If you use
+the pipe, you do not have to specify the data as the first argument. For
+example, we can select everyone aged exactly 45 in the data:
 
 ``` r
 heights %>% 
@@ -1129,10 +1143,11 @@ heights %>%
     ## 19  60000   71.8 male      12    45 white
 
 **Important** When you run that line of code, the `dplyr` package in
-tidyverse executes the filtering operation and returns a new data frame.
-If you want to save the result, you’ll need to use the assignment
-operator, `<-`:, the initial object would be unchanged, unless you
-overwrite it.
+tidyverse executes the filtering operation and returns a new data frame,
+however, it is just printing the resulting data to the console. If you
+want to save the result as an object in your workspace, you’ll need to
+use the assignment operator, `<-`:, the initial object would be
+unchanged, unless you overwrite it.
 
 ``` r
 heights_age45 <- heights %>% 

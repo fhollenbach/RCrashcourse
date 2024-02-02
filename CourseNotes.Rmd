@@ -506,7 +506,7 @@ When you run `read_csv()` it prints out a column specification that gives the na
 
 ### Wrangling
 
-Data wrangling is the art of getting your data into R in a useful form for visualisation and modelling. Data wrangling is very important: without it you can’t work with your own data! 
+Data wrangling is the art of getting your data into R and making transformations in a useful form for visualisation and modelling. Data wrangling is very important: without it you can’t work with your own data! 
 
 Often you’ll need to create some new variables or summaries, or maybe you just want to rename the variables or reorder the observations in order to make the data a little easier to work with.
 
@@ -547,17 +547,18 @@ head(heights)
 # Or we can pass the data object, with the pipe, to the head() function. It's the same outcome. We will use this going forward.
 
 heights %>% 
-  head()
+  head(n = 10) ## you can also specify how many rows should be shown
 
+#### another function to take an initial look is the glimpse() function
+heights %>% 
+  glimpse()
 ```
 
-### Then pull request it into Florian's github
-
-This is trivial when doing single operations, but when you do multiple ones, as we'll see below, it is incredibly useful!
+The pipe is trivial when doing single operations, but when you do multiple ones, as we'll see below, it is incredibly useful!
 
 ### Filtering
 
-`filter()` allows you to subset observations based on their values. The first argument is the name of the data frame. The second and subsequent arguments are the expressions that filter the data frame. For example, we can select everyone aged exactly 45 in the data:
+`filter()` allows you to subset observations based on their values. The first argument is the name of the data frame. The second and subsequent arguments are logical expressions that filter the data frame. If you use the pipe, you do not have to specify the data as the first argument. For example, we can select everyone aged exactly 45 in the data:
 
 ```{r}
 
@@ -566,7 +567,7 @@ heights %>%
 
 ```
 **Important**
-When you run that line of code, the `dplyr` package in tidyverse executes the filtering operation and returns a new data frame. If you want to save the result, you’ll need to use the assignment operator, `<-`:, the initial object would be unchanged, unless you overwrite it.
+When you run that line of code, the `dplyr` package in tidyverse executes the filtering operation and returns a new data frame, however, it is just printing the resulting data to the console. If you want to save the result as an object in your workspace, you’ll need to use the assignment operator, `<-`:, the initial object would be unchanged, unless you overwrite it.
 
 ```{r}
 
